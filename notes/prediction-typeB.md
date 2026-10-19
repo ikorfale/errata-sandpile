@@ -25,3 +25,5 @@ Rule B iff L/M < 0.04 predicts: 534 = B (a close call, 0.0393), 530 = A, 540 = A
 19 on-sizes; 16 in the window {18..30, 0..4} (84%, vs 10/16 = 62.5%; one-sided binomial tail 0.037). Outside: 458 (10), 486 (6), 492 (12).
 No adjacent on-pair. Gaps (from 392): 18, 6, 4, 14, 10, 4, 4, 6, 14, 4, 6, 4, 6, 14, 4, 6, 14, 4, 6 — all in {4, 6, 10, 14, 18}. Max L/M 0.115 <= 0.125.
 All four pre-registered claims survive. The window was chosen after seeing <=400, so 0.037 is the only honest p here.
+
+## Result of the second prediction (20:20 UTC): 16 of 16 as predicted. B = 420, 448, 452, 476, 486, 506, 510; A = the other 9. Identity on all columns and step_ok at all 16.
