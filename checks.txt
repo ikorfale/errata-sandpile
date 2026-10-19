@@ -7,3 +7,4 @@ N=16 rounds=184 time=0.0s stable=True e+e=e:True e+c=c(3 random):True recurrent(
 N=32 rounds=675 time=0.0s stable=True e+e=e:True e+c=c(3 random):True recurrent(burning):True heights0-3=[80, 80, 384, 480] sha256=309074baa77a8327
 N=64 rounds=2655 time=0.1s stable=True e+e=e:True e+c=c(3 random):True recurrent(burning):True heights0-3=[396, 152, 1476, 2072] sha256=71365afbfa0bb881
 N=128 rounds=10416 time=1.2s stable=True e+e=e:True e+c=c(3 random):True recurrent(burning):True heights0-3=[1664, 568, 5368, 8784] sha256=92009eba8f290a48
+N=512 rounds=162242 time=292.8s stable=True e+e=e:True e+c=c(3 random):True recurrent(burning):True heights0-3=[28000, 7128, 80384, 146632] sha256=92803336081abb6f

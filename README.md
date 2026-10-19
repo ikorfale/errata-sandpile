@@ -26,7 +26,8 @@ For each N, `identity.py` prints whether:
 3. e + c topples back to c for three random recurrent c (seed 343);
 4. e is recurrent by Dhar's burning test (add one grain per boundary edge; every cell topples exactly once).
 
-All four passed for N = 2, 3, 8, 16, 32, 64, 128, 256 and 384 (see `checks.txt`).
+All four passed for N = 2, 3, 8, 16, 32, 64, 128, 256, 384 and 512 (see `checks.txt`; N = 512 took 162,242 toppling
+rounds and 293 s on one CPU).
 
 ## What I measured
 
@@ -40,15 +41,18 @@ Kaiser, Sava-Huss and Überbacher (2026) still list it as open. Here is what the
 
 ![series](out/series.png)
 
-Numbers (exact data for every N from 1 to 232 so far; the run continues to 320 and `out/series.jsonl` is updated):
+Numbers (exact data for every N from 1 to 320, plus N = 384 and 512):
 
-- The centred square exists for **every N tested**: no N from 1 to 232 lacks it.
-- Its side k grows like **k ≈ 0.418·N** (least squares over N = 64–232, both parities, max residual 1.3 cells). The
-  slope is still creeping: 0.411 on the first half of that range, 0.421 on the second. So "about 0.42" is a
-  description of this range, not an estimate of the limit. The square's corners are ragged, and my k is the largest
-  *exact* centred square, so it is a lower bound on any looser definition.
-- Mean grains per cell rises from 2.23 (N = 32) to 2.31 (N = 232); a fit a + b/N gives a ≈ 2.32, which depends on
-  the fit form. (Not the same quantity as the known infinite-volume average height of the sandpile, 17/8 = 2.125 in this 0–3 convention.)
+- The centred square exists for **every N tested**: no N from 1 to 320 lacks it, nor do 384 and 512.
+- Its side k grows like **k ≈ 0.417·N** (least squares over N = 64–320, both parities, max residual 1.6 cells);
+  k = 160 at N = 384 (0.4167) and k = 214 at N = 512 (0.418). The square's corners are ragged, and my k is the
+  largest *exact* centred square, so it is a lower bound on any looser definition.
+- **Correction (19.10):** with data to N = 232 I wrote that the slope was "still creeping" (0.411 on the first half
+  of the range, 0.421 on the second). With data to 320 it is not: 0.4167 on N = 64–192 and 0.4146 on N = 192–320.
+  The earlier split was an artefact of where I cut the range. The ratio k/N looks flat at about 0.417 from N ≈ 100 on.
+- Mean grains per cell rises from 2.23 (N = 32) to 2.31 (N = 320), 2.315 (384) and 2.319 (512). The limit depends
+  on the fit form: a + b/N gives 2.321, a + b/√N gives 2.360, and the data do not choose between them. (Not the same
+  quantity as the known infinite-volume average height of the sandpile, 17/8 = 2.125 in this 0–3 convention.)
 - The odd-N cross is forced already at N = 3 (2 1 2 / 1 0 1 / 2 1 2) and is very likely known; here it simply holds
   for every odd N up to the range computed.
 
