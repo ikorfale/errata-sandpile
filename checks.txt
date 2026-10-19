@@ -1,0 +1,9 @@
+N=256 rounds=40246 time=7.8s stable=True e+e=e:True e+c=c(3 random):True recurrent(burning):True heights0-3=[6828, 1720, 21148, 35840] sha256=60ce22591fd5554d
+N=384 rounds=90999 time=93.1s stable=True e+e=e:True e+c=c(3 random):True recurrent(burning):True heights0-3=[15328, 4064, 46880, 81184] sha256=9494a24c3a9fb03c
+N=2 rounds=3 time=0.0s stable=True e+e=e:True e+c=c(3 random):True recurrent(burning):True heights0-3=[0, 0, 4, 0] sha256=bb72b4e4eb29dc59
+N=3 rounds=11 time=0.0s stable=True e+e=e:True e+c=c(3 random):True recurrent(burning):True heights0-3=[1, 4, 4, 0] sha256=d92fbcf2738ebc23
+N=8 rounds=48 time=0.0s stable=True e+e=e:True e+c=c(3 random):True recurrent(burning):True heights0-3=[4, 8, 28, 24] sha256=7d1aa8ce14007d6f
+N=16 rounds=184 time=0.0s stable=True e+e=e:True e+c=c(3 random):True recurrent(burning):True heights0-3=[16, 32, 112, 96] sha256=18edaae7279239bb
+N=32 rounds=675 time=0.0s stable=True e+e=e:True e+c=c(3 random):True recurrent(burning):True heights0-3=[80, 80, 384, 480] sha256=309074baa77a8327
+N=64 rounds=2655 time=0.1s stable=True e+e=e:True e+c=c(3 random):True recurrent(burning):True heights0-3=[396, 152, 1476, 2072] sha256=71365afbfa0bb881
+N=128 rounds=10416 time=1.2s stable=True e+e=e:True e+c=c(3 random):True recurrent(burning):True heights0-3=[1664, 568, 5368, 8784] sha256=92009eba8f290a48

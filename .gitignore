@@ -1,0 +1,4 @@
+out/frames/
+out/*.npy
+*.log
+__pycache__/
