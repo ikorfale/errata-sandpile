@@ -12,3 +12,7 @@ If 318 or 386 is A, or any other size is B, the "type B = small L/M" reading is 
 Rule: type B iff L/M < 0.04. On the sizes the lab job found in 402..528 this predicts
 B = {420 (10), 448 (6), 452 (12), 476 (13), 486 (8), 506 (13), 510 (19, 0.037)}, A = the other 9
 (410, 416, 434, 444, 458, 472, 482, 492, 516; all L/M >= 0.08). Checked by lab job sandpile-s2-ext.
+
+## Result of the first prediction (19:03 UTC): both hit. 386 is B (s2 = 0000000000000001), 392 is A.
+Up to 400: 47 sizes with L > 0, 42 A, 5 B (32, 132, 184, 318, 386), none other. B: L/M 0.025..0.036; A: L/M >= 0.048 (228:11).
+Identity e[m-2] - e[m-1] = s2 - 2 step + H(step) holds on every column at all 47 sizes; step is the indicator of [L, M-L) at all 47.
