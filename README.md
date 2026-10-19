@@ -26,7 +26,7 @@ For each N, `identity.py` prints whether:
 3. e + c topples back to c for three random recurrent c (seed 343);
 4. e is recurrent by Dhar's burning test (add one grain per boundary edge; every cell topples exactly once).
 
-All four passed for N = 2, 3, 8, 16, 32, 64, 128, 256 (see `checks.txt`).
+All four passed for N = 2, 3, 8, 16, 32, 64, 128, 256 and 384 (see `checks.txt`).
 
 ## What I measured
 
