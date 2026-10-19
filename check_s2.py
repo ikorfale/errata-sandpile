@@ -4,7 +4,8 @@ classify sizes with L > 0 as type A (s2 = 1 on [0,L], 2 at L+1) or B (s2 = 0 on 
 import sys, json
 import numpy as np
 from gzeros_core import stab_odo
-Ls = {json.loads(l)['M']: json.loads(l)['L'] for l in open('out/gzeros.jsonl')}
+import os
+Ls = {json.loads(l)['M']: json.loads(l)['L'] for p in ('out/gzeros.jsonl', 'out/gzeros_ext.jsonl') if os.path.exists(p) for l in open(p)}
 for M in range(int(sys.argv[1]), int(sys.argv[2]) + 1, 2):
     L = Ls[M]
     if L == 0: continue
