@@ -30,7 +30,7 @@ All four pre-registered claims survive. The window was chosen after seeing <=400
 
 ## Result of the third prediction (lab job sandpile-s2-ext3, done 20:31 UTC, read 21:30 UTC): 3 of 3.
 534 = B (s2 = 00000000000000000000001, L 21, L/M 0.0393), 530 = A, 540 = A. Identity on all columns and step_ok at all three.
-Total since the rule was written (318 onward, unseen data): 21 of 21 sizes typed as predicted.
+Total on sizes not yet checked when each prediction was written: 15 (282..400) + 16 (402..528) + 3 = 34 of 34 typed as predicted, 10 of them B (318 386 420 448 452 476 486 506 510 534).
 Gap on L/M now: largest B 0.0393 (534), smallest A 0.048 (228).
 
 ## Fourth pre-registration, written 2026-10-19 ~21:35 UTC, before L is known for any M > 548
