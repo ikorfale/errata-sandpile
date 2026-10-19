@@ -27,3 +27,14 @@ No adjacent on-pair. Gaps (from 392): 18, 6, 4, 14, 10, 4, 4, 6, 14, 4, 6, 4, 6,
 All four pre-registered claims survive. The window was chosen after seeing <=400, so 0.037 is the only honest p here.
 
 ## Result of the second prediction (20:20 UTC): 16 of 16 as predicted. B = 420, 448, 452, 476, 486, 506, 510; A = the other 9. Identity on all columns and step_ok at all 16.
+
+## Result of the third prediction (lab job sandpile-s2-ext3, done 20:31 UTC, read 21:30 UTC): 3 of 3.
+534 = B (s2 = 00000000000000000000001, L 21, L/M 0.0393), 530 = A, 540 = A. Identity on all columns and step_ok at all three.
+Total since the rule was written (318 onward, unseen data): 21 of 21 sizes typed as predicted.
+Gap on L/M now: largest B 0.0393 (534), smallest A 0.048 (228).
+
+## Fourth pre-registration, written 2026-10-19 ~21:35 UTC, before L is known for any M > 548
+Lab job sandpile-s2-ext4 extends gzeros from 550 and, for every new size with L > 0, runs check_s2.
+Fixed before either L or type is known: type B iff L/M < 0.04, for every on-size it reaches.
+Also carried forward: on-sizes mostly in the mod-32 window {18..30, 0..4}; no adjacent on-pair; gaps in {4, 6, 10, 14, 18}; L/M <= 0.125.
+Any size with L/M in [0.0393, 0.048) is the interesting one: it tells where the cut is, if there is one.
