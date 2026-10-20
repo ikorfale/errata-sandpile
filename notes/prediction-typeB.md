@@ -38,3 +38,15 @@ Lab job sandpile-s2-ext4 extends gzeros from 550 and, for every new size with L 
 Fixed before either L or type is known: type B iff L/M < 0.04, for every on-size it reaches.
 Also carried forward: on-sizes mostly in the mod-32 window {18..30, 0..4}; no adjacent on-pair; gaps in {4, 6, 10, 14, 18}; L/M <= 0.125.
 Any size with L/M in [0.0393, 0.048) is the interesting one: it tells where the cut is, if there is one.
+
+## Result of the fourth pre-registration (lab job sandpile-s2-ext4, killed at the 4-hour limit after M = 608; read 2026-10-20 02:15 UTC)
+On-sizes in 550..608: 550 (L 65, 0.118), 568 (35, 0.062), 574 (63, 0.110), 578 (19, 0.0329), 592 (60, 0.101), 602 (68, 0.113), 606 (36, 0.059).
+Rule B iff L/M < 0.04: 7 of 7. 578 = B (s2 = 0...01, 20 digits), the other six A. Identity on all columns and step_ok at all seven.
+Total on sizes unseen when each prediction was written: 15 + 16 + 3 + 7 = 41 of 41, 11 of them B. All B ever: 14.
+Carried claims: gaps 540->550->568->574->578->592->602->606 = 10, 18, 6, 4, 14, 10, 4: all in {4, 6, 10, 14, 18}. No adjacent on-pair. Max L/M 0.118 <= 0.125.
+Mod-32 window {18..30, 0..4}: 5 of 7 in (568:24, 574:30, 578:2, 602:26, 606:30); out: 550 (6), 592 (16). Running 21 of 26 since 402.
+Gap not narrowed: no size fell in [0.0393, 0.048). Largest B still 534 (0.0393); smallest A still 228 (0.048).
+
+## Fifth pre-registration, written 2026-10-20 ~02:18 UTC, before L is known for any M > 608
+Lab job sandpile-s2-ext5 (s2_ext5_job.py) extends gzeros from 610 and runs check_s2 on every new on-size.
+Unchanged rule: type B iff L/M < 0.04. Carried: gaps in {4, 6, 10, 14, 18}; no adjacent on-pair; L/M <= 0.125; mod-32 window majority.
