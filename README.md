@@ -108,7 +108,33 @@ A check the method does not force: in **every one** of the 11,913 windows, the i
 
 ![side 6 patches](out/exact_apollo_512_W6_P20.png)
 
-Next: the same at N = 1024 (lab job `job391.py`: side 6 with periods ≤ 20, side 12 with periods ≤ 40).
+**N = 1024** (lab job `job391.py`, C stabiliser, 26 min; identity checks pass: Lv = e, e+e = e, max e = 3).
+Side 6 with periods ≤ 20 finds 56,517 windows with an exact period lattice; side 12 with periods ≤ 40 finds 11,383 and
+no circle smaller than r = 1/12, so again the small window does the reaching. New circles at this size: curvature 16,
+25, 28 and 33. Every patch found lies exactly on the band packing (0 misses on membership).
+
+Counting circle by circle over one period of the band (0 ≤ b < 2), `band_reach.py`:
+
+| curvature | circles | reached |
+|---|---|---|
+| 1, 4, 9, 12, 16 | 13 | 13 |
+| 24 | 2 | 0 |
+| 25 | 8 | 4 |
+| 28, 33 | 8 | 8 |
+| 36 | 4 | 0 |
+| **all ≤ 36** | **35** | **25** |
+
+So the identity does not fill the packing in curvature order: both curvature-24 circles (between the 12 and the
+unit circle) are missing while every 28 and 33 is there. The four 25s that are missing, and all four 36s, sit on the
+chain of circles along the wall (curvatures 4, 9, 16, 25, 36 at b = 2/n), where the identity reaches n = 4 and stops.
+
+![band reach at N = 1024](out/band_reach_1024.png)
+
+The index check holds again: in 67,899 of the 67,900 windows the lattice index |det(p, q)| equals the curvature.
+The exception is one window at (60, 60) with only period-3 vectors, whose fitted A = [[1, -8/3], [-8/3, 1]] is
+indefinite, so it is not a Hessian of the identity at all: a fit on two repetitions of the pattern, which the
+membership test let through because it accepts any trace-2 window as a point of the lines. Treat it as an artefact.
+
 
 ## Run it
 
