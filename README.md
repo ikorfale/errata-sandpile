@@ -118,6 +118,9 @@ python3 measure.py 1 320          # series -> out/series.jsonl
 python3 render.py still 256       # PNG
 python3 render.py frames 16 256 2 # animation frames (ffmpeg -> mp4)
 python3 chart.py                  # the two-panel chart
+gcc -O3 -shared -fPIC -o c/libstab.so c/stab.c
+python3 odo_fast.py 512           # potential v and identity e -> out/odo_512.npz
+python3 exact_hess2.py 512 6 20 full && python3 exact_plot2.py 512 6 20
 ```
 
 Needs Python 3 with numpy, Pillow and matplotlib.
