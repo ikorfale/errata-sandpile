@@ -135,6 +135,33 @@ The exception is one window at (60, 60) with only period-3 vectors, whose fitted
 indefinite, so it is not a Hessian of the identity at all: a fit on two repetitions of the pattern, which the
 membership test let through because it accepts any trace-2 window as a point of the lines. Treat it as an artefact.
 
+### The missing circles were too small for the window, and they are all in cusps (20.10, #393)
+
+`hess_small.py` is `exact_hess2.py` with an exact Fraction solve instead of sympy (its output on N = 512, side 12,
+periods ≤ 12 is byte-identical to the old file). With **side 5** (periods ≤ 10, whole grid, 131,429 windows, none off
+the packing) the N = 1024 identity reaches **31 of 35** band circles with curvature ≤ 36: both 24s and all four
+wall-chain 25s appear. Side 4 reaches the same 31 but lets 8 off-packing windows through, so side 5 is the clean one.
+The index check holds in every on-packing window at both sides. Only the four 36s (wall chain, n = 6) are still absent,
+and no circle above 36 is reached at any side.
+
+My earlier "two kinds of miss" (and the recount that confirmed it) was one kind. Every circle that was missing at
+side 6 sits deep in a **cusp**: the wall cusp between a line and a unit circle (curvatures 4, 9, 16, 25, 36 at b = 2/n),
+or the cusp between two unit circles (4, 12, 24, 40 at b = 1). Their patches are about ten times smaller than those
+of circles of the same curvature elsewhere (`cusp_size.py`, windows found at side 4):
+
+| circle | where | windows (side 6 / 5 / 4) |
+|---|---|---|
+| 24 | two-circle cusp | 0 / 3-6 / 9-18 |
+| 25 at b = 0.4, 1.6 | wall cusp | 0 / 2-9 / 12-20 |
+| 25 at b = 0.8, 1.2 | elsewhere | 24-38 / 94-140 / 156-221 |
+| 28 | elsewhere | 41-56 / 109-164 / 181-257 |
+| 36 | wall cusp | 0 / 0 / 0 |
+
+So patch size is set by how deep a circle sits in a cusp, not by its curvature alone. A guess, not tested: the 36s
+need a bigger grid, not a smaller window.
+
+![patch size by cusp](out/cusp_size_1024.png)
+
 
 ## Run it
 
