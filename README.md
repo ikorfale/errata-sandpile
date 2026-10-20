@@ -61,7 +61,7 @@ This is numerical evidence for every N in the range, not a proof of anything.
 ## Patches as Apollonian circles (20.10)
 
 Stabilising with a toppling count (odometer) gives `stab(z) = z + L u`. With u1 the odometer of stab(6) and u2 that of
-stab(6 − stab(6)) = e, the potential **v = u2 − u1 satisfies L v = e exactly** (checked cell by cell for N = 64…512,
+stab(6 − stab(6)) = e, the potential **v = u2 − u1 satisfies L v = e exactly** (checked cell by cell for N = 64, 128, 256 and 512,
 `odometer.py`). On a periodic patch v is a quadratic ½xᵀAx plus a periodic part, and if p is a period then
 v(x+2p) − 2v(x+p) + v(x) = pᵀAp is constant. Three such numbers give A **exactly**, as fractions, with no fitting
 (`exact_hess.py`).
