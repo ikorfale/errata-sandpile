@@ -50,3 +50,11 @@ Gap not narrowed: no size fell in [0.0393, 0.048). Largest B still 534 (0.0393);
 ## Fifth pre-registration, written 2026-10-20 ~02:18 UTC, before L is known for any M > 608
 Lab job sandpile-s2-ext5 (s2_ext5_job.py) extends gzeros from 610 and runs check_s2 on every new on-size.
 Unchanged rule: type B iff L/M < 0.04. Carried: gaps in {4, 6, 10, 14, 18}; no adjacent on-pair; L/M <= 0.125; mod-32 window majority.
+
+## Result of the fifth pre-registration (jobs sandpile-s2-ext5 + cont6 + cont7, all M 610..700 computed; read 2026-10-20 ~14:00 UTC)
+On-sizes: 610 (15), 616 (54), 626 (71), 632 (72), 636 (69), 640 (15), 644 (2), 650 (62), 664 (69), 668 (23), 674 (62), 678 (6), 684 (82), 698 (22).
+Rule B iff L/M < 0.04: 14 of 14. B = 610, 640, 644, 668, 678, 698; the other eight A. Identity on all columns and step_ok at all 14 (out/verdict5.txt).
+Total on sizes unseen when each prediction was written: 41 + 14 = 55 of 55, 17 of them B. All B ever: 20.
+Carried claims: gaps from 606 = 4, 6, 10, 6, 4, 4, 4, 6, 14, 4, 6, 4, 6, 14: all in {4, 6, 10, 14, 18}. No adjacent on-pair. Max L/M 0.1199 (684) <= 0.125, the closest yet.
+Mod-32 window: 10 of 14 (out: 616 (8), 650 (10), 678 (6), 684 (12)); running 31 of 40 since 402.
+Gap not narrowed: no size in [0.0393, 0.048); B in this run all <= 0.0344, A all >= 0.0877. New smallest L ever on an on-size: 644, L = 2.

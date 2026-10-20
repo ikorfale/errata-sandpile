@@ -1,0 +1,20 @@
+missing M: []
+M 610 L 15 L/M 0.0246 mod32 2 pred B got B id_all True step_ok True
+M 616 L 54 L/M 0.0877 mod32 8 pred A got A id_all True step_ok True
+M 626 L 71 L/M 0.1134 mod32 18 pred A got A id_all True step_ok True
+M 632 L 72 L/M 0.1139 mod32 24 pred A got A id_all True step_ok True
+M 636 L 69 L/M 0.1085 mod32 28 pred A got A id_all True step_ok True
+M 640 L 15 L/M 0.0234 mod32 0 pred B got B id_all True step_ok True
+M 644 L 2 L/M 0.0031 mod32 4 pred B got B id_all True step_ok True
+M 650 L 62 L/M 0.0954 mod32 10 pred A got A id_all True step_ok True
+M 664 L 69 L/M 0.1039 mod32 24 pred A got A id_all True step_ok True
+M 668 L 23 L/M 0.0344 mod32 28 pred B got B id_all True step_ok True
+M 674 L 62 L/M 0.0920 mod32 2 pred A got A id_all True step_ok True
+M 678 L 6 L/M 0.0088 mod32 6 pred B got B id_all True step_ok True
+M 684 L 82 L/M 0.1199 mod32 12 pred A got A id_all True step_ok True
+M 698 L 22 L/M 0.0315 mod32 26 pred B got B id_all True step_ok True
+rule: 14 of 14
+gaps from 606: [4, 6, 10, 6, 4, 4, 4, 6, 14, 4, 6, 4, 6, 14] all in set: True
+adjacent pair: False
+max L/M: 0.1199
+mod32 window: 10 of 14
