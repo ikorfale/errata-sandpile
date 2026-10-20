@@ -84,6 +84,32 @@ smaller circles were not reached by this search (not shown absent). A window fit
 16×16 windows) is much cruder: 61% of periodic-looking windows within 0.02 of the packing vs 5% for random centres
 with the same radii, at N = 256. Consistent with LPS; it applies their theorem to the identity, it does not extend it.
 
+### Smaller windows reach smaller circles (20.10, #391)
+
+`exact_hess2.py` is the same rule vectorised per period vector (it reproduces the table above bit for bit at
+periods ≤ 12), with an option `full` that scans the whole grid instead of keeping the conservative margins.
+`c/stab.c` + `odo_fast.py` stabilise in C and reproduce `odo_256` and `odo_512` exactly (512 in 52 s instead of ~5 min).
+
+**My guess above was wrong**: the period limit was not what kept the triangles out. On the 512 identity, side 12, whole grid:
+
+| periods up to | windows | distinct A | radii reached |
+|---|---|---|---|
+| 12 | 2,237 | 13 | 0, 1, 1/4 |
+| 40 | 2,240 | 13 | 0, 1, 1/4 |
+
+Shrinking the window is what helps (periods ≤ 20, whole grid): side 8 gives 5,990 windows and the same radii;
+**side 6 gives 11,913 windows, 33 distinct A, and three new circles: r = 1/12 at (7/12, 1) and (17/12, 1), and r = 1/9
+at (1/9, 2/3)**, all exactly on the packing. The r = 1/12 patches sit in four mirror-image places inside the
+triangles; the two r = 1/9 windows are near the right edge of the grid, so treat them as boundary patches.
+
+A check the method does not force: in **every one** of the 11,913 windows, the index of the measured period lattice
+|det(p, q)| equals 1/r (4 for r = 1/4, 9 for 1/9, 12 for 1/12; 1 for r = 1 and the line point). That is LPS's
+"curvature = area of the fundamental tile", seen from data.
+
+![side 6 patches](out/exact_apollo_512_W6_P20.png)
+
+Next: the same at N = 1024 (lab job `job391.py`: side 6 with periods ≤ 20, side 12 with periods ≤ 40).
+
 ## Run it
 
 ```
