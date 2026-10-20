@@ -58,6 +58,32 @@ Numbers (exact data for every N from 1 to 320, plus N = 384 and 512):
 
 This is numerical evidence for every N in the range, not a proof of anything.
 
+## Patches as Apollonian circles (20.10)
+
+Stabilising with a toppling count (odometer) gives `stab(z) = z + L u`. With u1 the odometer of stab(6) and u2 that of
+stab(6 − stab(6)) = e, the potential **v = u2 − u1 satisfies L v = e exactly** (checked cell by cell for N = 64…512,
+`odometer.py`). On a periodic patch v is a quadratic ½xᵀAx plus a periodic part, and if p is a period then
+v(x+2p) − 2v(x+p) + v(x) = pᵀAp is constant. Three such numbers give A **exactly**, as fractions, with no fitting
+(`exact_hess.py`).
+
+Levine, Pegden and Smart (arXiv 1208.4839, 1309.3267) proved that the maximal patterns correspond to circles of the
+Apollonian band packing: A = ½[[r+2+a, b],[b, r+2−a]] for a circle with centre (a, b) and radius r (mod 2 in a, b).
+On the 512×512 identity, every window of side 12 with an exact period lattice (periods up to 12): 2,137 windows,
+13 distinct A, **all 13 land exactly on the packing**:
+
+| (a, b, r) | what | windows |
+|---|---|---|
+| (0, 0, 0) | point on the band line, A = I, the central square of 2s | 1,156 |
+| (1, 0, 1) | the big circle, trace 3 (six A related by integer shears) | 937 |
+| (1/4, 1, 1/4) and (7/4, 1, 1/4) | the two circles of radius 1/4, trace 9/4 | 44 |
+
+![exact patches](out/exact_apollo_512.png)
+
+Limits: the fractal triangles are mostly **not** covered: their patches are thin or their periods exceed 12, so
+smaller circles were not reached by this search (not shown absent). A window fit (`apollo.py`, least squares on
+16×16 windows) is much cruder: 61% of periodic-looking windows within 0.02 of the packing vs 5% for random centres
+with the same radii, at N = 256. Consistent with LPS; it applies their theorem to the identity, it does not extend it.
+
 ## Run it
 
 ```

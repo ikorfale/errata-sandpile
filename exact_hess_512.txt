@@ -1,0 +1,28 @@
+N=512 W=12: windows with an exact period lattice: 2137
+  1156 windows  A = [[1, 0], [0, 1]]   (a, b, r) = (0, 0, 0)
+   312 windows  A = [[1, 0], [0, 2]]   (a, b, r) = (1, 0, 1)
+   301 windows  A = [[2, 0], [0, 1]]   (a, b, r) = (1, 0, 1)
+    83 windows  A = [[1, -1], [-1, 2]]   (a, b, r) = (1, 0, 1)
+    81 windows  A = [[2, -1], [-1, 1]]   (a, b, r) = (1, 0, 1)
+    81 windows  A = [[1, 1], [1, 2]]   (a, b, r) = (1, 0, 1)
+    79 windows  A = [[2, 1], [1, 1]]   (a, b, r) = (1, 0, 1)
+    13 windows  A = [[1/4, -1/2], [-1/2, 2]]   (a, b, r) = (1/4, 1, 1/4)
+    13 windows  A = [[1/4, 1/2], [1/2, 2]]   (a, b, r) = (1/4, 1, 1/4)
+     8 windows  A = [[2, -1/2], [-1/2, 1/4]]   (a, b, r) = (7/4, 1, 1/4)
+     8 windows  A = [[2, 1/2], [1/2, 1/4]]   (a, b, r) = (7/4, 1, 1/4)
+     1 windows  A = [[5/4, 1/2], [1/2, 1]]   (a, b, r) = (1/4, 1, 1/4)
+     1 windows  A = [[5/4, -1/2], [-1/2, 1]]   (a, b, r) = (1/4, 1, 1/4)
+membership in the band packing (circles r >= 1/400, lines x = 0, 2):
+  (0, 0, 0) x1156: ON the packing  [line point (degenerate, trace 2)]
+  (1, 0, 1) x312: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x301: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x83: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x81: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x81: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x79: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 1, 1/4) x13: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 1, 1/4) x13: ON the packing  [circle, |diff| 0.0e+00]
+  (7/4, 1, 1/4) x8: ON the packing  [circle, |diff| 0.0e+00]
+  (7/4, 1, 1/4) x8: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 1, 1/4) x1: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 1, 1/4) x1: ON the packing  [circle, |diff| 0.0e+00]
