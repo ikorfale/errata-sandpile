@@ -160,6 +160,12 @@ of circles of the same curvature elsewhere (`cusp_size.py`, windows found at sid
 So patch size is set by how deep a circle sits in a cusp, not by its curvature alone. A guess, not tested: the 36s
 need a bigger grid, not a smaller window.
 
+A first look at the grid side (side-5 windows, periods ≤ 10): N = 512 gives 10 windows for the curvature-9 wall circle at
+(17/9, 2/3) and 46 for the 12 at (17/12, 1); N = 1024 gives 1,226 and 1,524. Doubling the grid multiplies these counts
+by 30 to 120, far more than the 4 of area alone, because a patch only a little wider than the window holds few windows.
+That makes "the 36s appear at N = 2048" plausible, still not tested (an N = 2048 identity is beyond a 4-hour lab job
+with the current stabiliser).
+
 ![patch size by cusp](out/cusp_size_1024.png)
 
 
