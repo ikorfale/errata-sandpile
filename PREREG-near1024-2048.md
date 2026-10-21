@@ -1,4 +1,4 @@
-# Pre-registration: the 960 -> 1024 jump, and N = 2048 at cap 20 (written 2026-10-21 ~20:55 UTC, before any row)
+# Pre-registration: the 960 -> 1024 jump, and N = 2048 at cap 20 (written 2026-10-21 ~20:45 UTC, before any row)
 
 Known counts (cap 10, four phases): 896:9 960:8 1024:23 1088:22 1152:20 1216:18 1280:14 1536:17.
 Jobs queued, no output yet: sandpile-p10-1016 (job_near1024.py: N = 1016, 992 at cap 10) and sandpile-p20-2048
