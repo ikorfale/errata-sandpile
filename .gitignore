@@ -3,3 +3,4 @@ out/*.npy
 *.log
 __pycache__/
 out/*.npz
+out/pre401/*.npy
