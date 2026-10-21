@@ -267,3 +267,6 @@ All 23 families ever reached are among the 32 (`out/ceiling406_P10.txt`); the ot
 reached at no size. So at cap 10, N = 1024 sits at the empirical ceiling and 2048 can show at most 32 families: a repeat
 of the 1024 excess (about 51) is impossible to see. `hess_stream.py` (two streaming passes, same rows as `hess_small.py`:
 identical set at N = 512) makes cap 20 fit in 700 MB; lab jobs `sandpile-p20-a/b` rerun all sizes at cap 20.
+Reviewed by a second model: the bound holds if every passing vector is a lattice vector; border windows that drop the
+shortest vector do not matter (`--any-pair`, any two independent lattice vectors: still 32 and 155). First cap-20 reading,
+N = 1024 one phase: 24 families (new: 88 (1, 12, 33)), nothing above curvature 97, so the cap is not the main limit there.

@@ -5,7 +5,7 @@ Detectable = the scanner's own rule: p = first lattice vector in its scan order,
 usage: python ceiling406.py PMAX [reached_file ...]"""
 import sys, collections, numpy as np
 from fractions import Fraction as F
-PMAX = int(sys.argv[1])
+PMAX = int(sys.argv[1]); GEN = '--any-pair' in sys.argv; sys.argv = [a for a in sys.argv if a != '--any-pair']  # --any-pair: any two independent lattice vectors (Fable: border windows can drop L[0])
 src = open('apollo.py').read().split('print(f"band')[0].split('KMAX = 400')[1]
 ns = {'np': np}; exec('KMAX = 400' + src, ns); C = ns['C']
 pa = open('parents81.py').read()
@@ -24,8 +24,9 @@ for (a, b, r) in sorted(circ):
     L = [v for v in vecs if lattice_ok(A11, A12, A22, v)]
     det_ok = None; det = None
     if len(L) >= 2:
-        p = L[0]; q = next((w for w in L[1:] if p[0]*w[1] - p[1]*w[0]), None)
-        if q is not None:
+        pairs = [(L[0], next((w for w in L[1:] if L[0][0]*w[1] - L[0][1]*w[0]), None))] if not GEN else [(x, y) for x in L for y in L if x[0]*y[1] - x[1]*y[0]]
+        for p, q in pairs:
+            if q is None or det_ok: continue
             det = abs(p[0]*q[1] - p[1]*q[0])
             for sg in (1, -1):
                 s = (p[0] + sg*q[0], p[1] + sg*q[1])
