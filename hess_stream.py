@@ -23,7 +23,7 @@ def wsum(bad, h, w):
 def okd(p):
     e1, o1 = sh(e, *p); v1, _ = sh(v, *p); em, om = sh(e, -p[0], -p[1]); vm, _ = sh(v, -p[0], -p[1])
     d = v1 - 2 * v + vm
-    bad = ~(o1 & om) | (e1 != e) | (em != e)
+    bad = ~(o1 & om) | (e1 != e) | (em != e); del e1, em, v1, vm, o1, om  # ~134 MB less at 2048 (Fable 21.10)
     dh, _ = sh(d, 0, 1); dv, _ = sh(d, 1, 0)
     ok = (wsum(bad, W, W) == 0) & (wsum(dh != d, W, W - 1) == 0) & (wsum(dv != d, W - 1, W) == 0)
     return ok, d[I0[:, None], J0[None, :]].astype(np.int64)
