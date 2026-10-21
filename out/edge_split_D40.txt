@@ -5,3 +5,4 @@ N=1088 D=40: reached 73, by interior windows 61, only within 40 cells of the edg
 N=1152 D=40: reached 65, by interior windows 53, only within 40 cells of the edge 12: {49: 8, 64: 4}
 N=1280 D=40: reached 47, by interior windows 43, only within 40 cells of the edge 4: {25: 4}
 N=1536 D=40: reached 55, by interior windows 55, only within 40 cells of the edge 0: {}
+N=1216 D=40: reached 61, by interior windows 49, only within 40 cells of the edge 12: {49: 8, 64: 4}
