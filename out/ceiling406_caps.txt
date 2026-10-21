@@ -1,0 +1,4 @@
+PMAX=12: families 189, detectable 48, max detectable curvature 144
+PMAX=15: families 189, detectable 81, max detectable curvature 225
+PMAX=20: families 189, detectable 155, max detectable curvature 400
+PMAX=30: families 189, detectable 189, max detectable curvature 400

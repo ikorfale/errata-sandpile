@@ -248,3 +248,22 @@ catalog (189 families, `fam400.sh`, `out/parents400_<N>_W5_4phase.txt`): 1024: 2
 others unchanged. The union over all 12 sizes is exactly the 23 families of N = 1024; nothing above curvature 97 is reached.
 Likely ceiling = the scanner's period cap (<= 10). Next: enumerate the families period <= 10 lattices can realise, then
 rerun with a larger cap before registering anything for 2048.
+
+### The ceiling of the side-5 scan (21.10, #406, `ceiling406.py`)
+The scanner's period lattice is L(A) = {p in Z^2 : A p in Z^2}: every p and q it used at N = 1024 (87,410 windows) satisfies
+it, and the basis determinant equals the curvature in 87,402 of them. Running the scanner's own selection rule (shortest
+lattice vector, first non-parallel one, then p+q or p-q inside the box) on L(A) for every circle with curvature <= 400:
+
+| period cap | families detectable (of 189) | largest curvature |
+|---|---|---|
+| 10 (all scans so far) | 32 | 100 |
+| 12 | 48 | 144 |
+| 15 | 81 | 225 |
+| 20 | 155 | 400 |
+| 30 | 189 | 400 |
+
+All 23 families ever reached are among the 32 (`out/ceiling406_P10.txt`); the other 9 are the deep chains along the walls
+(49, 64, 81, 100 with parents (0, 1, x); 60 (1, 40); 81 (0, 4, 49), (0, 16, 25); 84 (1, 16, 25); 100 (0, 9, 49)) and are
+reached at no size. So at cap 10, N = 1024 sits at the empirical ceiling and 2048 can show at most 32 families: a repeat
+of the 1024 excess (about 51) is impossible to see. `hess_stream.py` (two streaming passes, same rows as `hess_small.py`:
+identical set at N = 512) makes cap 20 fit in 700 MB; lab jobs `sandpile-p20-a/b` rerun all sizes at cap 20.

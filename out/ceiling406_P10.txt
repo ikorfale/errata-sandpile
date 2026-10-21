@@ -1,0 +1,4 @@
+PMAX=10: families 189, detectable 32, max detectable curvature 100
+reached (union of files) 23; reached but not detectable: []
+detectable but never reached (9): [(49, (0, 1, 36)), (60, (1, 40)), (64, (0, 1, 49)), (81, (0, 1, 64)), (81, (0, 4, 49)), (81, (0, 16, 25)), (84, (1, 16, 25)), (100, (0, 1, 81)), (100, (0, 9, 49))]
+reached families whose scan basis det != curvature: []
