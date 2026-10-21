@@ -57,3 +57,11 @@ My point bet stays 20 (nothing special).
 - 2016 T >= 30: elevation predates 2048, gradual (no diff clause; it was vacuous);
 - both T 18-29 and |diff| <= 3: nothing special;
 - any other combination: unclassified, reported as such.
+
+## Note (2026-10-21 ~23:00 UTC, no 2016 or 2048 row exists; not a change of any rule)
+
+The first 2048 job (sandpile-p20-2048) died in hess_stream.py pass 2 of phase o00, over the lab's 700 MB, after
+printing only its pass-1 line (612503 windows with p and q). Pass 2 and the row list now use window-shaped arrays
+instead of dicts and lists of tuples. Outputs are byte-identical to the stored files at N = 256 (o01) and N = 512
+(o00, o11); peak memory at 512 fell from 80 to 65 MB. The 2016 job also lacked its odometer step; added. Both
+requeued: sandpile-p20-2048b, sandpile-p20-2016. Bands and scoring above are unchanged.

@@ -37,17 +37,21 @@ for k, p in enumerate(vecs):
     newq = ok & (P >= 0) & ~newp & (Q < 0) & (cross != 0); Q[newq] = k; DQ[newq] = d[newq]
 print(f"pass 1: {len(vecs)} vectors in {time.time() - t0:.0f}s; windows with p and q: {int((Q >= 0).sum())}", flush=True)
 def norm(s): return s if (s[0] > 0 or (s[0] == 0 and s[1] > 0)) else (-s[0], -s[1])
-need = {}  # vector index -> list of (window a, b, sign)
+# Pass 2 kept as window-shaped arrays, not dicts of tuples: at N = 2048 the dicts held ~1.2M Python tuples and the job
+# died over 700 MB (sandpile-p20-2048, 21.10). SI[sg] = index of norm(p + sg q) in vecs, or -1; G/GOK = D there and ok.
+SI = {}; G = {}; GOK = {}
+for sg in (1, -1):
+    SI[sg] = np.full(shp, -1, np.int32); G[sg] = np.zeros(shp, np.int64); GOK[sg] = np.zeros(shp, bool)
 for a, b in zip(*np.nonzero(Q >= 0)):
     p, q = vecs[P[a, b]], vecs[Q[a, b]]
     for sg in (1, -1):
         s = norm((p[0] + sg * q[0], p[1] + sg * q[1]))
-        if s in vidx: need.setdefault(vidx[s], []).append((a, b, sg))
-got = {}  # (a, b, sg) -> D
-for k in sorted(need):
+        if s in vidx: SI[sg][a, b] = vidx[s]
+need = sorted((set(np.unique(SI[1]).tolist()) | set(np.unique(SI[-1]).tolist())) - {-1})
+for k in need:
     ok, d = okd(vecs[k])
-    for a, b, sg in need[k]:
-        if ok[a, b]: got[(a, b, sg)] = int(d[a, b])
+    for sg in (1, -1):
+        m = (SI[sg] == k) & ok; G[sg][m] = d[m]; GOK[sg][m] = True
 print(f"pass 2: {len(need)} vectors, total {time.time() - t0:.0f}s", flush=True)
 def solve3(Pm, y):
     M = [[F(x) for x in r] for r in Pm]
@@ -58,14 +62,14 @@ def solve3(Pm, y):
         for i in range(3): Mc[i][c] = y[i]
         out.append(det(Mc) / dd)
     return out
-rows = []
+R = np.zeros((int((Q >= 0).sum()), 9)); n = 0  # preallocated: a list of 600k tuples was the other big heap at 2048
 for a, b in zip(*np.nonzero(Q >= 0)):
     p, q = vecs[P[a, b]], vecs[Q[a, b]]; dp, dq = int(DP[a, b]), int(DQ[a, b]); pq = None
     for sg in (1, -1):
-        if (a, b, sg) in got: pq = sg * F(got[(a, b, sg)] - dp - dq, 2); break
+        if GOK[sg][a, b]: pq = sg * F(int(G[sg][a, b]) - dp - dq, 2); break
     if pq is None: continue
     Pm = [[p[0]**2, 2 * p[0] * p[1], p[1]**2], [q[0]**2, 2 * q[0] * q[1], q[1]**2], [p[0] * q[0], p[0] * q[1] + p[1] * q[0], p[1] * q[1]]]
     A11, A12, A22 = solve3(Pm, [F(dp), F(dq), pq])
-    rows.append((I0[a] + W // 2, J0[b] + W // 2, float(A11), float(A12), float(A22), *p, *q))
-print(f"N={N} W={W} PMAX={PMAX} phase {OI}{OJ}: windows with an exact period lattice: {len(rows)}")
-np.save(f'out/hess_s_{N}_{W}_{PMAX}_o{OI}{OJ}.npy', np.array(rows))
+    R[n] = (I0[a] + W // 2, J0[b] + W // 2, float(A11), float(A12), float(A22), *p, *q); n += 1
+print(f"N={N} W={W} PMAX={PMAX} phase {OI}{OJ}: windows with an exact period lattice: {n}")
+np.save(f'out/hess_s_{N}_{W}_{PMAX}_o{OI}{OJ}.npy', R[:n] if n else np.array([]))

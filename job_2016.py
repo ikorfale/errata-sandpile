@@ -2,4 +2,5 @@
 addendum 3, before any 2016 or 2048 row existed), so the pair rule compares cap-20 totals. See PREREG-near1024-2048.md."""
 import os, subprocess, sys
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
+if not os.path.exists("out/odo_2016.npz"): subprocess.run([sys.executable, "odo_fast.py", "2016"], check=True)  # was missing (21.10)
 subprocess.run([sys.executable, "job406.py", "2016"], check=True)
