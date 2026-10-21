@@ -1,0 +1,523 @@
+N=1536 W=5 PMAX=10 full=True: 220 vectors scanned in 55s
+N=1536 W=5: windows with an exact period lattice: 321804
+  101124 windows  A = [[1, 0], [0, 1]]   (a, b, r) = (0, 0, 0)
+  43003 windows  A = [[1, 0], [0, 2]]   (a, b, r) = (1, 0, 1)
+  42761 windows  A = [[2, 0], [0, 1]]   (a, b, r) = (1, 0, 1)
+  14466 windows  A = [[2, -1], [-1, 1]]   (a, b, r) = (1, 0, 1)
+  14459 windows  A = [[1, -1], [-1, 2]]   (a, b, r) = (1, 0, 1)
+  14356 windows  A = [[2, 1], [1, 1]]   (a, b, r) = (1, 0, 1)
+  14355 windows  A = [[1, 1], [1, 2]]   (a, b, r) = (1, 0, 1)
+  5563 windows  A = [[1/4, 1/2], [1/2, 2]]   (a, b, r) = (1/4, 1, 1/4)
+  5512 windows  A = [[2, -1/2], [-1/2, 1/4]]   (a, b, r) = (7/4, 1, 1/4)
+  5499 windows  A = [[1/4, -1/2], [-1/2, 2]]   (a, b, r) = (1/4, 1, 1/4)
+  5491 windows  A = [[2, 1/2], [1/2, 1/4]]   (a, b, r) = (7/4, 1, 1/4)
+  3188 windows  A = [[2, -2], [-2, 1]]   (a, b, r) = (1, 0, 1)
+  3182 windows  A = [[1, -2], [-2, 2]]   (a, b, r) = (1, 0, 1)
+  3085 windows  A = [[1, 2], [2, 2]]   (a, b, r) = (1, 0, 1)
+  3072 windows  A = [[2, 2], [2, 1]]   (a, b, r) = (1, 0, 1)
+  1710 windows  A = [[7/4, 1/2], [1/2, 1/3]]   (a, b, r) = (17/12, 1, 1/12)
+  1648 windows  A = [[7/4, -1/2], [-1/2, 1/3]]   (a, b, r) = (17/12, 1, 1/12)
+  1438 windows  A = [[1/3, 1/2], [1/2, 7/4]]   (a, b, r) = (7/12, 1, 1/12)
+  1399 windows  A = [[1/3, -1/2], [-1/2, 7/4]]   (a, b, r) = (7/12, 1, 1/12)
+  1177 windows  A = [[1/9, -2/3], [-2/3, 2]]   (a, b, r) = (1/9, 2/3, 1/9)
+  1027 windows  A = [[1/9, 2/3], [2/3, 2]]   (a, b, r) = (1/9, 4/3, 1/9)
+   989 windows  A = [[2, -2/3], [-2/3, 1/9]]   (a, b, r) = (17/9, 2/3, 1/9)
+   970 windows  A = [[2, 2/3], [2/3, 1/9]]   (a, b, r) = (17/9, 4/3, 1/9)
+   955 windows  A = [[1, -1/2], [-1/2, 5/4]]   (a, b, r) = (7/4, 1, 1/4)
+   916 windows  A = [[5/4, 1/2], [1/2, 1]]   (a, b, r) = (1/4, 1, 1/4)
+   894 windows  A = [[1/9, 1/3], [1/3, 2]]   (a, b, r) = (1/9, 2/3, 1/9)
+   887 windows  A = [[1, 1/2], [1/2, 5/4]]   (a, b, r) = (7/4, 1, 1/4)
+   848 windows  A = [[2, 3/2], [3/2, 1/4]]   (a, b, r) = (7/4, 1, 1/4)
+   845 windows  A = [[2, 1/3], [1/3, 1/9]]   (a, b, r) = (17/9, 2/3, 1/9)
+   841 windows  A = [[2, -3/2], [-3/2, 1/4]]   (a, b, r) = (7/4, 1, 1/4)
+   841 windows  A = [[1/4, -3/2], [-3/2, 2]]   (a, b, r) = (1/4, 1, 1/4)
+   836 windows  A = [[2, -3], [-3, 1]]   (a, b, r) = (1, 0, 1)
+   835 windows  A = [[2, -1/3], [-1/3, 1/9]]   (a, b, r) = (17/9, 4/3, 1/9)
+   832 windows  A = [[1/4, 3/2], [3/2, 2]]   (a, b, r) = (1/4, 1, 1/4)
+   830 windows  A = [[5/4, -1/2], [-1/2, 1]]   (a, b, r) = (1/4, 1, 1/4)
+   828 windows  A = [[1, -3], [-3, 2]]   (a, b, r) = (1, 0, 1)
+   825 windows  A = [[1/9, -1/3], [-1/3, 2]]   (a, b, r) = (1/9, 4/3, 1/9)
+   818 windows  A = [[2, 3], [3, 1]]   (a, b, r) = (1, 0, 1)
+   816 windows  A = [[1, 3], [3, 2]]   (a, b, r) = (1, 0, 1)
+   612 windows  A = [[10/9, -2/3], [-2/3, 1]]   (a, b, r) = (1/9, 2/3, 1/9)
+   520 windows  A = [[1, -2/3], [-2/3, 10/9]]   (a, b, r) = (17/9, 2/3, 1/9)
+   519 windows  A = [[1, 2/3], [2/3, 10/9]]   (a, b, r) = (17/9, 4/3, 1/9)
+   508 windows  A = [[10/9, 2/3], [2/3, 1]]   (a, b, r) = (1/9, 4/3, 1/9)
+   462 windows  A = [[7/4, 3/2], [3/2, 1/3]]   (a, b, r) = (17/12, 1, 1/12)
+   457 windows  A = [[7/4, -3/2], [-3/2, 1/3]]   (a, b, r) = (17/12, 1, 1/12)
+   387 windows  A = [[1/3, 3/2], [3/2, 7/4]]   (a, b, r) = (7/12, 1, 1/12)
+   386 windows  A = [[1/3, -3/2], [-3/2, 7/4]]   (a, b, r) = (7/12, 1, 1/12)
+   310 windows  A = [[53/28, 5/14], [5/14, 1/7]]   (a, b, r) = (7/4, 5/7, 1/28)
+   309 windows  A = [[53/28, -5/14], [-5/14, 1/7]]   (a, b, r) = (7/4, 9/7, 1/28)
+   307 windows  A = [[3/11, -5/11], [-5/11, 58/33]]   (a, b, r) = (17/33, 12/11, 1/33)
+   306 windows  A = [[3/11, 5/11], [5/11, 58/33]]   (a, b, r) = (17/33, 10/11, 1/33)
+   298 windows  A = [[58/33, 5/11], [5/11, 3/11]]   (a, b, r) = (49/33, 10/11, 1/33)
+   292 windows  A = [[58/33, -5/11], [-5/11, 3/11]]   (a, b, r) = (49/33, 12/11, 1/33)
+   290 windows  A = [[1/25, 3/5], [3/5, 2]]   (a, b, r) = (1/25, 6/5, 1/25)
+   287 windows  A = [[1/25, -2/5], [-2/5, 2]]   (a, b, r) = (1/25, 6/5, 1/25)
+   285 windows  A = [[1/4, 5/2], [5/2, 2]]   (a, b, r) = (1/4, 1, 1/4)
+   277 windows  A = [[1/4, -5/2], [-5/2, 2]]   (a, b, r) = (1/4, 1, 1/4)
+   275 windows  A = [[2, 5/2], [5/2, 1/4]]   (a, b, r) = (7/4, 1, 1/4)
+   273 windows  A = [[2, -5/2], [-5/2, 1/4]]   (a, b, r) = (7/4, 1, 1/4)
+   268 windows  A = [[5/3, 1/2], [1/2, 3/8]]   (a, b, r) = (31/24, 1, 1/24)
+   256 windows  A = [[5/3, -1/2], [-1/2, 3/8]]   (a, b, r) = (31/24, 1, 1/24)
+   248 windows  A = [[3/4, -1/2], [-1/2, 4/3]]   (a, b, r) = (17/12, 1, 1/12)
+   241 windows  A = [[1/7, 5/14], [5/14, 53/28]]   (a, b, r) = (1/4, 5/7, 1/28)
+   238 windows  A = [[1/7, -5/14], [-5/14, 53/28]]   (a, b, r) = (1/4, 9/7, 1/28)
+   231 windows  A = [[2, -3/5], [-3/5, 1/25]]   (a, b, r) = (49/25, 4/5, 1/25)
+   230 windows  A = [[2, -2/5], [-2/5, 1/25]]   (a, b, r) = (49/25, 6/5, 1/25)
+   230 windows  A = [[3/4, 1/2], [1/2, 4/3]]   (a, b, r) = (17/12, 1, 1/12)
+   228 windows  A = [[2, 2/5], [2/5, 1/25]]   (a, b, r) = (49/25, 4/5, 1/25)
+   226 windows  A = [[2, 3/5], [3/5, 1/25]]   (a, b, r) = (49/25, 6/5, 1/25)
+   220 windows  A = [[4/3, 1/2], [1/2, 3/4]]   (a, b, r) = (7/12, 1, 1/12)
+   207 windows  A = [[1/25, -3/5], [-3/5, 2]]   (a, b, r) = (1/25, 4/5, 1/25)
+   206 windows  A = [[1/25, 2/5], [2/5, 2]]   (a, b, r) = (1/25, 4/5, 1/25)
+   204 windows  A = [[1/9, 5/3], [5/3, 2]]   (a, b, r) = (1/9, 4/3, 1/9)
+   202 windows  A = [[2, -5/3], [-5/3, 1/9]]   (a, b, r) = (17/9, 2/3, 1/9)
+   202 windows  A = [[2, 5/3], [5/3, 1/9]]   (a, b, r) = (17/9, 4/3, 1/9)
+   201 windows  A = [[25/28, -9/14], [-9/14, 8/7]]   (a, b, r) = (7/4, 5/7, 1/28)
+   200 windows  A = [[25/28, 9/14], [9/14, 8/7]]   (a, b, r) = (7/4, 9/7, 1/28)
+   199 windows  A = [[3/8, -1/2], [-1/2, 5/3]]   (a, b, r) = (17/24, 1, 1/24)
+   196 windows  A = [[1/9, -5/3], [-5/3, 2]]   (a, b, r) = (1/9, 2/3, 1/9)
+   195 windows  A = [[3/8, 1/2], [1/2, 5/3]]   (a, b, r) = (17/24, 1, 1/24)
+   189 windows  A = [[1/16, 1/4], [1/4, 2]]   (a, b, r) = (1/16, 1/2, 1/16)
+   188 windows  A = [[4/3, -1/2], [-1/2, 3/4]]   (a, b, r) = (7/12, 1, 1/12)
+   170 windows  A = [[2, -1/4], [-1/4, 1/16]]   (a, b, r) = (31/16, 3/2, 1/16)
+   170 windows  A = [[17/16, 3/4], [3/4, 1]]   (a, b, r) = (1/16, 3/2, 1/16)
+   169 windows  A = [[17/16, -3/4], [-3/4, 1]]   (a, b, r) = (1/16, 1/2, 1/16)
+   166 windows  A = [[1/16, -1/4], [-1/4, 2]]   (a, b, r) = (1/16, 3/2, 1/16)
+   163 windows  A = [[1/16, -3/4], [-3/4, 2]]   (a, b, r) = (1/16, 1/2, 1/16)
+   155 windows  A = [[2, 1/4], [1/4, 1/16]]   (a, b, r) = (31/16, 1/2, 1/16)
+   151 windows  A = [[8/7, -9/14], [-9/14, 25/28]]   (a, b, r) = (1/4, 5/7, 1/28)
+   143 windows  A = [[8/7, 9/14], [9/14, 25/28]]   (a, b, r) = (1/4, 9/7, 1/28)
+   141 windows  A = [[2, 3/4], [3/4, 1/16]]   (a, b, r) = (31/16, 3/2, 1/16)
+   137 windows  A = [[1/16, 3/4], [3/4, 2]]   (a, b, r) = (1/16, 3/2, 1/16)
+   130 windows  A = [[2, -3/4], [-3/4, 1/16]]   (a, b, r) = (31/16, 1/2, 1/16)
+   127 windows  A = [[1, 3/4], [3/4, 17/16]]   (a, b, r) = (31/16, 3/2, 1/16)
+   115 windows  A = [[1, -3/4], [-3/4, 17/16]]   (a, b, r) = (31/16, 1/2, 1/16)
+    92 windows  A = [[58/33, -6/11], [-6/11, 3/11]]   (a, b, r) = (49/33, 10/11, 1/33)
+    91 windows  A = [[53/28, 9/14], [9/14, 1/7]]   (a, b, r) = (7/4, 9/7, 1/28)
+    91 windows  A = [[58/33, 6/11], [6/11, 3/11]]   (a, b, r) = (49/33, 12/11, 1/33)
+    87 windows  A = [[3/11, -6/11], [-6/11, 58/33]]   (a, b, r) = (17/33, 10/11, 1/33)
+    85 windows  A = [[53/28, -9/14], [-9/14, 1/7]]   (a, b, r) = (7/4, 5/7, 1/28)
+    81 windows  A = [[3/11, 6/11], [6/11, 58/33]]   (a, b, r) = (17/33, 12/11, 1/33)
+    78 windows  A = [[1, -3/2], [-3/2, 5/4]]   (a, b, r) = (7/4, 1, 1/4)
+    70 windows  A = [[7/4, 5/2], [5/2, 1/3]]   (a, b, r) = (17/12, 1, 1/12)
+    70 windows  A = [[3/11, -17/11], [-17/11, 58/33]]   (a, b, r) = (17/33, 10/11, 1/33)
+    70 windows  A = [[19/16, -1/2], [-1/2, 1]]   (a, b, r) = (3/16, 1, 3/16)
+    67 windows  A = [[7/4, -5/2], [-5/2, 1/3]]   (a, b, r) = (17/12, 1, 1/12)
+    67 windows  A = [[10/9, -5/3], [-5/3, 1]]   (a, b, r) = (1/9, 2/3, 1/9)
+    67 windows  A = [[10/9, 5/3], [5/3, 1]]   (a, b, r) = (1/9, 4/3, 1/9)
+    67 windows  A = [[5/4, 3/2], [3/2, 1]]   (a, b, r) = (1/4, 1, 1/4)
+    65 windows  A = [[3/11, 17/11], [17/11, 58/33]]   (a, b, r) = (17/33, 12/11, 1/33)
+    64 windows  A = [[53/28, 19/14], [19/14, 1/7]]   (a, b, r) = (7/4, 5/7, 1/28)
+    64 windows  A = [[53/28, -19/14], [-19/14, 1/7]]   (a, b, r) = (7/4, 9/7, 1/28)
+    64 windows  A = [[58/33, -17/11], [-17/11, 3/11]]   (a, b, r) = (49/33, 10/11, 1/33)
+    64 windows  A = [[58/33, -16/11], [-16/11, 3/11]]   (a, b, r) = (49/33, 12/11, 1/33)
+    64 windows  A = [[19/16, 1/2], [1/2, 1]]   (a, b, r) = (3/16, 1, 3/16)
+    64 windows  A = [[1/7, 9/14], [9/14, 53/28]]   (a, b, r) = (1/4, 9/7, 1/28)
+    64 windows  A = [[25/33, 6/11], [6/11, 14/11]]   (a, b, r) = (49/33, 12/11, 1/33)
+    63 windows  A = [[1/7, -9/14], [-9/14, 53/28]]   (a, b, r) = (1/4, 5/7, 1/28)
+    61 windows  A = [[5/3, 3/2], [3/2, 3/8]]   (a, b, r) = (31/24, 1, 1/24)
+    61 windows  A = [[3/11, 16/11], [16/11, 58/33]]   (a, b, r) = (17/33, 10/11, 1/33)
+    61 windows  A = [[14/11, -6/11], [-6/11, 25/33]]   (a, b, r) = (17/33, 10/11, 1/33)
+    60 windows  A = [[58/33, 16/11], [16/11, 3/11]]   (a, b, r) = (49/33, 10/11, 1/33)
+    60 windows  A = [[58/33, 17/11], [17/11, 3/11]]   (a, b, r) = (49/33, 12/11, 1/33)
+    60 windows  A = [[1, 3/2], [3/2, 5/4]]   (a, b, r) = (7/4, 1, 1/4)
+    60 windows  A = [[3/11, -16/11], [-16/11, 58/33]]   (a, b, r) = (17/33, 12/11, 1/33)
+    60 windows  A = [[14/11, 6/11], [6/11, 25/33]]   (a, b, r) = (17/33, 12/11, 1/33)
+    60 windows  A = [[25/33, -6/11], [-6/11, 14/11]]   (a, b, r) = (49/33, 10/11, 1/33)
+    55 windows  A = [[5/3, -3/2], [-3/2, 3/8]]   (a, b, r) = (31/24, 1, 1/24)
+    54 windows  A = [[1/9, 4/3], [4/3, 2]]   (a, b, r) = (1/9, 2/3, 1/9)
+    50 windows  A = [[5/4, -3/2], [-3/2, 1]]   (a, b, r) = (1/4, 1, 1/4)
+    49 windows  A = [[1/3, -5/2], [-5/2, 7/4]]   (a, b, r) = (7/12, 1, 1/12)
+    49 windows  A = [[1/3, 5/2], [5/2, 7/4]]   (a, b, r) = (7/12, 1, 1/12)
+    48 windows  A = [[1, 5/3], [5/3, 10/9]]   (a, b, r) = (17/9, 4/3, 1/9)
+    48 windows  A = [[1, -1/2], [-1/2, 19/16]]   (a, b, r) = (29/16, 1, 3/16)
+    47 windows  A = [[3/4, 3/2], [3/2, 4/3]]   (a, b, r) = (17/12, 1, 1/12)
+    46 windows  A = [[1/7, -19/14], [-19/14, 53/28]]   (a, b, r) = (1/4, 9/7, 1/28)
+    46 windows  A = [[1/7, 19/14], [19/14, 53/28]]   (a, b, r) = (1/4, 5/7, 1/28)
+    45 windows  A = [[3/4, -3/2], [-3/2, 4/3]]   (a, b, r) = (17/12, 1, 1/12)
+    41 windows  A = [[1/9, -4/3], [-4/3, 2]]   (a, b, r) = (1/9, 4/3, 1/9)
+    40 windows  A = [[2, -7/2], [-7/2, 1/4]]   (a, b, r) = (7/4, 1, 1/4)
+    40 windows  A = [[3/8, 3/2], [3/2, 5/3]]   (a, b, r) = (17/24, 1, 1/24)
+    39 windows  A = [[1/9, -8/3], [-8/3, 2]]   (a, b, r) = (1/9, 2/3, 1/9)
+    39 windows  A = [[1, -5/3], [-5/3, 10/9]]   (a, b, r) = (17/9, 2/3, 1/9)
+    39 windows  A = [[4/3, 3/2], [3/2, 3/4]]   (a, b, r) = (7/12, 1, 1/12)
+    38 windows  A = [[53/28, 23/14], [23/14, 1/7]]   (a, b, r) = (7/4, 9/7, 1/28)
+    38 windows  A = [[1/4, -7/2], [-7/2, 2]]   (a, b, r) = (1/4, 1, 1/4)
+    38 windows  A = [[3/8, -3/2], [-3/2, 5/3]]   (a, b, r) = (17/24, 1, 1/24)
+    37 windows  A = [[1/9, 7/3], [7/3, 2]]   (a, b, r) = (1/9, 2/3, 1/9)
+    36 windows  A = [[4/3, -3/2], [-3/2, 3/4]]   (a, b, r) = (7/12, 1, 1/12)
+    36 windows  A = [[1, 1/2], [1/2, 19/16]]   (a, b, r) = (29/16, 1, 3/16)
+    34 windows  A = [[2, 7/2], [7/2, 1/4]]   (a, b, r) = (7/4, 1, 1/4)
+    34 windows  A = [[1/4, 7/2], [7/2, 2]]   (a, b, r) = (1/4, 1, 1/4)
+    34 windows  A = [[10/9, 1/3], [1/3, 1]]   (a, b, r) = (1/9, 2/3, 1/9)
+    33 windows  A = [[2, 4/3], [4/3, 1/9]]   (a, b, r) = (17/9, 2/3, 1/9)
+    33 windows  A = [[53/28, -23/14], [-23/14, 1/7]]   (a, b, r) = (7/4, 5/7, 1/28)
+    29 windows  A = [[2, -8/3], [-8/3, 1/9]]   (a, b, r) = (17/9, 2/3, 1/9)
+    29 windows  A = [[2, -7/3], [-7/3, 1/9]]   (a, b, r) = (17/9, 4/3, 1/9)
+    29 windows  A = [[1, -4/5], [-4/5, 26/25]]   (a, b, r) = (49/25, 2/5, 1/25)
+    29 windows  A = [[1, 1/3], [1/3, 10/9]]   (a, b, r) = (17/9, 2/3, 1/9)
+    27 windows  A = [[2, 7/3], [7/3, 1/9]]   (a, b, r) = (17/9, 2/3, 1/9)
+    27 windows  A = [[2, 8/3], [8/3, 1/9]]   (a, b, r) = (17/9, 4/3, 1/9)
+    27 windows  A = [[1/9, 8/3], [8/3, 2]]   (a, b, r) = (1/9, 4/3, 1/9)
+    26 windows  A = [[1, -1/3], [-1/3, 10/9]]   (a, b, r) = (17/9, 4/3, 1/9)
+    25 windows  A = [[2, 4], [4, 1]]   (a, b, r) = (1, 0, 1)
+    25 windows  A = [[26/25, -4/5], [-4/5, 1]]   (a, b, r) = (1/25, 2/5, 1/25)
+    24 windows  A = [[1/9, -7/3], [-7/3, 2]]   (a, b, r) = (1/9, 4/3, 1/9)
+    24 windows  A = [[1/7, 23/14], [23/14, 53/28]]   (a, b, r) = (1/4, 9/7, 1/28)
+    23 windows  A = [[2, -4/3], [-4/3, 1/9]]   (a, b, r) = (17/9, 4/3, 1/9)
+    23 windows  A = [[26/25, 4/5], [4/5, 1]]   (a, b, r) = (1/25, 8/5, 1/25)
+    22 windows  A = [[2, -4], [-4, 1]]   (a, b, r) = (1, 0, 1)
+    22 windows  A = [[1/16, -7/4], [-7/4, 2]]   (a, b, r) = (1/16, 1/2, 1/16)
+    22 windows  A = [[1/7, -23/14], [-23/14, 53/28]]   (a, b, r) = (1/4, 5/7, 1/28)
+    22 windows  A = [[1, 4/5], [4/5, 26/25]]   (a, b, r) = (49/25, 8/5, 1/25)
+    22 windows  A = [[10/9, -1/3], [-1/3, 1]]   (a, b, r) = (1/9, 4/3, 1/9)
+    20 windows  A = [[1/9, -10/27], [-10/27, 154/81]]   (a, b, r) = (17/81, 34/27, 1/81)
+    20 windows  A = [[1/9, 10/27], [10/27, 154/81]]   (a, b, r) = (17/81, 20/27, 1/81)
+    19 windows  A = [[149/76, -23/38], [-23/38, 1/19]]   (a, b, r) = (145/76, 15/19, 1/76)
+    19 windows  A = [[149/76, -15/38], [-15/38, 1/19]]   (a, b, r) = (145/76, 23/19, 1/76)
+    19 windows  A = [[19/16, -3/2], [-3/2, 1]]   (a, b, r) = (3/16, 1, 3/16)
+    19 windows  A = [[1, 3/2], [3/2, 19/16]]   (a, b, r) = (29/16, 1, 3/16)
+    18 windows  A = [[149/76, 15/38], [15/38, 1/19]]   (a, b, r) = (145/76, 15/19, 1/76)
+    18 windows  A = [[149/76, 23/38], [23/38, 1/19]]   (a, b, r) = (145/76, 23/19, 1/76)
+    17 windows  A = [[2, 7/4], [7/4, 1/16]]   (a, b, r) = (31/16, 3/2, 1/16)
+    17 windows  A = [[25/73, -38/73], [-38/73, 122/73]]   (a, b, r) = (49/73, 70/73, 1/73)
+    16 windows  A = [[1, -4], [-4, 2]]   (a, b, r) = (1, 0, 1)
+    16 windows  A = [[19/16, 3/2], [3/2, 1]]   (a, b, r) = (3/16, 1, 3/16)
+    16 windows  A = [[1/16, 7/4], [7/4, 2]]   (a, b, r) = (1/16, 3/2, 1/16)
+    16 windows  A = [[25/73, 38/73], [38/73, 122/73]]   (a, b, r) = (49/73, 76/73, 1/73)
+    15 windows  A = [[2, -5], [-5, 1]]   (a, b, r) = (1, 0, 1)
+    15 windows  A = [[1, -5], [-5, 2]]   (a, b, r) = (1, 0, 1)
+    15 windows  A = [[1, 4], [4, 2]]   (a, b, r) = (1, 0, 1)
+    14 windows  A = [[2, -7/4], [-7/4, 1/16]]   (a, b, r) = (31/16, 1/2, 1/16)
+    14 windows  A = [[2, 5], [5, 1]]   (a, b, r) = (1, 0, 1)
+    14 windows  A = [[1, 5], [5, 2]]   (a, b, r) = (1, 0, 1)
+    14 windows  A = [[2/3, 1/2], [1/2, 11/8]]   (a, b, r) = (31/24, 1, 1/24)
+     9 windows  A = [[101/52, -19/26], [-19/26, 1/13]]   (a, b, r) = (97/52, 7/13, 1/52)
+     9 windows  A = [[17/16, 7/4], [7/4, 1]]   (a, b, r) = (1/16, 3/2, 1/16)
+     9 windows  A = [[1, 7/4], [7/4, 17/16]]   (a, b, r) = (31/16, 3/2, 1/16)
+     9 windows  A = [[1/25, 8/5], [8/5, 2]]   (a, b, r) = (1/25, 6/5, 1/25)
+     9 windows  A = [[2/3, -1/2], [-1/2, 11/8]]   (a, b, r) = (31/24, 1, 1/24)
+     9 windows  A = [[1, -3/2], [-3/2, 19/16]]   (a, b, r) = (29/16, 1, 3/16)
+     8 windows  A = [[101/52, 19/26], [19/26, 1/13]]   (a, b, r) = (97/52, 19/13, 1/52)
+     7 windows  A = [[1, 5/2], [5/2, 5/4]]   (a, b, r) = (7/4, 1, 1/4)
+     7 windows  A = [[17/16, -7/4], [-7/4, 1]]   (a, b, r) = (1/16, 1/2, 1/16)
+     6 windows  A = [[2, 8/5], [8/5, 1/25]]   (a, b, r) = (49/25, 6/5, 1/25)
+     6 windows  A = [[5/4, -5/2], [-5/2, 1]]   (a, b, r) = (1/4, 1, 1/4)
+     6 windows  A = [[1, -5/2], [-5/2, 5/4]]   (a, b, r) = (7/4, 1, 1/4)
+     6 windows  A = [[1, -7/4], [-7/4, 17/16]]   (a, b, r) = (31/16, 1/2, 1/16)
+     6 windows  A = [[11/8, -1/2], [-1/2, 2/3]]   (a, b, r) = (17/24, 1, 1/24)
+     5 windows  A = [[1, 3/5], [3/5, 26/25]]   (a, b, r) = (49/25, 6/5, 1/25)
+     4 windows  A = [[2, -8/5], [-8/5, 1/25]]   (a, b, r) = (49/25, 4/5, 1/25)
+     4 windows  A = [[1, 5/6], [5/6, 1]]   (a, b, r) = (0, 5/3, 0)
+     4 windows  A = [[1, -5/6], [-5/6, 1]]   (a, b, r) = (0, 1/3, 0)
+     4 windows  A = [[26/25, 3/5], [3/5, 1]]   (a, b, r) = (1/25, 6/5, 1/25)
+     4 windows  A = [[11/8, 1/2], [1/2, 2/3]]   (a, b, r) = (17/24, 1, 1/24)
+     3 windows  A = [[26/25, -3/5], [-3/5, 1]]   (a, b, r) = (1/25, 4/5, 1/25)
+     3 windows  A = [[1, -3/5], [-3/5, 26/25]]   (a, b, r) = (49/25, 4/5, 1/25)
+     2 windows  A = [[1, -9/5], [-9/5, 1]]   (a, b, r) = (0, 2/5, 0)
+     2 windows  A = [[1, 9/5], [9/5, 1]]   (a, b, r) = (0, 8/5, 0)
+     2 windows  A = [[1, 5/7], [5/7, 1]]   (a, b, r) = (0, 10/7, 0)
+     2 windows  A = [[25/243, 545/1458], [545/1458, 4165/2187]]   (a, b, r) = (434/2187, 545/729, 16/2187)
+     2 windows  A = [[547/441, 670/441], [670/441, 424/441]]   (a, b, r) = (41/147, 458/441, 89/441)
+     1 windows  A = [[684/343, -57/98], [-57/98, 0]]   (a, b, r) = (684/343, 41/49, -2/343)
+     1 windows  A = [[115/58, -41/58], [-41/58, 1/58]]   (a, b, r) = (57/29, 17/29, 0)
+     1 windows  A = [[115/58, 17/58], [17/58, 1/58]]   (a, b, r) = (57/29, 17/29, 0)
+     1 windows  A = [[2817/1444, -1753/2888], [-1753/2888, 41/722]]   (a, b, r) = (2735/1444, 1135/1444, 11/1444)
+     1 windows  A = [[2817/1444, -1135/2888], [-1135/2888, 41/722]]   (a, b, r) = (2735/1444, 1753/1444, 11/1444)
+     1 windows  A = [[2817/1444, 1135/2888], [1135/2888, 41/722]]   (a, b, r) = (2735/1444, 1135/1444, 11/1444)
+     1 windows  A = [[2817/1444, 1753/2888], [1753/2888, 41/722]]   (a, b, r) = (2735/1444, 1753/1444, 11/1444)
+     1 windows  A = [[460/243, -929/1458], [-929/1458, 226/2187]]   (a, b, r) = (3914/2187, 529/729, -8/2187)
+     1 windows  A = [[225/128, -283/512], [-283/512, 489/2048]]   (a, b, r) = (3111/2048, 229/256, -7/2048)
+     1 windows  A = [[1294/1323, -2245/2646], [-2245/2646, 1294/1323]]   (a, b, r) = (0, 401/1323, -58/1323)
+     1 windows  A = [[34/49, -41/49], [-41/49, 48/49]]   (a, b, r) = (12/7, 16/49, -16/49)
+     1 windows  A = [[1, -81/98], [-81/98, 333/343]]   (a, b, r) = (10/343, 17/49, -10/343)
+     1 windows  A = [[1, 85/98], [85/98, 48/49]]   (a, b, r) = (1/49, 85/49, -1/49)
+     1 windows  A = [[333/343, -81/98], [-81/98, 1]]   (a, b, r) = (676/343, 17/49, -10/343)
+     1 windows  A = [[35/36, -23/28], [-23/28, 1]]   (a, b, r) = (71/36, 5/14, -1/36)
+     1 windows  A = [[1/25, -8/5], [-8/5, 2]]   (a, b, r) = (1/25, 4/5, 1/25)
+     1 windows  A = [[13/8, 1/2], [1/2, 3/8]]   (a, b, r) = (5/4, 1, 0)
+     1 windows  A = [[3/4, -1/2], [-1/2, 5/4]]   (a, b, r) = (3/2, 1, 0)
+     1 windows  A = [[0, 41/98], [41/98, 677/343]]   (a, b, r) = (9/343, 41/49, -9/343)
+     1 windows  A = [[1/58, 17/58], [17/58, 115/58]]   (a, b, r) = (1/29, 17/29, 0)
+     1 windows  A = [[25/243, -545/1458], [-545/1458, 4165/2187]]   (a, b, r) = (434/2187, 913/729, 16/2187)
+     1 windows  A = [[0, -57/98], [-57/98, 677/343]]   (a, b, r) = (9/343, 41/49, -9/343)
+     1 windows  A = [[1780/5329, -5601/10658], [-5601/10658, 8920/5329]]   (a, b, r) = (3518/5329, 5057/5329, 42/5329)
+     1 windows  A = [[1/58, -41/58], [-41/58, 115/58]]   (a, b, r) = (1/29, 17/29, 0)
+     1 windows  A = [[161/100, -1/2], [-1/2, 23/64]]   (a, b, r) = (2001/1600, 1, -49/1600)
+     1 windows  A = [[13/8, -1/2], [-1/2, 3/8]]   (a, b, r) = (5/4, 1, 0)
+     1 windows  A = [[1/25, -7/5], [-7/5, 2]]   (a, b, r) = (1/25, 6/5, 1/25)
+     1 windows  A = [[8813/5329, -5093/10658], [-5093/10658, 1815/5329]]   (a, b, r) = (6998/5329, 5565/5329, -30/5329)
+     1 windows  A = [[35/36, -23/27], [-23/27, 1325/1296]]   (a, b, r) = (2527/1296, 8/27, -7/1296)
+     1 windows  A = [[48/49, 85/98], [85/98, 1]]   (a, b, r) = (97/49, 85/49, -1/49)
+     1 windows  A = [[221/216, -61/72], [-61/72, 1]]   (a, b, r) = (5/216, 11/36, 5/216)
+     1 windows  A = [[447/256, 447/1024], [447/1024, 1023/4096]]   (a, b, r) = (6129/4096, 447/512, -17/4096)
+     1 windows  A = [[31/25, 38/25], [38/25, 24/25]]   (a, b, r) = (7/25, 26/25, 1/5)
+     1 windows  A = [[1, -133/72], [-133/72, 1]]   (a, b, r) = (0, 11/36, 0)
+     1 windows  A = [[1375/729, 2741/4374], [2741/4374, 718/6561]]   (a, b, r) = (11657/6561, 2741/2187, -29/6561)
+     1 windows  A = [[1375/729, -2741/4374], [-2741/4374, 718/6561]]   (a, b, r) = (11657/6561, 1633/2187, -29/6561)
+     1 windows  A = [[1, 4], [4, 11/6]]   (a, b, r) = (7/6, 0, 5/6)
+     1 windows  A = [[8113/4096, -193/512], [-193/512, 1/64]]   (a, b, r) = (8049/4096, 319/256, -15/4096)
+membership in the band packing (circles r >= 1/400, lines x = 0, 2):
+  (0, 0, 0) x101124: ON the packing  [line point (degenerate, trace 2)]
+  (1, 0, 1) x43003: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x42761: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x14466: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x14459: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x14356: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x14355: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 1, 1/4) x5563: ON the packing  [circle, |diff| 0.0e+00]
+  (7/4, 1, 1/4) x5512: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 1, 1/4) x5499: ON the packing  [circle, |diff| 0.0e+00]
+  (7/4, 1, 1/4) x5491: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x3188: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x3182: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x3085: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x3072: ON the packing  [circle, |diff| 0.0e+00]
+  (17/12, 1, 1/12) x1710: ON the packing  [circle, |diff| 6.7e-10]
+  (17/12, 1, 1/12) x1648: ON the packing  [circle, |diff| 6.7e-10]
+  (7/12, 1, 1/12) x1438: ON the packing  [circle, |diff| 6.7e-10]
+  (7/12, 1, 1/12) x1399: ON the packing  [circle, |diff| 6.7e-10]
+  (1/9, 2/3, 1/9) x1177: ON the packing  [circle, |diff| 5.6e-10]
+  (1/9, 4/3, 1/9) x1027: ON the packing  [circle, |diff| 5.6e-10]
+  (17/9, 2/3, 1/9) x989: ON the packing  [circle, |diff| 5.6e-10]
+  (17/9, 4/3, 1/9) x970: ON the packing  [circle, |diff| 5.6e-10]
+  (7/4, 1, 1/4) x955: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 1, 1/4) x916: ON the packing  [circle, |diff| 0.0e+00]
+  (1/9, 2/3, 1/9) x894: ON the packing  [circle, |diff| 5.6e-10]
+  (7/4, 1, 1/4) x887: ON the packing  [circle, |diff| 0.0e+00]
+  (7/4, 1, 1/4) x848: ON the packing  [circle, |diff| 0.0e+00]
+  (17/9, 2/3, 1/9) x845: ON the packing  [circle, |diff| 5.6e-10]
+  (7/4, 1, 1/4) x841: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 1, 1/4) x841: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x836: ON the packing  [circle, |diff| 0.0e+00]
+  (17/9, 4/3, 1/9) x835: ON the packing  [circle, |diff| 5.6e-10]
+  (1/4, 1, 1/4) x832: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 1, 1/4) x830: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x828: ON the packing  [circle, |diff| 0.0e+00]
+  (1/9, 4/3, 1/9) x825: ON the packing  [circle, |diff| 5.6e-10]
+  (1, 0, 1) x818: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x816: ON the packing  [circle, |diff| 0.0e+00]
+  (1/9, 2/3, 1/9) x612: ON the packing  [circle, |diff| 5.6e-10]
+  (17/9, 2/3, 1/9) x520: ON the packing  [circle, |diff| 5.6e-10]
+  (17/9, 4/3, 1/9) x519: ON the packing  [circle, |diff| 5.6e-10]
+  (1/9, 4/3, 1/9) x508: ON the packing  [circle, |diff| 5.6e-10]
+  (17/12, 1, 1/12) x462: ON the packing  [circle, |diff| 6.7e-10]
+  (17/12, 1, 1/12) x457: ON the packing  [circle, |diff| 6.7e-10]
+  (7/12, 1, 1/12) x387: ON the packing  [circle, |diff| 6.7e-10]
+  (7/12, 1, 1/12) x386: ON the packing  [circle, |diff| 6.7e-10]
+  (7/4, 5/7, 1/28) x310: ON the packing  [circle, |diff| 5.7e-10]
+  (7/4, 9/7, 1/28) x309: ON the packing  [circle, |diff| 5.7e-10]
+  (17/33, 12/11, 1/33) x307: ON the packing  [circle, |diff| 5.5e-10]
+  (17/33, 10/11, 1/33) x306: ON the packing  [circle, |diff| 5.5e-10]
+  (49/33, 10/11, 1/33) x298: ON the packing  [circle, |diff| 5.5e-10]
+  (49/33, 12/11, 1/33) x292: ON the packing  [circle, |diff| 5.5e-10]
+  (1/25, 6/5, 1/25) x290: ON the packing  [circle, |diff| 0.0e+00]
+  (1/25, 6/5, 1/25) x287: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 1, 1/4) x285: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 1, 1/4) x277: ON the packing  [circle, |diff| 0.0e+00]
+  (7/4, 1, 1/4) x275: ON the packing  [circle, |diff| 0.0e+00]
+  (7/4, 1, 1/4) x273: ON the packing  [circle, |diff| 0.0e+00]
+  (31/24, 1, 1/24) x268: ON the packing  [circle, |diff| 6.7e-10]
+  (31/24, 1, 1/24) x256: ON the packing  [circle, |diff| 6.7e-10]
+  (17/12, 1, 1/12) x248: ON the packing  [circle, |diff| 6.7e-10]
+  (1/4, 5/7, 1/28) x241: ON the packing  [circle, |diff| 5.7e-10]
+  (1/4, 9/7, 1/28) x238: ON the packing  [circle, |diff| 5.7e-10]
+  (49/25, 4/5, 1/25) x231: ON the packing  [circle, |diff| 0.0e+00]
+  (49/25, 6/5, 1/25) x230: ON the packing  [circle, |diff| 0.0e+00]
+  (17/12, 1, 1/12) x230: ON the packing  [circle, |diff| 6.7e-10]
+  (49/25, 4/5, 1/25) x228: ON the packing  [circle, |diff| 0.0e+00]
+  (49/25, 6/5, 1/25) x226: ON the packing  [circle, |diff| 0.0e+00]
+  (7/12, 1, 1/12) x220: ON the packing  [circle, |diff| 6.7e-10]
+  (1/25, 4/5, 1/25) x207: ON the packing  [circle, |diff| 0.0e+00]
+  (1/25, 4/5, 1/25) x206: ON the packing  [circle, |diff| 0.0e+00]
+  (1/9, 4/3, 1/9) x204: ON the packing  [circle, |diff| 5.6e-10]
+  (17/9, 2/3, 1/9) x202: ON the packing  [circle, |diff| 5.6e-10]
+  (17/9, 4/3, 1/9) x202: ON the packing  [circle, |diff| 5.6e-10]
+  (7/4, 5/7, 1/28) x201: ON the packing  [circle, |diff| 5.7e-10]
+  (7/4, 9/7, 1/28) x200: ON the packing  [circle, |diff| 5.7e-10]
+  (17/24, 1, 1/24) x199: ON the packing  [circle, |diff| 6.7e-10]
+  (1/9, 2/3, 1/9) x196: ON the packing  [circle, |diff| 5.6e-10]
+  (17/24, 1, 1/24) x195: ON the packing  [circle, |diff| 6.7e-10]
+  (1/16, 1/2, 1/16) x189: ON the packing  [circle, |diff| 0.0e+00]
+  (7/12, 1, 1/12) x188: ON the packing  [circle, |diff| 6.7e-10]
+  (31/16, 3/2, 1/16) x170: ON the packing  [circle, |diff| 0.0e+00]
+  (1/16, 3/2, 1/16) x170: ON the packing  [circle, |diff| 0.0e+00]
+  (1/16, 1/2, 1/16) x169: ON the packing  [circle, |diff| 0.0e+00]
+  (1/16, 3/2, 1/16) x166: ON the packing  [circle, |diff| 0.0e+00]
+  (1/16, 1/2, 1/16) x163: ON the packing  [circle, |diff| 0.0e+00]
+  (31/16, 1/2, 1/16) x155: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 5/7, 1/28) x151: ON the packing  [circle, |diff| 5.7e-10]
+  (1/4, 9/7, 1/28) x143: ON the packing  [circle, |diff| 5.7e-10]
+  (31/16, 3/2, 1/16) x141: ON the packing  [circle, |diff| 0.0e+00]
+  (1/16, 3/2, 1/16) x137: ON the packing  [circle, |diff| 0.0e+00]
+  (31/16, 1/2, 1/16) x130: ON the packing  [circle, |diff| 0.0e+00]
+  (31/16, 3/2, 1/16) x127: ON the packing  [circle, |diff| 0.0e+00]
+  (31/16, 1/2, 1/16) x115: ON the packing  [circle, |diff| 0.0e+00]
+  (49/33, 10/11, 1/33) x92: ON the packing  [circle, |diff| 5.5e-10]
+  (7/4, 9/7, 1/28) x91: ON the packing  [circle, |diff| 5.7e-10]
+  (49/33, 12/11, 1/33) x91: ON the packing  [circle, |diff| 5.5e-10]
+  (17/33, 10/11, 1/33) x87: ON the packing  [circle, |diff| 5.5e-10]
+  (7/4, 5/7, 1/28) x85: ON the packing  [circle, |diff| 5.7e-10]
+  (17/33, 12/11, 1/33) x81: ON the packing  [circle, |diff| 5.5e-10]
+  (7/4, 1, 1/4) x78: ON the packing  [circle, |diff| 0.0e+00]
+  (17/12, 1, 1/12) x70: ON the packing  [circle, |diff| 6.7e-10]
+  (17/33, 10/11, 1/33) x70: ON the packing  [circle, |diff| 5.5e-10]
+  (3/16, 1, 3/16) x70: NOT on the packing  [circle, |diff| 1.2e-01]
+  (17/12, 1, 1/12) x67: ON the packing  [circle, |diff| 6.7e-10]
+  (1/9, 2/3, 1/9) x67: ON the packing  [circle, |diff| 5.6e-10]
+  (1/9, 4/3, 1/9) x67: ON the packing  [circle, |diff| 5.6e-10]
+  (1/4, 1, 1/4) x67: ON the packing  [circle, |diff| 0.0e+00]
+  (17/33, 12/11, 1/33) x65: ON the packing  [circle, |diff| 5.5e-10]
+  (7/4, 5/7, 1/28) x64: ON the packing  [circle, |diff| 5.7e-10]
+  (7/4, 9/7, 1/28) x64: ON the packing  [circle, |diff| 5.7e-10]
+  (49/33, 10/11, 1/33) x64: ON the packing  [circle, |diff| 5.5e-10]
+  (49/33, 12/11, 1/33) x64: ON the packing  [circle, |diff| 5.5e-10]
+  (3/16, 1, 3/16) x64: NOT on the packing  [circle, |diff| 1.2e-01]
+  (1/4, 9/7, 1/28) x64: ON the packing  [circle, |diff| 5.7e-10]
+  (49/33, 12/11, 1/33) x64: ON the packing  [circle, |diff| 5.5e-10]
+  (1/4, 5/7, 1/28) x63: ON the packing  [circle, |diff| 5.7e-10]
+  (31/24, 1, 1/24) x61: ON the packing  [circle, |diff| 6.7e-10]
+  (17/33, 10/11, 1/33) x61: ON the packing  [circle, |diff| 5.5e-10]
+  (17/33, 10/11, 1/33) x61: ON the packing  [circle, |diff| 5.5e-10]
+  (49/33, 10/11, 1/33) x60: ON the packing  [circle, |diff| 5.5e-10]
+  (49/33, 12/11, 1/33) x60: ON the packing  [circle, |diff| 5.5e-10]
+  (7/4, 1, 1/4) x60: ON the packing  [circle, |diff| 0.0e+00]
+  (17/33, 12/11, 1/33) x60: ON the packing  [circle, |diff| 5.5e-10]
+  (17/33, 12/11, 1/33) x60: ON the packing  [circle, |diff| 5.5e-10]
+  (49/33, 10/11, 1/33) x60: ON the packing  [circle, |diff| 5.5e-10]
+  (31/24, 1, 1/24) x55: ON the packing  [circle, |diff| 6.7e-10]
+  (1/9, 2/3, 1/9) x54: ON the packing  [circle, |diff| 5.6e-10]
+  (1/4, 1, 1/4) x50: ON the packing  [circle, |diff| 0.0e+00]
+  (7/12, 1, 1/12) x49: ON the packing  [circle, |diff| 6.7e-10]
+  (7/12, 1, 1/12) x49: ON the packing  [circle, |diff| 6.7e-10]
+  (17/9, 4/3, 1/9) x48: ON the packing  [circle, |diff| 5.6e-10]
+  (29/16, 1, 3/16) x48: NOT on the packing  [circle, |diff| 1.2e-01]
+  (17/12, 1, 1/12) x47: ON the packing  [circle, |diff| 6.7e-10]
+  (1/4, 9/7, 1/28) x46: ON the packing  [circle, |diff| 5.7e-10]
+  (1/4, 5/7, 1/28) x46: ON the packing  [circle, |diff| 5.7e-10]
+  (17/12, 1, 1/12) x45: ON the packing  [circle, |diff| 6.7e-10]
+  (1/9, 4/3, 1/9) x41: ON the packing  [circle, |diff| 5.6e-10]
+  (7/4, 1, 1/4) x40: ON the packing  [circle, |diff| 0.0e+00]
+  (17/24, 1, 1/24) x40: ON the packing  [circle, |diff| 6.7e-10]
+  (1/9, 2/3, 1/9) x39: ON the packing  [circle, |diff| 5.6e-10]
+  (17/9, 2/3, 1/9) x39: ON the packing  [circle, |diff| 5.6e-10]
+  (7/12, 1, 1/12) x39: ON the packing  [circle, |diff| 6.7e-10]
+  (7/4, 9/7, 1/28) x38: ON the packing  [circle, |diff| 5.7e-10]
+  (1/4, 1, 1/4) x38: ON the packing  [circle, |diff| 0.0e+00]
+  (17/24, 1, 1/24) x38: ON the packing  [circle, |diff| 6.7e-10]
+  (1/9, 2/3, 1/9) x37: ON the packing  [circle, |diff| 5.6e-10]
+  (7/12, 1, 1/12) x36: ON the packing  [circle, |diff| 6.7e-10]
+  (29/16, 1, 3/16) x36: NOT on the packing  [circle, |diff| 1.2e-01]
+  (7/4, 1, 1/4) x34: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 1, 1/4) x34: ON the packing  [circle, |diff| 0.0e+00]
+  (1/9, 2/3, 1/9) x34: ON the packing  [circle, |diff| 5.6e-10]
+  (17/9, 2/3, 1/9) x33: ON the packing  [circle, |diff| 5.6e-10]
+  (7/4, 5/7, 1/28) x33: ON the packing  [circle, |diff| 5.7e-10]
+  (17/9, 2/3, 1/9) x29: ON the packing  [circle, |diff| 5.6e-10]
+  (17/9, 4/3, 1/9) x29: ON the packing  [circle, |diff| 5.6e-10]
+  (49/25, 2/5, 1/25) x29: ON the packing  [circle, |diff| 0.0e+00]
+  (17/9, 2/3, 1/9) x29: ON the packing  [circle, |diff| 5.6e-10]
+  (17/9, 2/3, 1/9) x27: ON the packing  [circle, |diff| 5.6e-10]
+  (17/9, 4/3, 1/9) x27: ON the packing  [circle, |diff| 5.6e-10]
+  (1/9, 4/3, 1/9) x27: ON the packing  [circle, |diff| 5.6e-10]
+  (17/9, 4/3, 1/9) x26: ON the packing  [circle, |diff| 5.6e-10]
+  (1, 0, 1) x25: ON the packing  [circle, |diff| 0.0e+00]
+  (1/25, 2/5, 1/25) x25: ON the packing  [circle, |diff| 0.0e+00]
+  (1/9, 4/3, 1/9) x24: ON the packing  [circle, |diff| 5.6e-10]
+  (1/4, 9/7, 1/28) x24: ON the packing  [circle, |diff| 5.7e-10]
+  (17/9, 4/3, 1/9) x23: ON the packing  [circle, |diff| 5.6e-10]
+  (1/25, 8/5, 1/25) x23: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x22: ON the packing  [circle, |diff| 0.0e+00]
+  (1/16, 1/2, 1/16) x22: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 5/7, 1/28) x22: ON the packing  [circle, |diff| 5.7e-10]
+  (49/25, 8/5, 1/25) x22: ON the packing  [circle, |diff| 0.0e+00]
+  (1/9, 4/3, 1/9) x22: ON the packing  [circle, |diff| 5.6e-10]
+  (17/81, 34/27, 1/81) x20: ON the packing  [circle, |diff| 4.8e-10]
+  (17/81, 20/27, 1/81) x20: ON the packing  [circle, |diff| 4.8e-10]
+  (145/76, 15/19, 1/76) x19: ON the packing  [circle, |diff| 6.3e-10]
+  (145/76, 23/19, 1/76) x19: ON the packing  [circle, |diff| 6.3e-10]
+  (3/16, 1, 3/16) x19: NOT on the packing  [circle, |diff| 1.2e-01]
+  (29/16, 1, 3/16) x19: NOT on the packing  [circle, |diff| 1.2e-01]
+  (145/76, 15/19, 1/76) x18: ON the packing  [circle, |diff| 6.3e-10]
+  (145/76, 23/19, 1/76) x18: ON the packing  [circle, |diff| 6.3e-10]
+  (31/16, 3/2, 1/16) x17: ON the packing  [circle, |diff| 0.0e+00]
+  (49/73, 70/73, 1/73) x17: ON the packing  [circle, |diff| 8.4e-10]
+  (1, 0, 1) x16: ON the packing  [circle, |diff| 0.0e+00]
+  (3/16, 1, 3/16) x16: NOT on the packing  [circle, |diff| 1.2e-01]
+  (1/16, 3/2, 1/16) x16: ON the packing  [circle, |diff| 0.0e+00]
+  (49/73, 76/73, 1/73) x16: ON the packing  [circle, |diff| 8.4e-10]
+  (1, 0, 1) x15: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x15: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x15: ON the packing  [circle, |diff| 0.0e+00]
+  (31/16, 1/2, 1/16) x14: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x14: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x14: ON the packing  [circle, |diff| 0.0e+00]
+  (31/24, 1, 1/24) x14: ON the packing  [circle, |diff| 6.7e-10]
+  (97/52, 7/13, 1/52) x9: ON the packing  [circle, |diff| 1.1e-09]
+  (1/16, 3/2, 1/16) x9: ON the packing  [circle, |diff| 0.0e+00]
+  (31/16, 3/2, 1/16) x9: ON the packing  [circle, |diff| 0.0e+00]
+  (1/25, 6/5, 1/25) x9: ON the packing  [circle, |diff| 0.0e+00]
+  (31/24, 1, 1/24) x9: ON the packing  [circle, |diff| 6.7e-10]
+  (29/16, 1, 3/16) x9: NOT on the packing  [circle, |diff| 1.2e-01]
+  (97/52, 19/13, 1/52) x8: ON the packing  [circle, |diff| 1.1e-09]
+  (7/4, 1, 1/4) x7: ON the packing  [circle, |diff| 0.0e+00]
+  (1/16, 1/2, 1/16) x7: ON the packing  [circle, |diff| 0.0e+00]
+  (49/25, 6/5, 1/25) x6: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 1, 1/4) x6: ON the packing  [circle, |diff| 0.0e+00]
+  (7/4, 1, 1/4) x6: ON the packing  [circle, |diff| 0.0e+00]
+  (31/16, 1/2, 1/16) x6: ON the packing  [circle, |diff| 0.0e+00]
+  (17/24, 1, 1/24) x6: ON the packing  [circle, |diff| 6.7e-10]
+  (49/25, 6/5, 1/25) x5: ON the packing  [circle, |diff| 0.0e+00]
+  (49/25, 4/5, 1/25) x4: ON the packing  [circle, |diff| 0.0e+00]
+  (0, 5/3, 0) x4: ON the packing  [line point (degenerate, trace 2)]
+  (0, 1/3, 0) x4: ON the packing  [line point (degenerate, trace 2)]
+  (1/25, 6/5, 1/25) x4: ON the packing  [circle, |diff| 0.0e+00]
+  (17/24, 1, 1/24) x4: ON the packing  [circle, |diff| 6.7e-10]
+  (1/25, 4/5, 1/25) x3: ON the packing  [circle, |diff| 0.0e+00]
+  (49/25, 4/5, 1/25) x3: ON the packing  [circle, |diff| 0.0e+00]
+  (0, 2/5, 0) x2: ON the packing  [line point (degenerate, trace 2)]
+  (0, 8/5, 0) x2: ON the packing  [line point (degenerate, trace 2)]
+  (0, 10/7, 0) x2: ON the packing  [line point (degenerate, trace 2)]
+  (434/2187, 545/729, 16/2187) x2: NOT on the packing  [circle, |diff| 8.2e-03]
+  (41/147, 458/441, 89/441) x2: NOT on the packing  [circle, |diff| 1.2e-01]
+  (684/343, 41/49, -2/343) x1: NOT on the packing  [circle, |diff| 1.7e-02]
+  (57/29, 17/29, 0) x1: NOT on the packing  [line point (degenerate, trace 2)]
+  (57/29, 17/29, 0) x1: NOT on the packing  [line point (degenerate, trace 2)]
+  (2735/1444, 1135/1444, 11/1444) x1: NOT on the packing  [circle, |diff| 7.9e-03]
+  (2735/1444, 1753/1444, 11/1444) x1: NOT on the packing  [circle, |diff| 7.9e-03]
+  (2735/1444, 1135/1444, 11/1444) x1: NOT on the packing  [circle, |diff| 7.9e-03]
+  (2735/1444, 1753/1444, 11/1444) x1: NOT on the packing  [circle, |diff| 7.9e-03]
+  (3914/2187, 529/729, -8/2187) x1: NOT on the packing  [circle, |diff| 1.0e-02]
+  (3111/2048, 229/256, -7/2048) x1: NOT on the packing  [circle, |diff| 1.1e-02]
+  (0, 401/1323, -58/1323) x1: NOT on the packing  [circle, |diff| 5.2e-02]
+  (12/7, 16/49, -16/49) x1: NOT on the packing  [circle, |diff| 5.8e-01]
+  (10/343, 17/49, -10/343) x1: NOT on the packing  [circle, |diff| 5.8e-02]
+  (1/49, 85/49, -1/49) x1: NOT on the packing  [circle, |diff| 3.7e-02]
+  (676/343, 17/49, -10/343) x1: NOT on the packing  [circle, |diff| 5.8e-02]
+  (71/36, 5/14, -1/36) x1: NOT on the packing  [circle, |diff| 4.5e-02]
+  (1/25, 4/5, 1/25) x1: ON the packing  [circle, |diff| 0.0e+00]
+  (5/4, 1, 0) x1: NOT on the packing  [line point (degenerate, trace 2)]
+  (3/2, 1, 0) x1: NOT on the packing  [line point (degenerate, trace 2)]
+  (9/343, 41/49, -9/343) x1: NOT on the packing  [circle, |diff| 5.6e-02]
+  (1/29, 17/29, 0) x1: NOT on the packing  [line point (degenerate, trace 2)]
+  (434/2187, 913/729, 16/2187) x1: NOT on the packing  [circle, |diff| 8.2e-03]
+  (9/343, 41/49, -9/343) x1: NOT on the packing  [circle, |diff| 5.6e-02]
+  (3518/5329, 5057/5329, 42/5329) x1: NOT on the packing  [circle, |diff| 8.9e-03]
+  (1/29, 17/29, 0) x1: NOT on the packing  [line point (degenerate, trace 2)]
+  (2001/1600, 1, -49/1600) x1: NOT on the packing  [circle, |diff| 4.7e-02]
+  (5/4, 1, 0) x1: NOT on the packing  [line point (degenerate, trace 2)]
+  (1/25, 6/5, 1/25) x1: ON the packing  [circle, |diff| 0.0e+00]
+  (6998/5329, 5565/5329, -30/5329) x1: NOT on the packing  [circle, |diff| 1.5e-02]
+  (2527/1296, 8/27, -7/1296) x1: NOT on the packing  [circle, |diff| 2.5e-02]
+  (97/49, 85/49, -1/49) x1: NOT on the packing  [circle, |diff| 3.7e-02]
+  (5/216, 11/36, 5/216) x1: NOT on the packing  [circle, |diff| 2.5e-02]
+  (6129/4096, 447/512, -17/4096) x1: NOT on the packing  [circle, |diff| 1.3e-02]
+  (7/25, 26/25, 1/5) x1: NOT on the packing  [circle, |diff| 1.2e-01]
+  (0, 11/36, 0) x1: ON the packing  [line point (degenerate, trace 2)]
+  (11657/6561, 2741/2187, -29/6561) x1: NOT on the packing  [circle, |diff| 1.2e-02]
+  (11657/6561, 1633/2187, -29/6561) x1: NOT on the packing  [circle, |diff| 1.2e-02]
+  (7/6, 0, 5/6) x1: NOT on the packing  [circle, |diff| 3.3e-01]
+  (8049/4096, 319/256, -15/4096) x1: NOT on the packing  [circle, |diff| 1.1e-02]

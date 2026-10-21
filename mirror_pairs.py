@@ -2,7 +2,7 @@
 import sys, numpy as np
 exec(open('parents81.py').read().split('fam = collections')[0].replace("want = {int(k) for k in sys.argv[2:]}","want={52,73,76,81,25}"))
 rs=set()
-for row in np.load('out/hess_small_1536_5_10_full.npy'):
+for row in np.load(sys.argv[1] if len(sys.argv)>1 else 'out/hess_small_1536_5_10_full.npy'):
     rr=row[2]+row[4]-2
     if rr<=1e-9: continue
     rs.add((round((row[2]-row[4])%2,6),round((2*row[3])%2,6),round(rr,6)))

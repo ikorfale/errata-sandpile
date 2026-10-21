@@ -1,4 +1,4 @@
-out/hess_small_1536_5_10_full.npy: band circles with curvature <= 81 per period: 99, reached 39
+out/hess_small_1536_5_10_full.npy: band circles with curvature <= 81 per period: 99, reached 55
   curvature   1: 1 of 1
   curvature   4: 2 of 2
   curvature   9: 4 of 4
@@ -8,15 +8,15 @@ out/hess_small_1536_5_10_full.npy: band circles with curvature <= 81 per period:
   curvature  25: 8 of 8
   curvature  28: 4 of 4
   curvature  33: 4 of 4
-  curvature  36: 0 of 4
+  curvature  36: 4 of 4
   curvature  40: 0 of 2
   curvature  49: 0 of 12
-  curvature  52: 2 of 4
+  curvature  52: 4 of 4
   curvature  57: 0 of 4
   curvature  60: 0 of 2
-  curvature  64: 0 of 12
+  curvature  64: 4 of 12
   curvature  72: 0 of 4
-  curvature  73: 2 of 4
-  curvature  76: 2 of 4
-  curvature  81: 2 of 16
-windows off the packing (positive r): 294; most common: [((np.float64(0.1875), np.float64(1.0), np.float64(0.1875)), 169), ((np.float64(1.8125), np.float64(1.0), np.float64(0.1875)), 112), ((np.float64(1.894044), np.float64(0.786011), np.float64(0.007618)), 2)]
+  curvature  73: 4 of 4
+  curvature  76: 4 of 4
+  curvature  81: 4 of 16
+windows off the packing (positive r): 550; most common: [((np.float64(0.1875), np.float64(1.0), np.float64(0.1875)), 124), ((np.float64(1.8125), np.float64(1.0), np.float64(0.1875)), 124), ((np.float64(1.494845), np.float64(0.948454), np.float64(0.010309)), 74)]

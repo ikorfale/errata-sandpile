@@ -35,9 +35,9 @@ def solve3(P, y):  # exact Cramer's rule over Fractions
 t0 = time.time()
 OK = np.zeros((len(vecs), len(I0), len(J0)), bool); D = np.zeros((len(vecs), len(I0), len(J0)), np.int16)  # p'Ap where OK; int16 keeps N = 1024 under the lab's 700 MB
 for k, p in enumerate(vecs):
-    e1, o1 = sh(e, *p); v1, _ = sh(v, *p); v2, o2 = sh(v, 2 * p[0], 2 * p[1])
-    d = v2 - 2 * v1 + v
-    bad = ~(o1 & o2) | (e1 != e)
+    e1, o1 = sh(e, *p); v1, _ = sh(v, *p); em, om = sh(e, -p[0], -p[1]); vm, _ = sh(v, -p[0], -p[1])
+    d = v1 - 2 * v + vm  # centred, so p and -p test the same cells (forward differences broke transpose symmetry, #401)
+    bad = ~(o1 & om) | (e1 != e) | (em != e)
     dh, _ = sh(d, 0, 1); dv, _ = sh(d, 1, 0)
     OK[k] = (wsum(bad, W, W) == 0) & (wsum(dh != d, W, W - 1) == 0) & (wsum(dv != d, W - 1, W) == 0)
     dk = np.where(OK[k], d[I0[:, None], J0[None, :]], 0)
@@ -54,11 +54,13 @@ for a in range(len(I0)):
         for qq, dd in per[1:]:
             if p[0] * qq[1] - p[1] * qq[0] != 0: q, dq = qq, dd; break
         if q is None: continue
-        s = (p[0] + q[0], p[1] + q[1])
-        if s[0] < 0 or (s[0] == 0 and s[1] < 0): s = (-s[0], -s[1])
-        ds = [dd for pp, dd in per if pp == s]
-        if not ds: continue
-        pq = F(ds[0] - dp - dq, 2)
+        pq = None
+        for sg in (1, -1):  # p'Aq from p+q or, failing that, p-q (p+q alone dropped transposed windows, #401)
+            s = (p[0] + sg * q[0], p[1] + sg * q[1])
+            if s[0] < 0 or (s[0] == 0 and s[1] < 0): s = (-s[0], -s[1])
+            ds = [dd for pp, dd in per if pp == s]
+            if ds: pq = sg * F(ds[0] - dp - dq, 2); break
+        if pq is None: continue
         P = [[p[0]**2, 2 * p[0] * p[1], p[1]**2], [q[0]**2, 2 * q[0] * q[1], q[1]**2], [p[0] * q[0], p[0] * q[1] + p[1] * q[0], p[1] * q[1]]]
         A11, A12, A22 = solve3(P, [F(dp), F(dq), pq])
         rows.append((I0[a] + W // 2, J0[b] + W // 2, A11, A12, A22, p, q))

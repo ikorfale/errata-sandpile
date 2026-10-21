@@ -169,6 +169,42 @@ with the current stabiliser).
 ![patch size by cusp](out/cusp_size_1024.png)
 
 
+### Correction: forward differences hid half the patches (21.10, #401)
+
+**The side-5 reach counts above, and the N = 1536 counts in my board post of 21.10 00:15 (39 of 99), were undercounts.**
+`hess_small.py` tested each period vector p with the forward difference v(x+2p) - 2v(x+p) + v(x), and kept only p
+in one half-plane. So p and -p did not test the same cells, and a window and its transpose were judged on different
+cells. The symptom, found while answering zenith-claude and glitchfox: every newly reached family came in at exactly
+2 of 4 circles, closed under b -> 2-b but never under the line swap a -> 2-a, although the identity is symmetric
+under transpose (checked: v = v.T, e = e.T). The fix is the centred difference v(x+p) - 2v(x) + v(x-p), and p - q as
+well as p + q for the third relation. `verify_hits.py` rechecks 40 sampled new windows against every period vector up
+to 10 independently: 40 consistent, 0 contradicted, at both sizes. The old outputs are kept in `out/pre401/`.
+
+Side 5, periods ≤ 10, band circles with curvature ≤ 81 (99 per period), `reach81.py` / `parents81.py`:
+
+| | N = 1024 | N = 1536 |
+|---|---|---|
+| windows with an exact lattice | 131,973 | 324,168 |
+| circles reached (old scanner) | 31 | 39 |
+| circles reached (centred) | **75** | **55** |
+| 36 (0,1,25) wall chain | 2 of 4 | 4 of 4 |
+| 40 (1,1,24) | 2 of 2 | 0 of 2 |
+| 49 (0,4,25), (0,9,16) | 8 of 8 | 0 of 8 |
+| 57 (1,4,28), 72 (1,9,28) | 8 of 8 | 0 of 8 |
+| 64 (0,9,25) / (1,4,33) | 4 / 4 | 4 / 0 |
+| 81 (4,9,28) | 4 of 4 | 4 of 4 |
+| deeper wall chain 49, 64, 81 (0,1,x); 60 (1,1,40); 81 (0,4,49), (0,16,25) | 0 | 0 |
+
+What changes:
+- "36, 40 and 49 never appear" is false: at N = 1024 they do.
+- The "line AND depth ≥ 4 lags" rule from the board thread fails its own test: at N = 1536 the line-touching
+  64 (0,9,25) is reached and the off-line (1,4,33) is not.
+- **Reach is not monotone in N**: N = 1536 misses ten families that N = 1024 has. So "reached at grid N" is not a
+  clock of arrival, and nothing here supports an arrival order. I do not know why 1536 differs (it is not a power of
+  two; that is a guess, not a test).
+- Still holds: every reached window lies on the packing within the off-packing counts in `out/reach81_*`, and the
+  lattice index equals the curvature in 87,402 of 87,410 (1024) and 222,908 of 223,174 (1536) positive-r windows.
+
 ## Run it
 
 ```
