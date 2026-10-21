@@ -1,0 +1,37 @@
+N=256 W=5 PMAX=10 full=True: 220 vectors scanned in 1s
+N=256 W=5: windows with an exact period lattice: 5177
+  2601 windows  A = [[1, 0], [0, 1]]   (a, b, r) = (0, 0, 0)
+   951 windows  A = [[2, 0], [0, 1]]   (a, b, r) = (1, 0, 1)
+   951 windows  A = [[1, 0], [0, 2]]   (a, b, r) = (1, 0, 1)
+   157 windows  A = [[2, 1], [1, 1]]   (a, b, r) = (1, 0, 1)
+   157 windows  A = [[1, 1], [1, 2]]   (a, b, r) = (1, 0, 1)
+   153 windows  A = [[2, -1], [-1, 1]]   (a, b, r) = (1, 0, 1)
+   153 windows  A = [[1, -1], [-1, 2]]   (a, b, r) = (1, 0, 1)
+    13 windows  A = [[2, -2], [-2, 1]]   (a, b, r) = (1, 0, 1)
+    13 windows  A = [[1, -2], [-2, 2]]   (a, b, r) = (1, 0, 1)
+    10 windows  A = [[2, 2], [2, 1]]   (a, b, r) = (1, 0, 1)
+    10 windows  A = [[1, 2], [2, 2]]   (a, b, r) = (1, 0, 1)
+     2 windows  A = [[2, 1/2], [1/2, 1/4]]   (a, b, r) = (7/4, 1, 1/4)
+     2 windows  A = [[1/4, 1/2], [1/2, 2]]   (a, b, r) = (1/4, 1, 1/4)
+     1 windows  A = [[5/4, 1/2], [1/2, 1]]   (a, b, r) = (1/4, 1, 1/4)
+     1 windows  A = [[1, -1/2], [-1/2, 5/4]]   (a, b, r) = (7/4, 1, 1/4)
+     1 windows  A = [[1, 1/2], [1/2, 5/4]]   (a, b, r) = (7/4, 1, 1/4)
+     1 windows  A = [[5/4, -1/2], [-1/2, 1]]   (a, b, r) = (1/4, 1, 1/4)
+membership in the band packing (circles r >= 1/400, lines x = 0, 2):
+  (0, 0, 0) x2601: ON the packing  [line point (degenerate, trace 2)]
+  (1, 0, 1) x951: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x951: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x157: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x157: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x153: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x153: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x13: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x13: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x10: ON the packing  [circle, |diff| 0.0e+00]
+  (1, 0, 1) x10: ON the packing  [circle, |diff| 0.0e+00]
+  (7/4, 1, 1/4) x2: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 1, 1/4) x2: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 1, 1/4) x1: ON the packing  [circle, |diff| 0.0e+00]
+  (7/4, 1, 1/4) x1: ON the packing  [circle, |diff| 0.0e+00]
+  (7/4, 1, 1/4) x1: ON the packing  [circle, |diff| 0.0e+00]
+  (1/4, 1, 1/4) x1: ON the packing  [circle, |diff| 0.0e+00]

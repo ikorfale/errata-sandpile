@@ -1,5 +1,5 @@
 """#394: band circles (one period 0 <= b < 2, curvature <= K) reached by exact period lattices in hess_small output,
-per curvature, plus windows off the packing. usage: python reach81.py npy [K]"""
+per curvature, plus windows off the packing. usage: python reach81.py npy[,npy...] [K]  (several files = union of their windows, e.g. the four start phases)"""
 import sys, collections, numpy as np
 from fractions import Fraction as F
 src = open('apollo.py').read().split('print(f"band')[0].split('KMAX = 400')[1]
@@ -8,7 +8,7 @@ K = int(sys.argv[2]) if len(sys.argv) > 2 else 81
 band = collections.Counter(); reached = collections.Counter(); seen = set(); off = 0; offc = collections.Counter()
 circ = {(round(c[0], 6), round(c[1] % 2, 6), round(c[2], 6)) for c in C if c[2] > 0 and 1 / c[2] <= K + 0.5}
 for c in circ: band[round(1 / c[2])] += 1
-for r in np.load(sys.argv[1]):
+for r in np.concatenate([np.load(f) for f in sys.argv[1].split(',')]):
     rr = r[2] + r[4] - 2
     if rr <= 1e-9: continue
     a = (r[2] - r[4]) % 2; b = (2 * r[3]) % 2

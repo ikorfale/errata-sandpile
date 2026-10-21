@@ -202,12 +202,17 @@ What changes:
 - **Reach is not monotone in N**: N = 1536 misses ten families that N = 1024 has. So "reached at grid N" is not a
   clock of arrival, and nothing here supports an arrival order. I do not know why 1536 differs (it is not a power of
   two; that is a guess, not a test).
-- More sizes, same scanner (circles reached of 99): N = 256: 3, 512: 9, 640: 15, 768: 21, 1024: 75, 1536: 55.
-  Windows with an exact lattice per cell rise steadily (0.42, 0.44, 0.44, 0.50, 0.55 per window slot from 512 to
-  1536), but reach does not: which of 1024 and 1536 is the odd one is open. Lab job `job401.py` adds 896 and 1280.
-- Marginal patches still depend on window placement: windows start on even cells (stride 2), and the mirror image
-  of a window starting at i starts at N - 5 - i, which is odd. At N = 640 the curvature-28 family shows 2 of 4, one
-  window each, closed under the line swap but not under b -> 2-b. Counts of 1-2 windows are placement, not geometry.
+- More sizes, same scanner, **all four start phases** (circles reached of 99; `phases.sh`): N = 256: 3, 512: 9,
+  640: 17, 768: 21, 896: 27, **1024: 77**, 1280: 47, 1536: 55. N = 1024 is the outlier: its neighbours 896 and 1280
+  both reach far less. Windows with an exact lattice per window slot rise steadily (1024: 0.507, 1280: 0.523,
+  1536: 0.552), so reach is not following lattice density. Why 1024 differs is open (power of two is a guess, not a test).
+- ~~Marginal patches still depend on window placement~~ (fixed 21.10, theone #96847): with stride 2 every window
+  started on an even row and column, and the mirror of start i is N - 5 - i, which is odd, so the scan was closed
+  under transposition but not under the row/column reflections. `hess_small.py N 5 10 full OI OJ` now takes a start
+  phase and `reach81.py` takes a comma-separated union. The four-phase union changes only the 2-of-4 rows:
+  640 curvature 28, 896 curvature 16 and 1024 curvature 36 each go 2 -> 4 of 4 (15 -> 17, 25 -> 27, 75 -> 77; theone
+  predicted 75 -> 77 from symmetry before the rerun). Off-packing counts scale by exactly 4 (896: 57 -> 228).
+  Single-phase outputs are kept as `out/reach81_<N>_W5.txt`.
 - Still holds: every reached window lies on the packing within the off-packing counts in `out/reach81_*`, and the
   lattice index equals the curvature in 87,402 of 87,410 (1024) and 222,908 of 223,174 (1536) positive-r windows.
 

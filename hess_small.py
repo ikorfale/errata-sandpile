@@ -3,7 +3,7 @@ for windows of side 4-5 where the curvature-24 patches might fit. Same rule, sam
 Original doc follows.
 exact_hess2.py (#391): exact_hess.py vectorised per period vector (integral images), same windows, same rule,
 so PMAX can reach 40 on N = 1024. Prints the same table; checked to reproduce exact_hess_512.txt at W=12, PMAX=10.
-usage: python exact_hess2.py N [W] [PMAX] [full]
+usage: python hess_small.py N [W] [PMAX] [full] [OI OJ]
 'full': windows over the whole grid (out-of-grid shifts are rejected per cell), instead of exact_hess.py's
 margins M = 2 PMAX below and 2M above, which at PMAX = 40 drop most of the grid."""
 import sys, time, collections, numpy as np
@@ -13,7 +13,9 @@ z = np.load(f'out/odo_{N}.npz'); v = z['v']; e = z['e']
 vecs = sorted({(i, j) for i in range(0, PMAX + 1) for j in range(-PMAX, PMAX + 1) if (i, j) > (0, 0)}, key=lambda p: p[0]**2 + p[1]**2)
 FULL = len(sys.argv) > 4 and sys.argv[4] == 'full'
 M = 2 * PMAX
-I0 = np.arange(0, N - W + 1, W // 2) if FULL else np.arange(M, N - W - 2 * M, W // 2); J0 = I0.copy()
+OI, OJ = (int(sys.argv[5]), int(sys.argv[6])) if len(sys.argv) > 6 else (0, 0)  # start phase: the mirror of start i is N - W - i, odd when N - W is; scan all W//2 phases to close under reflections (theone, #96847)
+I0 = np.arange(OI, N - W + 1, W // 2) if FULL else np.arange(M + OI, N - W - 2 * M, W // 2)
+J0 = np.arange(OJ, N - W + 1, W // 2) if FULL else np.arange(M + OJ, N - W - 2 * M, W // 2)
 def sh(a, di, dj):  # a(x + (di, dj)) on the full grid, out of bounds -> None mask
     out = np.zeros_like(a); ok = np.zeros(a.shape, bool)
     si = slice(max(0, -di), N - max(0, di)); sj = slice(max(0, -dj), N - max(0, dj))
@@ -71,7 +73,7 @@ for (A11, A12, A22), n in cnt.most_common():
     a = (A11 - A22) % 2; b = (2 * A12) % 2; r = A11 + A22 - 2
     out.append((n, A11, A12, A22, a, b, r))
     print(f"  {n:4d} windows  A = [[{A11}, {A12}], [{A12}, {A22}]]   (a, b, r) = ({a}, {b}, {r})")
-np.save(f'out/hess_small_{N}_{W}_{PMAX}{"_full" if FULL else ""}.npy', np.array([(r[0], r[1], float(r[2]), float(r[3]), float(r[4]), *r[5], *r[6]) for r in rows]))
+np.save(f'out/hess_small_{N}_{W}_{PMAX}{"_full" if FULL else ""}{f"_o{OI}{OJ}" if (OI, OJ) != (0, 0) else ""}.npy', np.array([(r[0], r[1], float(r[2]), float(r[3]), float(r[4]), *r[5], *r[6]) for r in rows]))
 src = open('apollo.py').read().split('print(f"band')[0].split('KMAX = 400')[1]
 ns = {'np': np}; exec('KMAX = 400' + src, ns); Cb = ns['C']
 print("membership in the band packing (circles r >= 1/400, lines x = 0, 2):")
