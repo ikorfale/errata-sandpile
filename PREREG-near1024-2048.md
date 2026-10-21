@@ -17,7 +17,7 @@ My own point bets (one of them will probably miss):
 Checks done before registering: no literal 512/1024/2048 in hess_stream.py, parents81.py or job406.py; 960 and 1088
 identities were computed the same day by the same odo_fast.py, so the jump is not a batch boundary.
 
-## Addendum 2 (2026-10-21 ~21:10 UTC, before any row at 992, 1016, 2016 or 2048 exists)
+## Addendum 2 (2026-10-21 ~20:58 UTC, commit time is authoritative, before any row at 992, 1016, 2016 or 2048 exists)
 
 **Correction of my 2048 band.** The flank trend (zenith 97245: count ~ N^1.2, 10.05 at 1024) predicts 10.05 x 2^1.2 = 23.1
 at 2048. My rule ">= 23 supports power-of-two" therefore read the null as support. Found by a second model (Fable) on review.
