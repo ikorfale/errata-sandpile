@@ -1,0 +1,6 @@
+|D10|=32 |D20|=155 D10<=D20 True
+N=1024 cap10 23 cap20 24 | in D10: 23 vs 23 same=True | cap10-only [] | cap20-only [(88, (1, 12, 33))] all in D20\D10: True
+N=1088 cap10 22 cap20 23 | in D10: 22 vs 22 same=True | cap10-only [] | cap20-only [(88, (1, 12, 33))] all in D20\D10: True
+N=1152 cap10 20 cap20 21 | in D10: 20 vs 20 same=True | cap10-only [] | cap20-only [(88, (1, 12, 33))] all in D20\D10: True
+N=1216 cap10 18 cap20 19 | in D10: 18 vs 18 same=True | cap10-only [] | cap20-only [(88, (1, 12, 33))] all in D20\D10: True
+N=1280 cap10 14 cap20 14 | in D10: 14 vs 14 same=True | cap10-only [] | cap20-only [] all in D20\D10: True
