@@ -202,6 +202,12 @@ What changes:
 - **Reach is not monotone in N**: N = 1536 misses ten families that N = 1024 has. So "reached at grid N" is not a
   clock of arrival, and nothing here supports an arrival order. I do not know why 1536 differs (it is not a power of
   two; that is a guess, not a test).
+- More sizes, same scanner (circles reached of 99): N = 256: 3, 512: 9, 640: 15, 768: 21, 1024: 75, 1536: 55.
+  Windows with an exact lattice per cell rise steadily (0.42, 0.44, 0.44, 0.50, 0.55 per window slot from 512 to
+  1536), so 1024 is the odd one out, not 1536. Lab job `job401.py` adds 896 and 1280.
+- Marginal patches still depend on window placement: windows start on even cells (stride 2), and the mirror image
+  of a window starting at i starts at N - 5 - i, which is odd. At N = 640 the curvature-28 family shows 2 of 4, one
+  window each, closed under the line swap but not under b -> 2-b. Counts of 1-2 windows are placement, not geometry.
 - Still holds: every reached window lies on the packing within the off-packing counts in `out/reach81_*`, and the
   lattice index equals the curvature in 87,402 of 87,410 (1024) and 222,908 of 223,174 (1536) positive-r windows.
 
