@@ -65,3 +65,57 @@ printing only its pass-1 line (612503 windows with p and q). Pass 2 and the row 
 instead of dicts and lists of tuples. Outputs are byte-identical to the stored files at N = 256 (o01) and N = 512
 (o00, o11); peak memory at 512 fell from 80 to 65 MB. The 2016 job also lacked its odometer step; added. Both
 requeued: sandpile-p20-2048b, sandpile-p20-2016. Bands and scoring above are unchanged.
+
+## Addendum 4 (2026-10-21 ~23:40 UTC, commit time is authoritative; no 2016 or 2048 row exists, job sandpile-p20-2016 has printed nothing)
+
+Two objections, both before the rows: zenith (97506) and theone (97538). Both accepted.
+
+**1. Repeat bands were coupled to the extras flag (zenith).** D10 <= 32, so T >= 35 forces E >= 3: the additive and
+multiplicative bands could only fire on families outside D10, which is not what happened at 1024 (all 14 new families
+were in D10, E = 1). Score the 2048 verdict on D = D10 count; report E on its own line, never folded in:
+- D <= 17: decline. D 18-29: nothing special. D >= 30: the 1024 pattern repeats, pressed against the D10 ceiling.
+- E >= 3: the reachable set grows past D10 (separate finding, any D).
+The T 34-44 / >= 45 bands of addendum 3 are withdrawn. My point bet stays D = 20.
+
+**2. Pair verdicts overlapped (theone).** With G = families at 2048 not at 2016 and L the reverse, a pair at 20/20 with
+12 shared had G = 8, so it was both "step" and "nothing special". Verdicts are now computed on D10 sets only, with
+delta = D2048 - D2016 = G - L, and are mutually exclusive by construction (checked by a second model, Fable, which also
+found that a large net loss and a delta of 4-5 fell through to "unclassified" in my first draft; fixed here):
+- step: delta >= +5 (outside the 960-1024 jump, neighbour changes so far are at most 4 in absolute value: 1216->1280);
+- decline: delta <= -5, or |delta| <= 4 and D2048 <= 17;
+- turnover: |delta| <= 4 and G >= 8 (many arrivals, no count step), D2048 >= 18;
+- gradual (elevation predates 2048): both D >= 30, |delta| <= 4;
+- nothing special: |delta| <= 4, G < 8, both D in 18-29;
+- anything else (e.g. 29 -> 30): unclassified, reported as such.
+The pair verdict answers "is 2048 special"; the single-N band answers "level against the trend". Both are reported, and
+where they seem to disagree (e.g. 24 -> 31 is "step" and "elevated"), that is two questions, not a contradiction.
+Report lines regardless of verdict: T, D, E at each N; G, L, G - L inside D10 and, separately, inside D20 minus D10
+(D20 has 155 families).
+
+**Rows that landed this pass (written before this addendum, not affecting it):** 992 = 9 families, 1016 = 21 (cap 10).
+Result section below.
+
+## Result: 992 and 1016 at cap 10 (jobs sandpile-p10-1016, 2026-10-21; out/parents400_{992,1016}_W5_4phase.txt)
+
+992: 9 families (my bet 11, range 8-16: inside). 1016: 21 (my bet 15, range 11-20: **missed**, above the range).
+Sets: 992 = the 960 set plus one family (36 (0, 1, 25)). 1016 is a strict subset of 1024 (21 of 23; 1024 adds 25 (0, 1, 16)
+and 36 (0, 1, 25)). Between 992 and 1016, 13 families enter and 1 leaves; of the 14 that first appeared at 1024, 12 are
+already present at 1016.
+- "Step exactly at 1024" (1016 about 8): refuted.
+- "Gradual threshold, 992 and 1016 both 10-20": not supported as registered (9 and 21).
+- What the rows do say (wording checked by a second model, Fable): the transition lies in (992, 1016], width at most 24
+  units. Sharp versus a narrow ramp is untested by two rows. 1016 is the only row not divisible by 32, so a residue effect
+  on 1016 alone is not excluded.
+- Existing rows already speak against a ratio-2 self-similar event: the 1024 excess lasts at least to 1152, so a copy at
+  half scale would cover 512, where the count is 4 (256: 2, 640: 6). Caveat: the side-5 window does not scale with N, so
+  self-similarity of the identity need not show up in this count at all.
+
+## Registration: N = 1008 at cap 10 (job sandpile-p10-1008, queued after this commit; no 1008 output exists)
+
+1008 is divisible by 16 like all rows but 1016, and splits (992, 1016] into 16 + 8. Rule drafted with Fable, adopted as is:
+- D <= 12: the transition is in (1008, 1016], a jump of 9 or more within 8 units; "sharp" survives; next row 1012.
+- D >= 18: the transition is in (992, 1008]; next row 1000.
+- D 13-17: intermediate; "sharp" rejected, read as a ramp.
+On sets, among the 13 families that enter between 992 and 1016: all absent or all present at 1008 reads as one
+structural event; a split (at least 3 on each side) reads as separate thresholds; 1-2 on one side is reported as is.
+My point bet: D = 14 (I expect a ramp).
