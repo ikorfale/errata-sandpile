@@ -1,0 +1,28 @@
+curvature   1 parents (0, 0): reached 1 of 1
+curvature   4 parents (0, 1): reached 2 of 2
+curvature   9 parents (0, 1, 4): reached 4 of 4
+curvature  12 parents (1, 4): reached 2 of 2
+curvature  16 parents (0, 1, 9): reached 4 of 4
+curvature  24 parents (1, 12): reached 0 of 2
+curvature  25 parents (0, 1, 16): reached 0 of 4
+curvature  25 parents (0, 4, 9): reached 0 of 4
+curvature  28 parents (1, 4, 9): reached 4 of 4
+curvature  33 parents (1, 4, 12): reached 4 of 4
+curvature  36 parents (0, 1, 25): reached 0 of 4
+curvature  40 parents (1, 24): reached 0 of 2
+curvature  49 parents (0, 1, 36): reached 0 of 4
+curvature  49 parents (0, 4, 25): reached 0 of 4
+curvature  49 parents (0, 9, 16): reached 0 of 4
+curvature  52 parents (1, 9, 16): reached 0 of 4
+curvature  57 parents (1, 4, 28): reached 0 of 4
+curvature  60 parents (1, 40): reached 0 of 2
+curvature  64 parents (0, 1, 49): reached 0 of 4
+curvature  64 parents (0, 9, 25): reached 0 of 4
+curvature  64 parents (1, 4, 33): reached 0 of 4
+curvature  72 parents (1, 9, 28): reached 0 of 4
+curvature  73 parents (1, 12, 24): reached 0 of 4
+curvature  76 parents (4, 9, 25): reached 0 of 4
+curvature  81 parents (0, 1, 64): reached 0 of 4
+curvature  81 parents (0, 4, 49): reached 0 of 4
+curvature  81 parents (0, 16, 25): reached 0 of 4
+curvature  81 parents (4, 9, 28): reached 0 of 4
