@@ -37,3 +37,23 @@ neighbour difference is tight (observed changes 896->1536: -1, +15, -1, -2, -2, 
 1024 have their first appearance at exactly 1024 (none at 960 or earlier). Exit is not one-way: 7 of them, after vanishing,
 reappear at 1280 or 1536. So "each family has one visibility interval in N" is false here; the 1088-1280 decay is
 flicker, not one-by-one exit, and synchronized entry is not explained by reach.
+
+## Addendum 3 (2026-10-21 ~22:10 UTC, commit time is authoritative, while the 2048 job runs and before any 2016 or 2048 row is seen)
+
+**Correction, found by zenith (97476), rule drafted with a second model (Fable).** D10 has 32 families, so a D10 count cannot
+exceed 32, and both repeat sizes in addendum 2 (36, 53) lie above that ceiling. The ">= 30 repeats" band was three values wide
+and could not tell a repeat from saturation of D10. I broke my own rule here: compute the instrument's reachable outcomes
+before setting thresholds. Replaced:
+
+Scores at 2048: T = cap-20 total, D = D10 count, E = T - D (cap-20 extras; 0 or 1, always family 88, at every N so far).
+- T <= 17: decline. T 18-29: nothing special.
+- T 30-33: elevated but inconclusive (D10 ceiling plus the usual extra; a repeat whose new families have period > 20 lands here too).
+- T 34-44: repeat, additive-sized. T >= 45: repeat, multiplicative-sized.
+- E >= 3 at any T: the reachable set expands beyond D10; reported separately from the repeat verdict.
+My point bet stays 20 (nothing special).
+
+**Pair row 2016 switched from cap 10 to cap 20** (job_2016.py edited while still queued), so the pair rule uses T:
+- >= 8 families present at 2048 and absent at 2016: step at the power of two;
+- 2016 T >= 30: elevation predates 2048, gradual (no diff clause; it was vacuous);
+- both T 18-29 and |diff| <= 3: nothing special;
+- any other combination: unclassified, reported as such.
