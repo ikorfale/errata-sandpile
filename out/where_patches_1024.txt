@@ -1,0 +1,20 @@
+N=1024: 3528 windows at curvature 25
+ clusters (i/N, j/N) -> windows: [((np.float64(0.02), np.float64(0.65)), 110), ((np.float64(0.65), np.float64(0.02)), 110), ((np.float64(0.02), np.float64(0.41)), 108), ((np.float64(0.41), np.float64(0.02)), 108), ((np.float64(0.65), np.float64(0.98)), 108), ((np.float64(0.98), np.float64(0.65)), 108), ((np.float64(0.41), np.float64(0.98)), 107), ((np.float64(0.98), np.float64(0.41)), 107)]
+ N=1280 windows within 0.01 of (0.02,0.65): 394, by curvature: [(25, 394)]
+ N=1280 windows within 0.01 of (0.65,0.02): 394, by curvature: [(25, 394)]
+N=1024: 128 windows at curvature 49
+ clusters (i/N, j/N) -> windows: [((np.float64(0.01), np.float64(0.3)), 4), ((np.float64(0.01), np.float64(0.36)), 4), ((np.float64(0.01), np.float64(0.39)), 4), ((np.float64(0.01), np.float64(0.46)), 4), ((np.float64(0.01), np.float64(0.54)), 4), ((np.float64(0.01), np.float64(0.7)), 4), ((np.float64(0.3), np.float64(0.01)), 4), ((np.float64(0.3), np.float64(0.99)), 4)]
+ N=1280 windows within 0.01 of (0.01,0.3): 20, by curvature: [(9, 20)]
+ N=1280 windows within 0.01 of (0.01,0.36): 52, by curvature: [(25, 52)]
+N=1024: 88 windows at curvature 73
+ clusters (i/N, j/N) -> windows: [((np.float64(0.19), np.float64(0.36)), 11), ((np.float64(0.19), np.float64(0.64)), 11), ((np.float64(0.36), np.float64(0.19)), 11), ((np.float64(0.36), np.float64(0.81)), 11), ((np.float64(0.64), np.float64(0.81)), 11), ((np.float64(0.64), np.float64(0.19)), 11), ((np.float64(0.81), np.float64(0.36)), 11), ((np.float64(0.81), np.float64(0.64)), 11)]
+ N=1280 windows within 0.01 of (0.19,0.36): 5, by curvature: [(12, 5)]
+ N=1280 windows within 0.01 of (0.19,0.64): 5, by curvature: [(12, 5)]
+N=1024: 272 windows at curvature 76
+ clusters (i/N, j/N) -> windows: [((np.float64(0.04), np.float64(0.35)), 17), ((np.float64(0.04), np.float64(0.41)), 17), ((np.float64(0.04), np.float64(0.59)), 17), ((np.float64(0.04), np.float64(0.65)), 17), ((np.float64(0.35), np.float64(0.04)), 17), ((np.float64(0.41), np.float64(0.04)), 17), ((np.float64(0.59), np.float64(0.04)), 17), ((np.float64(0.65), np.float64(0.04)), 17)]
+ N=1280 windows within 0.01 of (0.04,0.35): 0, by curvature: []
+ N=1280 windows within 0.01 of (0.04,0.41): 0, by curvature: []
+N=1024: 3528 windows at curvature 25
+ clusters (i/N, j/N) -> windows: [((np.float64(0.02), np.float64(0.65)), 110), ((np.float64(0.65), np.float64(0.02)), 110), ((np.float64(0.02), np.float64(0.41)), 108), ((np.float64(0.41), np.float64(0.02)), 108), ((np.float64(0.65), np.float64(0.98)), 108), ((np.float64(0.98), np.float64(0.65)), 108), ((np.float64(0.41), np.float64(0.98)), 107), ((np.float64(0.98), np.float64(0.41)), 107)]
+ N=960 windows within 0.01 of (0.02,0.65): 0, by curvature: []
+ N=960 windows within 0.01 of (0.65,0.02): 0, by curvature: []
