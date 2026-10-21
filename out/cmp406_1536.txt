@@ -1,0 +1,2 @@
+|D10|=32 |D20|=155 D10<=D20 True
+N=1536 cap10 17 cap20 17 | in D10: 17 vs 17 same=True | cap10-only [] | cap20-only [] all in D20\D10: True

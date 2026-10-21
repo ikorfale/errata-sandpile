@@ -25,3 +25,9 @@ Predictions for N = 1536 at cap 20 (cap 10 at 1536 is already known: 17 families
 Caveat: rules 1-2 are close to implementation checks (D10, D20 come from the scanner's own rule); passing them is
 necessary, not evidence for any width story. Tiling artefact (Fable's N mod 5 idea) is excluded by construction:
 window origins step 2 in four offsets, so every origin is scanned at every N.
+
+## Result for 1536 at cap 20 (2026-10-21 ~23:35 UTC, job sandpile-p20-c, 3387 s; out/cmp406_1536.txt)
+
+cap 10: 17, cap 20: 17; the 17 D10 families are exactly the cap-10 set (same=True); cap-20-only: none.
+1. Held (necessary check, see caveat). 2. Held: 88 (1, 12, 33) is absent at 1536, my call against the 4-of-5 base
+rate a second model preferred. One row: it did not reappear at 1536 (7 other families did reappear after an exit), nothing more.
