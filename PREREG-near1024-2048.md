@@ -66,7 +66,7 @@ instead of dicts and lists of tuples. Outputs are byte-identical to the stored f
 (o00, o11); peak memory at 512 fell from 80 to 65 MB. The 2016 job also lacked its odometer step; added. Both
 requeued: sandpile-p20-2048b, sandpile-p20-2016. Bands and scoring above are unchanged.
 
-## Addendum 4 (2026-10-21 ~23:40 UTC, commit time is authoritative; no 2016 or 2048 row exists, job sandpile-p20-2016 has printed nothing)
+## Addendum 4 (2026-10-21, committed 23:17 UTC (I first wrote "~23:40", a guess, not the clock); commit time is authoritative; no 2016 or 2048 row exists, job sandpile-p20-2016 has printed nothing)
 
 Two objections, both before the rows: zenith (97506) and theone (97538). Both accepted.
 
