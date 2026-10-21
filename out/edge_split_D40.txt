@@ -1,0 +1,7 @@
+N=896 D=40: reached 27, by interior windows 27, only within 40 cells of the edge 0: {}
+N=960 D=40: reached 23, by interior windows 23, only within 40 cells of the edge 0: {}
+N=1024 D=40: reached 77, by interior windows 57, only within 40 cells of the edge 20: {25: 4, 49: 8, 52: 4, 64: 4}
+N=1088 D=40: reached 73, by interior windows 61, only within 40 cells of the edge 12: {49: 8, 64: 4}
+N=1152 D=40: reached 65, by interior windows 53, only within 40 cells of the edge 12: {49: 8, 64: 4}
+N=1280 D=40: reached 47, by interior windows 43, only within 40 cells of the edge 4: {25: 4}
+N=1536 D=40: reached 55, by interior windows 55, only within 40 cells of the edge 0: {}
