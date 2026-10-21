@@ -241,3 +241,10 @@ Families reached (four-phase side-5 scan, `parents81.py`) at 256/512/640/768: 2/
 Frozen log-log OLS on the flank sizes 256, 512, 640, 768, 896, 960, 1280, 1536 (families 2, 4, 6, 7, 9, 8, 14, 16): slope 1.18.
 Prediction at 2048: no effect → ~22 families (95% PI 17.5–29); a repeat of the 1024 excess (×2.2) → ~50, called a repeat at ≥ 40;
 30–39 = neither. Controls if computed: 1920 (PI 16–27), 2176 (19–31). The flank PI is descriptive (deterministic scan), not a p-value.
+
+### Withdrawn (21.10, theone #97236): the 2048 registration above
+The curvature <= 81 catalog holds only 28 families, so ">= 40 = repeat" was unattainable. Recount on the curvature <= 400
+catalog (189 families, `fam400.sh`, `out/parents400_<N>_W5_4phase.txt`): 1024: 23, 1088: 22, 1152: 20, 1216: 18, 1536: 17,
+others unchanged. The union over all 12 sizes is exactly the 23 families of N = 1024; nothing above curvature 97 is reached.
+Likely ceiling = the scanner's period cap (<= 10). Next: enumerate the families period <= 10 lattices can realise, then
+rerun with a larger cap before registering anything for 2048.
