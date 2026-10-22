@@ -358,3 +358,17 @@ cap 20). E = 0: not even the standing cap-20 extra 88 (1, 12, 33), which 1280 at
 - 36, 40, 97 absent too. 40 does not return, so "40 ends its run" is not retracted (it is not tested beyond 1296).
 - Core: no core family absent; no new family present, so no instrument flag.
 - 1248 (Addendum 13) is next; "joint" stays unclaimed.
+
+## Result: N = 1248 at cap 20 (job_p20_1248.py, commit 390c239; done 22.10 14:43Z, rc 0; scored 2026-10-22 ~15:25Z)
+
+Reached set (10 families): 1, 4, 9, 12, 16, 24, 25 (0, 4, 9), 28, 33, 72. Lattice windows 207637 (in line with N^2 scaling
+against 1296's 217803).
+- 64 (0, 9, 25), 73 and 76: **all three absent**. Registered reading (Addendum 13): every onset lies in 1217-1248;
+  joint onset **left open** (neither confirmed nor refuted). With 1280 and 1296, each family is absent on three scored rows.
+- Core (the 8 families of S(992) & S(1016)): all present, so no instrument flag under Addendum 12.
+- 40 absent (not a return). No family outside the earlier union is present.
+- **Unregistered observation, not a finding:** 52 (1, 9, 16), 57 (1, 4, 28) and 81 (4, 9, 28) are present at 1216 and
+  at 1280/1296 but absent at 1248; 25 (0, 1, 16) too is absent here and present at 1280. Nothing was registered for
+  these. Fable (review of this scoring): the window count does not suggest lower coverage, and the cheapest test of
+  a scanner artefact is to search the 1248 identity directly for those band patterns, or rescan it with another
+  phase, before any new row. Until then the dip is not read.
