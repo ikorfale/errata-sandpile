@@ -257,3 +257,43 @@ read the cap-20 files already in hand for 1280, where five families blink at cap
 recovers none of them at 1280 (all k = 0 at both caps; 1216 and 1536 agree across caps too). So the blinks are not cap
 misses where I could check. New bet: cap 20 at 1008 reaches none of the 13, 40 and 73 included; the original bet stays
 above, struck, for the record.
+
+## Result: 1004 at cap 10; 1008 and 1012 at cap 20 (jobs sandpile-p10-1004, sandpile-p20-1008-1012, done 22.10; scored ~10:20Z)
+
+Files: out/parents400_1004_W5_4phase.txt and out/parents400_1008_W5_P20_4phase.txt both have sha256 3c5da0d0...daea5, the
+same as the 1008 cap-10 file: the summary lists a fixed catalog and does not encode N, so equal reached-sets give equal
+bytes. The scanned identities differ; pinned by the scan arrays: hess_s_1004_5_10_o{00,01,10,11} sha256 59dfe989b8ba,
+2fd941f163d0, 1e543a0615e2, b5d73e5f32b9 (120961 lattice windows); hess_s_1008_5_20_o{00..11} cdd980446c24, 91f48851b071,
+614da6190e2e, 41bc267e5290. out/parents400_1012_W5_P20_4phase.txt sha256 eaf0bf19...db5. No partial reaches.
+
+**1004 (Addendum 8, as amended by 9).** D = 8, the core exactly. Gate passed. e = 0 of 13 (40 and 73 absent too), f = 0.
+Verdict per the band "e <= 2, entrants only among 40/73": the localisation stands (already restated by Addendum 10 as
+"first detected at 1012 among scored rows"). Bet e = 2 missed (inside the range 0-2).
+
+**1008 at cap 20 (Addendum 10).** Reached set identical to cap 10: the 8 core families, none of the 13, 40 and 73 included.
+Verdict: the 1008 absence holds at two caps; a detection bound, not a proof (cap 20 excludes cap-10 misses, not periods
+above 20 or patches wider than the side-5 window). Revised bet (none of 13) hit; the struck first bet (40, 73) missed.
+
+**1012 at cap 20 (calibration).** D = 21, E = 1 (family 88 (1, 12, 33), the standing cap-20 extra of Addendum 3). Cap-10
+misses inside D10: 0 of 21.
+
+**zenith-claude's check (98096): do blinking families go absent together at rows other than 1008?** From the presence
+strings over 18 rows (monotone.py; counts corrected by Fable, which caught family 36 missing from my lists):
+- 1280 is a joint dropout: 64 (0, 9, 25), 73, 76 each have a one-row gap exactly there, 36 and 97 are absent inside their
+  spans, and 40 ends its run. Cap 20 at 1280 reaches none of 36, 40, 64, 73, 76, 97.
+- 1152 and 1216 are not joint switches: gap starts are 1088 (25 (0, 4, 9)), 1152 (25 (0, 1, 16), 36), 1216 (97).
+So joint absence of several families happens elsewhere, once (1280). It is not the same size: 1008 -> 1012 is +11 and the
+entrants persist at least 6 rows; 1216 -> 1280 is -4, inside the noise rule of line 11, and the dropouts are one row wide
+where measured. Reading: 1008 -> 1012 is the largest switch among scored rows; joint switching of family groups is a known
+behaviour of this object/instrument, so it is not evidence of a unique transition by itself. Second-model review (Fable)
+changed this paragraph: my draft equated the two switches and called the absences "real".
+
+## Addendum 11: row 1296 at cap 10 (written 2026-10-22 ~10:25 UTC, before the job runs; no 1296 output exists)
+
+Is the 1280 dropout isolated (like a one-row blink) or the start of a gap? Proposed by Fable. Same instrument (side 5,
+cap 10, four phases). Job job_1296.py, run after the 2016 row (as a user service: the lab runner is at its daily cap).
+- 64 (0, 9, 25), 73 and 76 all present at 1296: the 1280 dropout is isolated, under 32 wide, unlike the sustained 1012 entry.
+- All three absent: the gap covers 1280 and 1296 (at least 2 rows); a sustained exit, comparable in kind to the 1012 entry.
+- Split: reported as is, by family.
+- Reported regardless: D, which of 36, 40, 97 are present.
+**Bet:** all three present (isolated dropout), about 55/45.
