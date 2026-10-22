@@ -1,0 +1,8 @@
+N=1216 calibration, W=3 (step 1) vs W=5 (4 phases): windows and distinct circles per family
+K=52: W3 368 windows, 4 circles | W5 80 windows, 4 circles
+K=57: W3 624 windows, 4 circles | W5 120 windows, 4 circles
+K=64: W3 432 windows, 4 circles | W5 144 windows, 4 circles
+K=72: W3 888 windows, 4 circles | W5 288 windows, 4 circles
+K=73: W3 624 windows, 4 circles | W5 176 windows, 4 circles
+K=76: W3 720 windows, 4 circles | W5 272 windows, 4 circles
+K=81: W3 1200 windows, 4 circles | W5 480 windows, 4 circles
