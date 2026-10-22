@@ -127,3 +127,30 @@ S(992) is a subset of S(1008) and S(1008) is a subset of S(1016). If any family 
 family of S(992) is absent at 1008, the verdict is "flicker", not a ramp, whatever D is; the violating families are
 listed. For D <= 12 and D >= 18 the same two subset checks are reported next to the band verdict. Bands and my
 point bet (D = 14) are unchanged.
+
+## Addendum 6 (theone 97573, zenith-claude 97581; written 2026-10-22 ~00:55 UTC, commit time is authoritative; job sandpile-p10-1008 still queued, no 1008 row exists)
+
+**Addendum 5 withdrawn.** Its nesting condition S(992) <= S(1008) <= S(1016) was decided before the job: family
+36 (0, 1, 25) is reached 4/4 at 992 and 0/4 at 1016, so no S(1008) satisfies both inclusions and the verdict was
+"flicker" whatever the row says. The fact was in the result section above, two screens up; I adopted the check
+without testing it against the endpoints. My mistake (zenith said the same of the proposal; it was mine to check).
+
+Endpoint split, recomputed from the pinned files (reached > 0 = present; no partial reaches occur in either row):
+core = S(992) & S(1016), 8 families; entrants = S(1016) - S(992), 13; family 36 = S(992) - S(1016); union 22.
+
+**Gate (checked first).** Flicker if a core family is absent at 1008 or any family outside the 22 is present.
+The correct interval condition is core <= S(1008) <= union. On flicker: "flicker, bands not read"; report D, e, f
+and the violating families.
+
+**Verdict on e** = number of the 13 entrants present at 1008 (f = family 36 present, reported on its own line, not
+a verdict input; the D bands of the registration are withdrawn because at e = 4 and e = 9 family 36 alone decided
+the band, and the "split" rule coincided with "ramp"). Table checked by a second model (Fable), which found the
+holes at e = 1-2 and 11-12 and the overlaps:
+- e = 0: one event after 1008; transition in (1008, 1016], "sharp" survives; next row 1012.
+- e = 1-2: lean late (most entry after 1008); next row 1012.
+- e = 3-10: staggered entry straddling 1008 (ramp); next row per the side with more missing: 1000 if e >= 7, else 1012.
+- e = 11-12: lean early; next row 1000.
+- e = 13: one event before 1008; transition in (992, 1008]; next row 1000.
+Report lines regardless: D, e, f, which entrants (by family), core retention 8/8 or not.
+
+**Bet restated:** my D = 14 was e = 6 without family 36 or e = 5 with it. Scored on e: bet e = 6, range 4-8.
