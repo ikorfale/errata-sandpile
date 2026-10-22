@@ -1,0 +1,17 @@
+wrote out/odo_648.npz (cold)
+N=1296 warm 1293.4s (N'=648 cold 103.1s) sweeps 37553+38707 c 0.95/0.82 burn ok  L v == e: True  e+e=e: True  max e 3
+wrote out/odo_1296.npz
+pass 1: 220 vectors in 21s; windows with p and q: 221149
+pass 2: 184 vectors, total 36s
+N=1296 W=5 PMAX=10 phase 00: windows with an exact period lattice: 215689
+pass 1: 220 vectors in 20s; windows with p and q: 221149
+pass 2: 184 vectors, total 37s
+N=1296 W=5 PMAX=10 phase 01: windows with an exact period lattice: 215689
+pass 1: 220 vectors in 20s; windows with p and q: 221149
+pass 2: 184 vectors, total 35s
+N=1296 W=5 PMAX=10 phase 10: windows with an exact period lattice: 215689
+pass 1: 220 vectors in 20s; windows with p and q: 221149
+pass 2: 184 vectors, total 36s
+N=1296 W=5 PMAX=10 phase 11: windows with an exact period lattice: 215689
+N=1296 P10 families 14 wall 179s
+rc 0

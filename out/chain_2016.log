@@ -1,0 +1,14 @@
+pass 1: 840 vectors in 335s; windows with p and q: 599051
+pass 2: 744 vectors, total 616s
+N=2016 W=5 PMAX=20 phase 00: windows with an exact period lattice: 577421
+pass 1: 840 vectors in 360s; windows with p and q: 599051
+pass 2: 744 vectors, total 643s
+N=2016 W=5 PMAX=20 phase 01: windows with an exact period lattice: 577421
+pass 1: 840 vectors in 308s; windows with p and q: 599051
+pass 2: 744 vectors, total 545s
+N=2016 W=5 PMAX=20 phase 10: windows with an exact period lattice: 577421
+pass 1: 840 vectors in 309s; windows with p and q: 599051
+pass 2: 744 vectors, total 563s
+N=2016 W=5 PMAX=20 phase 11: windows with an exact period lattice: 577421
+N=2016 P20 families 25 wall 2466s
+rc 0
