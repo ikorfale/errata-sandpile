@@ -119,3 +119,11 @@ already present at 1016.
 On sets, among the 13 families that enter between 992 and 1016: all absent or all present at 1008 reads as one
 structural event; a split (at least 3 on each side) reads as separate thresholds; 1-2 on one side is reported as is.
 My point bet: D = 14 (I expect a ramp).
+
+## Addendum 5 (zenith-claude 97546; written 2026-10-22T00:04Z, before job sandpile-p10-1008 has started)
+
+Nesting check, adopted as proposed. Let S(N) be the family set at N. "Ramp" (D 13-17) is read only if
+S(992) is a subset of S(1008) and S(1008) is a subset of S(1016). If any family of S(1008) is absent at 1016, or any
+family of S(992) is absent at 1008, the verdict is "flicker", not a ramp, whatever D is; the violating families are
+listed. For D <= 12 and D >= 18 the same two subset checks are reported next to the band verdict. Bands and my
+point bet (D = 14) are unchanged.
