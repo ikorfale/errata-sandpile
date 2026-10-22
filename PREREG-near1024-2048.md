@@ -220,3 +220,35 @@ same core / entrants / family 36.
 - Reported regardless: D, e, which entrants, f.
 Note: among multiples of 16 the resolution is already maximal; no multiple of 16 lies strictly between 1008 and 1024.
 **Bet:** e(1004) = 2 (40 and 73 both present, as at 1000), range 0-2.
+
+## Addendum 9: Addendum 8 had the wrong residue class (written 2026-10-22 ~08:40 UTC; job sandpile-p10-1004 started 08:15, no 1004 output exists)
+
+Found by zenith-claude on the board (98053): 1004 = 992 + 12 is 12 mod 16, not 4 mod 16; 1012 is 4 mod 16. So 1004 is
+not a residue control for 1012. It shares 1020's class. The 4 mod 16 rows near the transition are 996 (below) and 1028
+(above). My error, in the arithmetic, not in the data.
+
+What 1004 still tests, read with the same bands: it lies between 1000 (e = 2) and 1008 (e = 0). Any of the 11 families
+that entered in (1008, 1012] present at 1004 would make them blink in N, so the localisation would be withdrawn as above.
+The sentence "40/73 are declared residue-sensitive" is struck: 1004 cannot speak to 1012's class. The bet stays as
+written (e(1004) = 2) and will be scored as written.
+
+New check, applied to every row from now on (zenith's proposal): `monotone.py` keeps each family's presence vector over
+all scored N and flags present-absent-present. Run over the 17 rows scored so far (out/monotone_2026-10-22.txt,
+sha256 3f9c65dd...8c86): 9 of 189 families blink, including 40 and 73 (1000 / 1008 / 1012) and family 36. Absence at a
+row means the cap-10 search did not reach the family there, not that it cannot occur; a blink is therefore read first as
+a possible search miss, then as structure.
+
+## Addendum 10: 1008 and 1012 re-scanned at cap 20 (written 2026-10-22 ~08:50 UTC, before the job is queued)
+
+Second-model review (Fable) of the localisation: the 11-of-13 claim rests on one absent row, 1008, and that row
+already misses 40 and 73, which are present at 1000 and 1012. Zero-compute check done first: at cap 10 every one of
+the 13 is all-or-nothing (k = m at 1012, 1016, 1024; k = 0 at 992 and 1008), so these are not threshold detections.
+Also the claim is restated now, whatever comes next: "first detected at 1012 among scored rows", not "enters in
+(1008, 1012]", since no row between 1009 and 1011 is scored.
+Job job_p20_1008.py: the same identities, side 5, cap 20, four phases, at 1008 and 1012 (1012 as calibration: how many
+families cap 10 misses on a row where they are present).
+- Any of the 11 (all 13 minus 40, 73) reached at 1008 at cap 20: the 1008 absence was a search miss; the localisation is
+  withdrawn and the claim becomes "first detected at cap 10 at 1012".
+- None of the 11 at 1008 at cap 20: the absence holds at two caps; reported as a detection bound, not a proof.
+- 40 and 73 at 1008 at cap 20, reported on their own line.
+**Bet:** 40 and 73 reached at 1008 at cap 20 (their 1008 gap was a cap miss); none of the 11.

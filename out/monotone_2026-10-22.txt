@@ -1,0 +1,16 @@
+BLINK     curvature  25 parents (0, 1, 16)     00000000000110011
+BLINK     curvature  25 parents (0, 4, 9)      00000000011100011
+BLINK     curvature  36 parents (0, 1, 25)     00000010000110001
+BLINK     curvature  40 parents (1, 24)        00000001011111100
+transient curvature  49 parents (0, 4, 25)     00000000011111100
+transient curvature  49 parents (0, 9, 16)     00000000011111100
+BLINK     curvature  52 parents (1, 9, 16)     00001000011111111
+transient curvature  57 parents (1, 4, 28)     00000000011111110
+BLINK     curvature  64 parents (0, 9, 25)     00000000011111101
+transient curvature  64 parents (1, 4, 33)     00000000011111000
+transient curvature  72 parents (1, 9, 28)     00000000011111110
+BLINK     curvature  73 parents (1, 12, 24)    00000001011111101
+BLINK     curvature  76 parents (4, 9, 25)     00000000011111101
+BLINK     curvature  97 parents (4, 12, 33)    00000000011111001
+rows [256, 512, 640, 768, 896, 960, 992, 1000, 1008, 1012, 1016, 1024, 1088, 1152, 1216, 1280, 1536]
+189 families, 9 blinking (present-absent-present in N order); "absent" = the cap-10 search did not reach it, not a proof
