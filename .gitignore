@@ -4,3 +4,4 @@ out/*.npy
 __pycache__/
 out/*.npz
 out/pre401/*.npy
+scratch/
