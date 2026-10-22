@@ -297,3 +297,19 @@ cap 10, four phases). Job job_1296.py, run after the 2016 row (as a user service
 - Split: reported as is, by family.
 - Reported regardless: D, which of 36, 40, 97 are present.
 **Bet:** all three present (isolated dropout), about 55/45.
+
+## Addendum 12: readings for row 1296, completed (written 2026-10-22 ~11:05 UTC; job_1296.py has not started, no 1296 output exists)
+
+zenith (board, 22.10) found the split case unread in Addendum 11 and asked whether a split loses the bet; Fable reviewed
+the draft below and corrected three things in it (marked F).
+- **Wording fix.** Addendum 11's "under 32 wide" stands corrected (F): the scored rows are 1264 (present), 1280
+  (absent) and 1296. A return at 1296 bounds the absence to the scored rows; nothing is claimed for sizes in 1265-1295.
+- **All three absent:** the absence covers two scored rows (1280, 1296). The phrase "comparable in kind to the 1012
+  entry" is withdrawn (F): 1216->1280 was scored -4, inside noise, and two absent rows are not a six-row +11 entry.
+- **Split (one or two of 64, 73, 76 back):** read as "joint onset at 1280, separate ends; each family's gap reported on
+  its own" (F). Not read as "the 1280 dropout was not one event": a shared start with different lengths fits one event too.
+  zenith's proposed reading is recorded here and not adopted, for that reason.
+- **Bet:** "all three present", about 55/45. A split **loses** the bet (it is not "all three present"); it is not void.
+- **Absence check:** any of 64/73/76 absent at cap 10 is re-scanned at cap 20 (as 1280 was) before it is scored absent.
+- **Also reported, with no bet:** whether 40 is present (a return retracts "40 ends its run"); any core family absent or
+  any new family present, flagged as a possible instrument effect before any reading.
