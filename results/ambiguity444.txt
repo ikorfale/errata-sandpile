@@ -1,0 +1,7 @@
+W=3 hit windows: (N, K, circle classes at hit, non-circle classes at hit, circle classes at transpose) -> windows
+(1248, 73, 1, 5, 1) 8
+(1248, 76, 1, 1, 1) 16
+(1248, 81, 1, 2, 1) 8
+(1280, 73, 1, 5, 1) 8
+(1280, 76, 1, 1, 1) 16
+W=5 hits at 1216 (four phases), same all-pairs check: 528 windows; K=52: 80, K=73: 176, K=76: 272; every window exactly 1 class (the circle), 0 alternatives
