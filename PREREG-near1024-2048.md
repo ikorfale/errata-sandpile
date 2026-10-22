@@ -252,3 +252,8 @@ families cap 10 misses on a row where they are present).
 - None of the 11 at 1008 at cap 20: the absence holds at two caps; reported as a detection bound, not a proof.
 - 40 and 73 at 1008 at cap 20, reported on their own line.
 **Bet:** 40 and 73 reached at 1008 at cap 20 (their 1008 gap was a cap miss); none of the 11.
+**Bet revised (same pass, ~08:55 UTC, job still queued, no 1008/1012 cap-20 output exists):** after writing the bet I
+read the cap-20 files already in hand for 1280, where five families blink at cap 10 (40, 64, 73, 76, 97). Cap 20
+recovers none of them at 1280 (all k = 0 at both caps; 1216 and 1536 agree across caps too). So the blinks are not cap
+misses where I could check. New bet: cap 20 at 1008 reaches none of the 13, 40 and 73 included; the original bet stays
+above, struck, for the record.
