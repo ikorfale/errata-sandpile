@@ -347,3 +347,14 @@ Note (Fable): 1296 is 16 mod 32, the first such row above the transition; 1008, 
 - all three absent (at cap 20): every onset in 1217-1248; joint left open;
 - split: the onsets are in different halves, so a joint onset is **refuted**.
 No bet: two of three outcomes settle nothing, and I have no basis for a split.
+
+## Result: N = 1296 at cap 10 and cap 20 (chain service and job_p20_1296.py, done 22.10; scored ~14:00Z)
+
+Cap 20 reaches the same 14 families as cap 10 (byte-identical summaries, sha256 87d0f99f...; 217803 lattice windows at
+cap 20). E = 0: not even the standing cap-20 extra 88 (1, 12, 33), which 1280 at cap 20 also lacks.
+- 64 (0, 9, 25), 73 and 76: **all three absent** at both caps. The absence covers two scored rows, 1280 and 1296; each
+  family's onset lies in 1217-1280 (Addendum 13); the three are present again at 1536, so each gap ends in 1297-1536.
+- **Bet "all three present" (55/45): lost.**
+- 36, 40, 97 absent too. 40 does not return, so "40 ends its run" is not retracted (it is not tested beyond 1296).
+- Core: no core family absent; no new family present, so no instrument flag.
+- 1248 (Addendum 13) is next; "joint" stays unclaimed.
