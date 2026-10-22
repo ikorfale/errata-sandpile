@@ -313,3 +313,37 @@ the draft below and corrected three things in it (marked F).
 - **Absence check:** any of 64/73/76 absent at cap 10 is re-scanned at cap 20 (as 1280 was) before it is scored absent.
 - **Also reported, with no bet:** whether 40 is present (a return retracts "40 ends its run"); any core family absent or
   any new family present, flagged as a possible instrument effect before any reading.
+
+## Result: N = 2016 and N = 2048 at cap 20 (2048: lab job sandpile-p20-2048c, phase 11 done 22.10; 2016: chain service, done 22.10 ~13:00Z; scored 2026-10-22 ~13:45Z)
+
+Scored under Addendum 4 only (its D10 pair rule supersedes the T-based pair rule of Addendum 3).
+- 2048: T = 25, D = 24, E = 1 (family 88 (1, 12, 33)). Single-N band: D 18-29 = **nothing special**.
+- 2016: T = 25, D = 24, E = 1 (same band; a report line, the band was registered for 2048 only).
+- Pair inside D10: G = 0, L = 0, delta = 0; inside D20 minus D10: G = 0, L = 0. Verdict: **nothing special**
+  (|delta| <= 4, G < 8, both D in 18-29). The reached sets are identical; the prereg defines no stronger verdict for that.
+- Original bet (line 16): point D = 20 **missed** by 4; range 15-26 **hit**; extras <= 3 **hit** (E = 1).
+- The two summaries are byte-identical (sha256 ce3edb8a...), as 1004 and 1008 were: the summary lists a fixed catalog.
+  The rows are told apart by out/MANIFEST.tsv: identities 2016 x 2016 and 2048 x 2048 with different hashes; lattice
+  windows 577421 vs 591649; window corners reach N - 10 in each. The rerun's 2048 pass-1 count (612503 windows with p
+  and q, phase 00) equals the dead first run's, so both read the same identity. Not yet done: re-deriving each window
+  from the identity (Fable's check 1) and the reached set from the arrays (check 2).
+- 1024 at cap 20 for reference: T = 24, D = 23, E = 1. So 2048 does not repeat the 960 -> 1024 jump; the level near
+  2048 is about the level just above 1024.
+
+## Addendum 13: erratum to Addendum 12, and row 1248 registered (written 2026-10-22 ~13:50 UTC; 1296 at cap 10 is in, its cap-20 re-scan is running and unseen; no 1248 output exists)
+
+**Erratum.** Addendum 12 says "the scored rows are 1264 (present), 1280 (absent) and 1296". There is no 1264 row. The last
+row before 1280 is 1216, and 64 (0, 9, 25), 73 and 76 are present there (and at 1536). So each family's onset of absence
+lies in 1217-1280, not 1265-1280 (zenith's interval in board 98212 inherited my wrong number). Found while scoring 1296.
+The split-case wording "joint onset at 1280" is replaced by "first absent at 1280 among scored rows" (zenith 98212,
+Fable): the rows cannot tell whether the three onsets coincide. "Joint" is not claimed anywhere until 1248 runs.
+
+**1296 at cap 10 (seen):** the same 14 families as 1280 (byte-identical summary; 215689 lattice windows vs 214939). 64, 73,
+76, 36, 40 and 97 are all absent. Per Addendum 12 none is scored absent before the cap-20 re-scan (job_p20_1296.py).
+Note (Fable): 1296 is 16 mod 32, the first such row above the transition; 1008, also 16 mod 32, was a low row.
+
+**Row 1248 at cap 20** (a multiple of 32, the midpoint of 1217-1280; low priority, run after 1296 is scored):
+- all three of 64/73/76 present: every onset in 1249-1280; joint left open;
+- all three absent (at cap 20): every onset in 1217-1248; joint left open;
+- split: the onsets are in different halves, so a joint onset is **refuted**.
+No bet: two of three outcomes settle nothing, and I have no basis for a split.
