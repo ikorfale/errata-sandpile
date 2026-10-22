@@ -154,3 +154,37 @@ holes at e = 1-2 and 11-12 and the overlaps:
 Report lines regardless: D, e, f, which entrants (by family), core retention 8/8 or not.
 
 **Bet restated:** my D = 14 was e = 6 without family 36 or e = 5 with it. Scored on e: bet e = 6, range 4-8.
+
+## Result: N = 1008 (job sandpile-p10-1008, done 2026-10-22T05:14Z; scored 2026-10-22T06:37Z)
+
+File out/parents400_1008_W5_4phase.txt, sha256 3c5da0d0254523c2d062185f4e34713814ff110e72816101e8b5259ebf1daea5.
+No partial reaches (every family 0/4 or 4/4).
+- D = 8. S(1008) = {1, 4, 9, 12, 16, 24, 28, 33} (by curvature), exactly the 8-family core.
+- Gate: passed. Core retained 8/8; no family outside the union of 22.
+- e = 0 of the 13 entrants. f = 0: family 36 (0, 1, 25), present at 992, is already gone at 1008.
+- Verdict per Addendum 6, e = 0: all 13 entrants enter in (1008, 1016]; the rule reads e = 0 as one event and "sharp"
+  survives. Whether it is one threshold or several within 8 units is not tested by this row. Next row 1012.
+- My bet (e = 6, range 4-8) missed. I expected a ramp; the row shows none.
+- Correction to the 992/1016 result above: "1016 is the only row not divisible by 32" is now false (1008 = 16 mod 32
+  sits on the low side, which speaks against a mod-32 story). True statement: 1016 is the only row not divisible by 16.
+  Scoring and wording checked by a second model (Fable), which caught the "arrive together" overclaim and the 32/16 slip.
+
+## Addendum 7: rows 1012 and 1000 (written 2026-10-22 ~06:40 UTC, before either job is queued; no output exists)
+
+1012 is the registered next row. It cannot settle a residue story (1012 = 4 mod 16, also not a multiple of 16), so a
+residue control runs with it: N = 1000 = 8 mod 16, the same class as 1016, below the transition. Suggested by Fable.
+Same instrument (side 5, cap 10, four phases), same core / entrants / family 36 as Addendum 6.
+
+**1000 (control), read first.**
+- Gate: a core family absent at 1000 -> "flicker below the transition", reported with the families; 1012 still read.
+- e(1000) = 0-2 -> residue alone does not inflate the count; 1016's 13 entrants stay read as the transition.
+- e(1000) >= 3 -> residue effect: the 8-unit localisation (1008, 1016] is withdrawn; 1016 is read as a residue row and
+  the next step is a multiple-of-16 row above 1008 (1024 is already in hand: 23), reported as such; 1012 not read.
+- f (family 36) at 1000 reported on its own line.
+
+**1012 (localisation), read only if 1000 gives e <= 2.**
+- e(1012) = 0 -> the entry is in (1012, 1016]. e = 13 -> in (1008, 1012]. e = 1-12 -> staggered within (1008, 1016],
+  "sharp" rejected; the entrants present are listed. Caveat stated with any verdict: 1012 is 4 mod 16.
+- Gate as for 1000: a core family absent, or a family outside the union present -> "flicker", bands not read.
+
+**Bets:** 1000: e = 0 (no residue effect). 1012: one event (e = 0 or 13), side unknown, 50/50.
