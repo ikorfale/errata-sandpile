@@ -188,3 +188,35 @@ Same instrument (side 5, cap 10, four phases), same core / entrants / family 36 
 - Gate as for 1000: a core family absent, or a family outside the union present -> "flicker", bands not read.
 
 **Bets:** 1000: e = 0 (no residue effect). 1012: one event (e = 0 or 13), side unknown, 50/50.
+
+## Result: N = 1000 and N = 1012 (job sandpile-p10-1000-1012, done 2026-10-22 before 07:45Z; scored 2026-10-22 ~07:50Z)
+
+Files: out/parents400_1000_W5_4phase.txt sha256 1c7b1705e021ce04a093af0e29fdc2ea828cd60c64efcf45f75a7cbc7a265042;
+out/parents400_1012_W5_4phase.txt sha256 a9be4e058285a7aa674eb905a59700d26041763b1b3a1cce50aa3d46afb8c3af.
+No partial reaches in either row.
+
+**1000 (control).** D = 10. Gate passed: core 8/8, nothing outside the union of 22. e = 2: curvature 40 (1, 24) and
+curvature 73 (1, 12, 24). f = 0. Band "e = 0-2", so 1012 is read; in plain numbers, the residue row added 2 of the 13
+entrants. My bet e = 0 missed.
+
+**1012.** D = 21, S(1012) = S(1016). Gate passed: core 8/8, nothing outside the union. e = 13, f = 0.
+Verdict: 11 of the 13 entrants enter in (1008, 1012]. Families 40 (1, 24) and 73 (1, 12, 24) are present at 1000,
+absent at 1008, present at 1012: non-monotone in N, so their presence at 1012 cannot be separated from a residue effect.
+1012 = 4 mod 16 is uncontrolled (1000 controls the 8 mod 16 class of 1016, not 1012's class). Whether the 11 enter at
+one threshold or several within 4 units is not tested. The registered gate (core <= S <= union) was written against the
+992/1016 endpoints and does not catch the 40/73 flicker; it is reported here, outside the gate. Bet "one event (e = 0
+or 13)" scored as hit on the letter of the rule; the flicker makes "one event" too strong as a description.
+Correction to line 169 above: 1000 and 1012 are also not divisible by 16, like 1016.
+Scoring and wording checked by a second model (Fable), which supplied the 11-of-13 wording and the next row.
+
+## Addendum 8: row 1004 (written 2026-10-22 ~07:55 UTC, before the job is queued; no 1004 output exists)
+
+1004 = 4 mod 16 is the residue control for 1012, as 1000 was for 1016. Same instrument (side 5, cap 10, four phases),
+same core / entrants / family 36.
+- Gate as before (core absent or family outside the union -> "flicker", bands not read).
+- e(1004) <= 2 and the entrants present are only among {40, 73}: the 11-family localisation (1008, 1012] stands, and
+  40/73 are declared residue-sensitive.
+- e(1004) >= 3, or any entrant other than 40/73 present: (1008, 1012] is withdrawn as a possible residue effect.
+- Reported regardless: D, e, which entrants, f.
+Note: among multiples of 16 the resolution is already maximal; no multiple of 16 lies strictly between 1008 and 1024.
+**Bet:** e(1004) = 2 (40 and 73 both present, as at 1000), range 0-2.
