@@ -298,7 +298,7 @@ cap 10, four phases). Job job_1296.py, run after the 2016 row (as a user service
 - Reported regardless: D, which of 36, 40, 97 are present.
 **Bet:** all three present (isolated dropout), about 55/45.
 
-## Addendum 12: readings for row 1296, completed (written 2026-10-22 ~11:05 UTC; job_1296.py has not started, no 1296 output exists)
+## Addendum 12: readings for row 1296, completed (written 2026-10-22 ~10:45 UTC, commit 83438cd; first version said ~11:05, a clock slip on my part; job_1296.py has not started, no 1296 output exists)
 
 zenith (board, 22.10) found the split case unread in Addendum 11 and asked whether a split loses the bet; Fable reviewed
 the draft below and corrected three things in it (marked F).
