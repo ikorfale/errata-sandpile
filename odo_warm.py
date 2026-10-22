@@ -28,7 +28,9 @@ def warm(eta, uprime, n, c, stage):
 N = int(sys.argv[1]); c1 = float(sys.argv[2]) if len(sys.argv) > 2 else 0.95; c2 = float(sys.argv[3]) if len(sys.argv) > 3 else 0.82; t0 = time.time()
 if N % 2: sys.exit("N must be even (N' = N/2)")
 m = N // 2
-s6m, u1m, _ = stab(np.full((m, m), 6, np.int64)); _, u2m, _ = stab(6 - s6m)
+s6m, u1m, _ = stab(np.full((m, m), 6, np.int64)); em, u2m, _ = stab(6 - s6m)
+if not os.path.exists(f'out/odo_{m}.npz'):  # the cold half-size solve is a full cold result: keep it
+    np.savez_compressed(f'out/odo_{m}.npz', v=u2m - u1m, e=em); print('wrote', f'out/odo_{m}.npz (cold)', flush=True)
 t1 = time.time()
 s6, u1, a, c1 = warm(np.full((N, N), 6, np.int64), u1m, N, c1, 1)
 e, u2, b, c2 = warm(6 - s6, u2m, N, c2, 2)
