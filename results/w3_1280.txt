@@ -1,0 +1,16 @@
+pass 1: 840 vectors in 210s; windows with p and q: 1043848
+pass 2: 806 vectors, total 396s
+N=1280 W=3 PMAX=20 phase 00: windows with an exact period lattice: 965972
+curvature  52 parents (1, 9, 16): reached 4 of 4
+curvature  57 parents (1, 4, 28): reached 4 of 4
+curvature  64 parents (0, 1, 49): reached 0 of 4
+curvature  64 parents (0, 9, 25): reached 0 of 4
+curvature  64 parents (1, 4, 33): reached 0 of 4
+curvature  72 parents (1, 9, 28): reached 4 of 4
+curvature  73 parents (1, 12, 24): reached 2 of 4
+curvature  76 parents (4, 9, 25): reached 2 of 4
+curvature  81 parents (0, 1, 64): reached 0 of 4
+curvature  81 parents (0, 4, 49): reached 0 of 4
+curvature  81 parents (0, 16, 25): reached 0 of 4
+curvature  81 parents (4, 9, 28): reached 4 of 4
+rc 0
