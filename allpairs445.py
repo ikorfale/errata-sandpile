@@ -9,6 +9,7 @@ import sys, time, collections, numpy as np
 from fractions import Fraction as F
 N = int(sys.argv[1]); W = int(sys.argv[2]) if len(sys.argv) > 2 else 5; PMAX = int(sys.argv[3]) if len(sys.argv) > 3 else 20
 TAG = '' if W == 5 else f'_W{W}'  # zenith 99936 side-4/side-6 bracket: other window sides never overwrite the W=5 files
+OFF = bool(__import__('os').environ.get('OFFCAT')); TAG += '_off' if OFF else ''  # Fable 23.10: count m=1 windows OFF the circle catalog
 src = open('parents81.py').read().split('fam = collections.Counter()')[0].replace('want = {int(k) for k in sys.argv[2:]}', 'want = set()')
 ns = {'__name__': 'x'}; sv = sys.argv; sys.argv = sv[:1]; exec(src, ns); sys.argv = sv; circ = ns['circ']
 z = np.load(f'out/odo_{N}.npz'); v = z['v'].astype(np.int64); e = z['e']; del z
@@ -65,7 +66,7 @@ def full_ok(A, okk, x, y):
     return bool(np.all(L * D == a * px * px + 2 * b * px * py + c * py * py))
 t0 = time.time(); memo = {}
 rows = []  # (ci, cj, m, K or -1 when m != 1, full-set verified) for family windows (m == 1) and all m > 1 windows
-fams_new = collections.defaultdict(lambda: [0, set()]); fams_res = collections.Counter(); mult = collections.Counter(); fullv = collections.Counter(); fams_full = collections.Counter(); fams_vset = collections.defaultdict(set)
+fams_new = collections.defaultdict(lambda: [0, set()]); fams_res = collections.Counter(); mult = collections.Counter(); fullv = collections.Counter(); fams_full = collections.Counter(); fams_vset = collections.defaultdict(set); offcat = collections.Counter(); offkeys = collections.defaultdict(set)
 for OI, OJ in [(a, b) for a in range(W // 2) for b in range(W // 2)]:  # Fable 23.10: step W//2 needs W//2 phases per axis (W=6 skipped residue 2)
     I0 = np.arange(OI, N - W + 1, W // 2); J0 = np.arange(OJ, N - W + 1, W // 2); shp = (len(I0), len(J0))
     def wsum(bad, h, w):
@@ -105,6 +106,8 @@ for OI, OJ in [(a, b) for a in range(W // 2) for b in range(W // 2)]:  # Fable 2
             if K is not None: fams_new[K][0] += 1; fams_new[K][1].add(fk); fams_full[K] += fv
             if K is not None and fv: fams_vset[K].add(fk)  # zenith 99841: seen set from verified windows only
             if K is not None: rows.append((ci, cj, 1, K, fv))  # only family windows are kept (memory)
+            s2 = A[0] + A[2] - 2
+            if K is None and s2 > 0: kk = round(1 / s2); offcat[kk] += 1; offkeys[kk].add(fk)  # same s2 band, key not on a catalog circle
         else:
             for K in {t[0] for t in c.values()} - {None}: fams_res[K] += 1
             rows.append((ci, cj, m, -1, 0))
@@ -134,6 +137,7 @@ with open(f'results/allpairs445_{N}{TAG}.txt', 'w') as fo:
         a, b = fams_old.get(K, [0, set()]), fams_new.get(K, [0, set()])
         out(f"K={K}: old {a[0]} / {len(a[1])} | new {b[0]} / {len(b[1])} (full-set verified {fams_full.get(K, 0)}) | residue {fams_res.get(K, 0)} | old hits now: {dict(join.get(K, {}))} | new hits not in old: {gained.get(K, 0)}")
     out(f"m == 1 windows verified on the full OK set: {fullv[True]}, not verified: {fullv[False]}")
+    if OFF: out(f"off-catalog m=1 windows with s2 > 0, by round(1/s2): windows / distinct keys: { {K: (offcat[K], len(offkeys[K])) for K in sorted(offcat)} }")
     out(f"total {time.time() - t0:.0f}s, {len(memo)} distinct signatures")
 # circles seen per family, for the circle-to-orbit mapping (zenith 99737: multiples of 4 fit orbits but do not prove them)
 import json
