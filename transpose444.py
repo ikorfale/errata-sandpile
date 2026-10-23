@@ -18,8 +18,15 @@ def okd(a, b, p):
             ds.add(int(v[xp, yp] - 2 * v[x, y] + v[xm, ym]))
     return ds.pop() if len(ds) == 1 else None
 def key(A): return (round((A[0] - A[2]) % 2, 6) % 2, round((2 * A[1]) % 2, 6) % 2, round(A[0] + A[2] - 2, 6))
-# regression (theone 98945): two representatives differing by the integer-harmonic shift diag(1,-1) are one class
-assert key((1.5, 0, 1.5)) == key((2.5, 0, 0.5)) == (0.0, 0.0, 1.0)
+def add(out, A):
+    """File exact Hessian A under its class. Class identity on EXACT rationals (Fable 23.10: a rounded key can split
+    one class or merge two); circle membership compares the float key of the exact value with the 6-decimal catalogue."""
+    s2 = A[0] + A[2] - 2; kx = ((A[0] - A[2]) % 2, (2 * A[1]) % 2, s2)
+    out.setdefault((round(1 / s2) if s2 > 0 else 0, key([float(x) for x in A]) in circ, kx), set()).add(tuple(A))
+# regression (theone 98945, tightened per theone 99355): two representatives differing by the integer-harmonic shift
+# diag(1,-1) go through the production grouping add() and land in ONE entry holding TWO representatives
+_o = {}; add(_o, (F(3, 2), F(0), F(3, 2))); add(_o, (F(5, 2), F(0), F(1, 2)))
+assert len(_o) == 1 and len(next(iter(_o.values()))) == 2, _o
 def solve3(M, b):                                       # Cramer's rule in Fractions: exact
     det = lambda m: (m[0][0]*(m[1][1]*m[2][2]-m[1][2]*m[2][1]) - m[0][1]*(m[1][0]*m[2][2]-m[1][2]*m[2][0])
                      + m[0][2]*(m[1][0]*m[2][1]-m[1][1]*m[2][0]))
@@ -36,11 +43,7 @@ def classes(c):
                 if s not in D: continue
                 pq = sg * F(D[s] - D[p] - D[q], 2)
                 M = [[p[0]**2, 2*p[0]*p[1], p[1]**2], [q[0]**2, 2*q[0]*q[1], q[1]**2], [p[0]*q[0], p[0]*q[1]+p[1]*q[0], p[1]*q[1]]]
-                A = solve3(M, [F(D[p]), F(D[q]), pq]); s2 = A[0] + A[2] - 2
-                # class identity on EXACT rationals (Fable 23.10: a rounded key can split one class or merge two);
-                # circle membership compares the float key of the exact value with the 6-decimal catalogue
-                kx = ((A[0] - A[2]) % 2, (2 * A[1]) % 2, s2)
-                out.setdefault((round(1 / s2) if s2 > 0 else 0, key([float(x) for x in A]) in circ, kx), set()).add(tuple(A))
+                add(out, solve3(M, [F(D[p]), F(D[q]), pq]))
     return len(D), out
 R = np.concatenate([np.load(f'out/hess_s_{N}_{W}_20_o{ph}.npy') for ph in ((('00','01','10','11')) if W == 5 else ('00',))])
 for r in R:
