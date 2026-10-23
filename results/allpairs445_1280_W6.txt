@@ -1,0 +1,17 @@
+N=1280 W=6 PMAX=20: all-pairs, keep-if-agree (allpairs445.py). windows with >=1 solvable pair by multiplicity: {1: 818857, 2: 32, 4: 32, 5: 32, 6: 32, 7: 16, 8: 8, 9: 8, 11: 8, 14: 8, 17: 16, 18: 8, 21: 8, 30: 8}
+K: old hess_stream windows / circles | new m=1 windows / circles | windows with m>1 that include K (residue)
+K=1: old 0 / 0 | new 405728 / 1 (full-set verified 404488) | residue 80 | old hits now: {} | new hits not in old: 405728
+K=4: old 0 / 0 | new 77152 / 2 (full-set verified 77152) | residue 0 | old hits now: {} | new hits not in old: 77152
+K=9: old 0 / 0 | new 15736 / 4 (full-set verified 15736) | residue 0 | old hits now: {} | new hits not in old: 15736
+K=12: old 0 / 0 | new 13760 / 2 (full-set verified 13760) | residue 0 | old hits now: {} | new hits not in old: 13760
+K=16: old 0 / 0 | new 2832 / 4 (full-set verified 2832) | residue 0 | old hits now: {} | new hits not in old: 2832
+K=24: old 0 / 0 | new 2768 / 2 (full-set verified 2768) | residue 0 | old hits now: {} | new hits not in old: 2768
+K=25: old 0 / 0 | new 6016 / 8 (full-set verified 6016) | residue 0 | old hits now: {} | new hits not in old: 6016
+K=28: old 0 / 0 | new 7592 / 4 (full-set verified 7592) | residue 0 | old hits now: {} | new hits not in old: 7592
+K=33: old 0 / 0 | new 9168 / 4 (full-set verified 9168) | residue 0 | old hits now: {} | new hits not in old: 9168
+K=52: old 0 / 0 | new 16 / 4 (full-set verified 16) | residue 0 | old hits now: {} | new hits not in old: 16
+K=57: old 0 / 0 | new 8 / 4 (full-set verified 8) | residue 0 | old hits now: {} | new hits not in old: 8
+K=72: old 0 / 0 | new 40 / 4 (full-set verified 40) | residue 0 | old hits now: {} | new hits not in old: 40
+K=81: old 0 / 0 | new 72 / 4 (full-set verified 72) | residue 0 | old hits now: {} | new hits not in old: 72
+m == 1 windows verified on the full OK set: 817609, not verified: 1248
+total 1866s, 27092 distinct signatures
