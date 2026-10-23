@@ -66,7 +66,7 @@ def full_ok(A, okk, x, y):
 t0 = time.time(); memo = {}
 rows = []  # (ci, cj, m, K or -1 when m != 1, full-set verified) for family windows (m == 1) and all m > 1 windows
 fams_new = collections.defaultdict(lambda: [0, set()]); fams_res = collections.Counter(); mult = collections.Counter(); fullv = collections.Counter(); fams_full = collections.Counter(); fams_vset = collections.defaultdict(set)
-for OI, OJ in ((0, 0), (0, 1), (1, 0), (1, 1)):
+for OI, OJ in [(a, b) for a in range(W // 2) for b in range(W // 2)]:  # Fable 23.10: step W//2 needs W//2 phases per axis (W=6 skipped residue 2)
     I0 = np.arange(OI, N - W + 1, W // 2); J0 = np.arange(OJ, N - W + 1, W // 2); shp = (len(I0), len(J0))
     def wsum(bad, h, w):
         S = np.zeros((N + 1, N + 1), np.int64); S[1:, 1:] = bad.astype(np.int64).cumsum(0).cumsum(1)
