@@ -1,0 +1,20 @@
+N=1248
+  K=52: hits 0, off-family 0; by set of nearby families {}; unassigned 0
+  K=57: hits 0, off-family 0; by set of nearby families {}; unassigned 0
+  K=64: hits 0, off-family 0; by set of nearby families {}; unassigned 0
+  K=73: hits 16, off-family 16; by set of nearby families {(1,): 16}; unassigned 0
+  K=76: hits 96, off-family 96; by set of nearby families {(): 48, (9,): 48}; unassigned 48
+  K=81: hits 112, off-family 112; by set of nearby families {(): 64, (4,): 16, (9,): 16, (28,): 16}; unassigned 64
+N=1280
+  K=52: hits 40, off-family 0; by set of nearby families {}; unassigned 0
+  K=57: hits 48, off-family 0; by set of nearby families {}; unassigned 0
+  K=64: hits 0, off-family 0; by set of nearby families {}; unassigned 0
+  K=73: hits 16, off-family 16; by set of nearby families {(1,): 16}; unassigned 0
+  K=76: hits 96, off-family 96; by set of nearby families {(): 48, (9,): 48}; unassigned 48
+  K=81: hits 352, off-family 112; by set of nearby families {(): 64, (4,): 16, (9,): 16, (28,): 16}; unassigned 64
+K=76: unassigned canonical positions 1248: 6, 1280: 6; same corner offset 0; same fraction of N (3 dp) 2; 1248 positions with a 1280 position within 2 cells after scaling: 6
+   1248 sample [(50, 430), (50, 442), (50, 506), (50, 518), (51, 430), (51, 518)]
+   1280 sample [(50, 441), (50, 453), (50, 519), (50, 531), (51, 441), (51, 531)]
+K=81: unassigned canonical positions 1248: 8, 1280: 8; same corner offset 0; same fraction of N (3 dp) 2; 1248 positions with a 1280 position within 2 cells after scaling: 8
+   1248 sample [(80, 403), (80, 545), (82, 408), (82, 540), (83, 407), (83, 541), (84, 406), (84, 542)]
+   1280 sample [(83, 412), (83, 560), (85, 417), (85, 555), (86, 416), (86, 556), (87, 415), (87, 557)]
