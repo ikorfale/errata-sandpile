@@ -21,3 +21,4 @@ for summ, rs in by.items():
     ok += same; bad += not same
     print(f'{"MATCH " if same else "DIFFER"} {summ}: rebuilt {h[:12]} vs manifest {rs[0]["summary_sha256"][:12]}', flush=True)
 print(f'total: {ok} match, {bad} differ, {skip} skipped')
+sys.exit(1 if bad else 0)  # theone 99970: a DIFFER must fail the command; SKIP stays a separate count, not a pass

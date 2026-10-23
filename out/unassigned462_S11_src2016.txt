@@ -1,0 +1,26 @@
+N=1248
+  K=52: hits 0, off-family 0; by set of nearby families {}; unassigned 0
+  K=57: hits 144, off-family 144; by set of nearby families {(): 32, (1,): 64, (1, 28): 16, (4,): 32}; unassigned 32
+  K=64: hits 336, off-family 336; by set of nearby families {(): 48, (1,): 96, (1, 33): 32, (25,): 96, (33,): 64}; unassigned 48
+  K=73: hits 688, off-family 688; by set of nearby families {(): 224, (1,): 128, (1, 24): 16, (12,): 80, (12, 24): 32, (24,): 208}; unassigned 224
+  K=76: hits 432, off-family 432; by set of nearby families {(): 160, (4,): 112, (9,): 112, (25,): 48}; unassigned 160
+  K=81: hits 0, off-family 0; by set of nearby families {}; unassigned 0
+N=1280
+  K=52: hits 616, off-family 0; by set of nearby families {}; unassigned 0
+  K=57: hits 544, off-family 144; by set of nearby families {(): 32, (1,): 64, (1, 28): 16, (4,): 32}; unassigned 32
+  K=64: hits 400, off-family 400; by set of nearby families {(): 48, (1,): 96, (1, 33): 32, (9,): 64, (25,): 96, (33,): 64}; unassigned 48
+  K=73: hits 688, off-family 688; by set of nearby families {(): 224, (1,): 144, (1, 24): 16, (12,): 64, (12, 24): 32, (24,): 208}; unassigned 224
+  K=76: hits 432, off-family 432; by set of nearby families {(): 176, (4,): 112, (9,): 96, (25,): 48}; unassigned 176
+  K=81: hits 136, off-family 0; by set of nearby families {}; unassigned 0
+K=57: unassigned canonical positions 1248: 4, 1280: 4; same corner offset 0; same fraction of N (3 dp) 0; 1248 positions with a 1280 position within 2 cells after scaling: 4
+   1248 sample [(123, 386), (123, 387), (123, 561), (123, 562)]
+   1280 sample [(126, 395), (126, 396), (126, 576), (126, 577)]
+K=64: unassigned canonical positions 1248: 6, 1280: 6; same corner offset 0; same fraction of N (3 dp) 4; 1248 positions with a 1280 position within 2 cells after scaling: 6
+   1248 sample [(10, 417), (10, 531), (11, 417), (11, 531), (154, 402), (154, 546)]
+   1280 sample [(10, 428), (10, 544), (11, 428), (11, 544), (159, 412), (159, 560)]
+K=73: unassigned canonical positions 1248: 28, 1280: 28; same corner offset 0; same fraction of N (3 dp) 11; 1248 positions with a 1280 position within 2 cells after scaling: 28
+   1248 sample [(235, 455), (235, 493), (236, 455), (236, 493), (237, 443), (237, 444), (237, 445), (237, 455), (237, 456), (237, 492), (237, 493), (237, 503)]
+   1280 sample [(243, 467), (243, 505), (244, 455), (244, 467), (244, 505), (244, 517), (245, 456), (245, 457), (245, 467), (245, 468), (245, 504), (245, 505)]
+K=76: unassigned canonical positions 1248: 20, 1280: 22; same corner offset 2; same fraction of N (3 dp) 11; 1248 positions with a 1280 position within 2 cells after scaling: 20
+   1248 sample [(48, 443), (48, 505), (49, 442), (49, 443), (49, 505), (49, 506), (50, 429), (50, 430), (50, 442), (50, 443), (50, 505), (50, 506)]
+   1280 sample [(48, 454), (48, 518), (49, 453), (49, 454), (49, 518), (49, 519), (50, 440), (50, 441), (50, 453), (50, 454), (50, 518), (50, 519)]
