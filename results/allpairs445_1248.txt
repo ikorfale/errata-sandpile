@@ -11,4 +11,4 @@ K=28: old 8304 / 4 | new 8304 / 4 (full-set verified 8304) | residue 0 | old hit
 K=33: old 10480 / 4 | new 10480 / 4 (full-set verified 10480) | residue 0 | old hits now: {'same K': 10480} | new hits not in old: 0
 K=72: old 96 / 4 | new 96 / 4 (full-set verified 96) | residue 0 | old hits now: {'same K': 96} | new hits not in old: 0
 m == 1 windows verified on the full OK set: 829660, not verified: 288
-total 732s, 34592 distinct signatures
+total 856s, 34592 distinct signatures

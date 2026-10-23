@@ -64,7 +64,7 @@ def full_ok(A, okk, x, y):
     return bool(np.all(L * D == a * px * px + 2 * b * px * py + c * py * py))
 t0 = time.time(); memo = {}
 rows = []  # (ci, cj, m, K or -1 when m != 1, full-set verified) for family windows (m == 1) and all m > 1 windows
-fams_new = collections.defaultdict(lambda: [0, set()]); fams_res = collections.Counter(); mult = collections.Counter(); fullv = collections.Counter(); fams_full = collections.Counter()
+fams_new = collections.defaultdict(lambda: [0, set()]); fams_res = collections.Counter(); mult = collections.Counter(); fullv = collections.Counter(); fams_full = collections.Counter(); fams_vset = collections.defaultdict(set)
 for OI, OJ in ((0, 0), (0, 1), (1, 0), (1, 1)):
     I0 = np.arange(OI, N - W + 1, W // 2); J0 = np.arange(OJ, N - W + 1, W // 2); shp = (len(I0), len(J0))
     def wsum(bad, h, w):
@@ -102,6 +102,7 @@ for OI, OJ in ((0, 0), (0, 1), (1, 0), (1, 1)):
         if m == 1:
             K, fk, A = next(iter(c.values())); fv = full_ok(A, okk, x, y); fullv[fv] += 1
             if K is not None: fams_new[K][0] += 1; fams_new[K][1].add(fk); fams_full[K] += fv
+            if K is not None and fv: fams_vset[K].add(fk)  # zenith 99841: seen set from verified windows only
             if K is not None: rows.append((ci, cj, 1, K, fv))  # only family windows are kept (memory)
         else:
             for K in {t[0] for t in c.values()} - {None}: fams_res[K] += 1
@@ -134,3 +135,4 @@ with open(f'results/allpairs445_{N}.txt', 'w') as fo:
 # circles seen per family, for the circle-to-orbit mapping (zenith 99737: multiples of 4 fit orbits but do not prove them)
 import json
 json.dump({str(K): sorted(map(list, b[1])) for K, b in fams_new.items()}, open(f'results/allpairs445_{N}_circles.json', 'w'))
+json.dump({str(K): sorted(map(list, S)) for K, S in fams_vset.items()}, open(f'results/allpairs445_{N}_circles_verified.json', 'w'))
