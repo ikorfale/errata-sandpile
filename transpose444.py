@@ -20,6 +20,10 @@ def okd(a, b, p):
 def key(A): return (round((A[0] - A[2]) % 2, 6) % 2, round((2 * A[1]) % 2, 6) % 2, round(A[0] + A[2] - 2, 6))
 # regression (theone 98945): two representatives differing by the integer-harmonic shift diag(1,-1) are one class
 assert key((1.5, 0, 1.5)) == key((2.5, 0, 0.5)) == (0.0, 0.0, 1.0)
+def solve3(M, b):                                       # Cramer's rule in Fractions: exact
+    det = lambda m: (m[0][0]*(m[1][1]*m[2][2]-m[1][2]*m[2][1]) - m[0][1]*(m[1][0]*m[2][2]-m[1][2]*m[2][0])
+                     + m[0][2]*(m[1][0]*m[2][1]-m[1][1]*m[2][0]))
+    d = F(det(M)); return [F(det([[b[r] if c == j else M[r][c] for c in range(3)] for r in range(3)])) / d for j in range(3)]
 def norm(s): return s if (s[0] > 0 or (s[0] == 0 and s[1] > 0)) else (-s[0], -s[1])
 def classes(c):
     # theone 98945: dedupe by class (curvature, canonical key k), keep raw Hessian representatives separately
@@ -31,12 +35,12 @@ def classes(c):
                 s = norm((p[0] + sg * q[0], p[1] + sg * q[1]))
                 if s not in D: continue
                 pq = sg * F(D[s] - D[p] - D[q], 2)
-                M = np.array([[p[0]**2, 2*p[0]*p[1], p[1]**2], [q[0]**2, 2*q[0]*q[1], q[1]**2], [p[0]*q[0], p[0]*q[1]+p[1]*q[0], p[1]*q[1]]], float)
-                A = np.linalg.solve(M, [D[p], D[q], float(pq)]); s2 = A[0] + A[2] - 2
-                k = key(A)
-                # class identity at 4 decimals: the 6-decimal key splits one class when float noise straddles a rounding edge
-                # (0.5078125 -> 0.507812 / 0.507813 at 1248 K=73, found in the recount); circle membership keeps the 6-decimal key
-                out.setdefault((round(1 / s2) if s2 > 1e-9 else 0, k in circ, tuple(round(x + 1e-9, 4) for x in k)), set()).add(tuple(float(x) for x in np.round(A, 4)))
+                M = [[p[0]**2, 2*p[0]*p[1], p[1]**2], [q[0]**2, 2*q[0]*q[1], q[1]**2], [p[0]*q[0], p[0]*q[1]+p[1]*q[0], p[1]*q[1]]]
+                A = solve3(M, [F(D[p]), F(D[q]), pq]); s2 = A[0] + A[2] - 2
+                # class identity on EXACT rationals (Fable 23.10: a rounded key can split one class or merge two);
+                # circle membership compares the float key of the exact value with the 6-decimal catalogue
+                kx = ((A[0] - A[2]) % 2, (2 * A[1]) % 2, s2)
+                out.setdefault((round(1 / s2) if s2 > 0 else 0, key([float(x) for x in A]) in circ, kx), set()).add(tuple(A))
     return len(D), out
 R = np.concatenate([np.load(f'out/hess_s_{N}_{W}_20_o{ph}.npy') for ph in ((('00','01','10','11')) if W == 5 else ('00',))])
 for r in R:
