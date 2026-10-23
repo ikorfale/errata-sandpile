@@ -1,0 +1,22 @@
+N=1216 W=5 PMAX=20: all-pairs, keep-if-agree (allpairs445.py). windows with >=1 solvable pair by multiplicity: {1: 759848, 2: 1216, 4: 32, 5: 88, 6: 64, 9: 8, 10: 64, 11: 64, 12: 96, 15: 64, 17: 96, 18: 56, 19: 128, 20: 72, 21: 64, 22: 8}
+K: old hess_stream windows / circles | new m=1 windows / circles | windows with m>1 that include K (residue)
+K=1: old 384104 / 1 | new 384104 / 1 (full-set verified 384104) | residue 0 | old hits now: {'same K': 384104} | new hits not in old: 0
+K=4: old 77936 / 2 | new 77936 / 2 (full-set verified 77936) | residue 0 | old hits now: {'same K': 77936} | new hits not in old: 0
+K=9: old 22816 / 4 | new 22896 / 4 (full-set verified 22896) | residue 0 | old hits now: {'same K': 22816} | new hits not in old: 80
+K=12: old 14600 / 2 | new 13528 / 2 (full-set verified 13392) | residue 1072 | old hits now: {'same K': 13528, 'm>1': 1072} | new hits not in old: 0
+K=16: old 616 / 4 | new 616 / 4 (full-set verified 560) | residue 0 | old hits now: {'same K': 616} | new hits not in old: 0
+K=24: old 288 / 2 | new 288 / 2 (full-set verified 288) | residue 0 | old hits now: {'same K': 288} | new hits not in old: 0
+K=28: old 2584 / 4 | new 2584 / 4 (full-set verified 2568) | residue 0 | old hits now: {'same K': 2584} | new hits not in old: 0
+K=33: old 3176 / 4 | new 3144 / 4 (full-set verified 2904) | residue 32 | old hits now: {'same K': 3144, 'm>1': 32} | new hits not in old: 0
+K=40: old 16 / 2 | new 16 / 2 (full-set verified 16) | residue 0 | old hits now: {'same K': 16} | new hits not in old: 0
+K=49: old 128 / 8 | new 128 / 8 (full-set verified 128) | residue 0 | old hits now: {'same K': 128} | new hits not in old: 0
+K=52: old 80 / 4 | new 80 / 4 (full-set verified 80) | residue 0 | old hits now: {'same K': 80} | new hits not in old: 0
+K=57: old 120 / 4 | new 120 / 4 (full-set verified 120) | residue 0 | old hits now: {'same K': 120} | new hits not in old: 0
+K=64: old 144 / 4 | new 144 / 4 (full-set verified 144) | residue 0 | old hits now: {'same K': 144} | new hits not in old: 0
+K=72: old 288 / 4 | new 288 / 4 (full-set verified 288) | residue 0 | old hits now: {'same K': 288} | new hits not in old: 0
+K=73: old 176 / 4 | new 176 / 4 (full-set verified 176) | residue 0 | old hits now: {'same K': 176} | new hits not in old: 0
+K=76: old 272 / 4 | new 272 / 4 (full-set verified 272) | residue 0 | old hits now: {'same K': 272} | new hits not in old: 0
+K=81: old 480 / 4 | new 480 / 4 (full-set verified 456) | residue 0 | old hits now: {'same K': 480} | new hits not in old: 0
+K=88: old 288 / 4 | new 288 / 4 (full-set verified 288) | residue 0 | old hits now: {'same K': 288} | new hits not in old: 0
+m == 1 windows verified on the full OK set: 759104, not verified: 744
+total 638s, 28060 distinct signatures
