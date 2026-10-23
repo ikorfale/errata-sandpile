@@ -1,0 +1,22 @@
+S=11 D=10; templates from 2016 family windows
+N=2016: scanner families 21
+  K=52: templates 376; hits 2928 in 40 clusters, 2928 within D of a scanner 52-window; scanner windows 1176; hit centres by scanner class {0: 1800, 52: 1128}; off-family hits 0 near other families {}
+  K=57: templates 364; hits 4664 in -1 clusters, 4664 within D of a scanner 57-window; scanner windows 1784; hit centres by scanner class {0: 2928, 57: 1736}; off-family hits 0 near other families {}
+  K=64: templates 672; hits 4512 in -1 clusters, 4512 within D of a scanner 64-window; scanner windows 1920; hit centres by scanner class {0: 2656, 64: 1856}; off-family hits 0 near other families {}
+  K=73: templates 384; hits 4936 in -1 clusters, 4936 within D of a scanner 73-window; scanner windows 1336; hit centres by scanner class {0: 3616, 73: 1320}; off-family hits 0 near other families {}
+  K=76: templates 276; hits 3184 in 32 clusters, 3184 within D of a scanner 76-window; scanner windows 1408; hit centres by scanner class {0: 2048, 76: 1136}; off-family hits 0 near other families {}
+  K=81: templates 100; hits 712 in 32 clusters, 712 within D of a scanner 81-window; scanner windows 1592; hit centres by scanner class {0: 208, 81: 504}; off-family hits 0 near other families {}
+N=1248: scanner families 10
+  K=52: templates 376; hits 0 in 0 clusters, 0 within D of a scanner 52-window; scanner windows 0; hit centres by scanner class {}; off-family hits 0 near other families {}
+  K=57: templates 364; hits 144 in 32 clusters, 0 within D of a scanner 57-window; scanner windows 0; hit centres by scanner class {0: 144}; off-family hits 144 near other families {1: 80, 4: 32, 28: 16}
+  K=64: templates 672; hits 336 in 32 clusters, 0 within D of a scanner 64-window; scanner windows 0; hit centres by scanner class {0: 336}; off-family hits 336 near other families {1: 128, 25: 96, 33: 96}
+  K=73: templates 384; hits 688 in 16 clusters, 0 within D of a scanner 73-window; scanner windows 0; hit centres by scanner class {0: 688}; off-family hits 688 near other families {1: 144, 12: 112, 24: 256}
+  K=76: templates 276; hits 432 in 16 clusters, 0 within D of a scanner 76-window; scanner windows 0; hit centres by scanner class {0: 432}; off-family hits 432 near other families {4: 112, 9: 112, 25: 48}
+  K=81: templates 100; hits 0 in 0 clusters, 0 within D of a scanner 81-window; scanner windows 0; hit centres by scanner class {}; off-family hits 0 near other families {}
+N=1280: scanner families 13
+  K=52: templates 376; hits 616 in 8 clusters, 616 within D of a scanner 52-window; scanner windows 104; hit centres by scanner class {0: 512, 52: 104}; off-family hits 0 near other families {}
+  K=57: templates 364; hits 544 in 40 clusters, 400 within D of a scanner 57-window; scanner windows 40; hit centres by scanner class {0: 504, 57: 40}; off-family hits 144 near other families {1: 80, 4: 32, 28: 16}
+  K=64: templates 672; hits 400 in 36 clusters, 0 within D of a scanner 64-window; scanner windows 0; hit centres by scanner class {0: 400}; off-family hits 400 near other families {1: 128, 9: 64, 25: 96, 33: 96}
+  K=73: templates 384; hits 688 in 16 clusters, 0 within D of a scanner 73-window; scanner windows 0; hit centres by scanner class {0: 688}; off-family hits 688 near other families {1: 160, 12: 96, 24: 256}
+  K=76: templates 276; hits 432 in 16 clusters, 0 within D of a scanner 76-window; scanner windows 0; hit centres by scanner class {0: 432}; off-family hits 432 near other families {4: 112, 9: 96, 25: 48}
+  K=81: templates 100; hits 136 in 8 clusters, 136 within D of a scanner 81-window; scanner windows 160; hit centres by scanner class {0: 40, 81: 96}; off-family hits 0 near other families {}
