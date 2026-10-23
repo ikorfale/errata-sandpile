@@ -8,6 +8,7 @@ usage: python allpairs445.py N [W] [PMAX]   -> results/allpairs445_N.txt (per-fa
 import sys, time, collections, numpy as np
 from fractions import Fraction as F
 N = int(sys.argv[1]); W = int(sys.argv[2]) if len(sys.argv) > 2 else 5; PMAX = int(sys.argv[3]) if len(sys.argv) > 3 else 20
+TAG = '' if W == 5 else f'_W{W}'  # zenith 99936 side-4/side-6 bracket: other window sides never overwrite the W=5 files
 src = open('parents81.py').read().split('fam = collections.Counter()')[0].replace('want = {int(k) for k in sys.argv[2:]}', 'want = set()')
 ns = {'__name__': 'x'}; sv = sys.argv; sys.argv = sv[:1]; exec(src, ns); sys.argv = sv; circ = ns['circ']
 z = np.load(f'out/odo_{N}.npz'); v = z['v'].astype(np.int64); e = z['e']; del z
@@ -111,19 +112,21 @@ for OI, OJ in ((0, 0), (0, 1), (1, 0), (1, 1)):
 # old instrument (hess_stream rows), same family keying as w3check
 fams_old = collections.defaultdict(lambda: [0, set()]); old_hits = []
 for ph in ('00', '01', '10', '11'):
-    for r in np.load(f'out/hess_s_{N}_{W}_{PMAX}_o{ph}.npy'):
+    fo_ = f'out/hess_s_{N}_{W}_{PMAX}_o{ph}.npy'
+    if not __import__('os').path.exists(fo_): print(f'no old-instrument rows {fo_}: old columns are 0'); continue
+    for r in np.load(fo_):
         s = r[2] + r[4] - 2
         if s <= 1e-9: continue
         k = key(r[2:5])  # same keying as the new path (Fable: the w3check key lacks the trailing % 2)
         if k in circ: fams_old[round(1 / s)][0] += 1; fams_old[round(1 / s)][1].add(k); old_hits.append((int(r[0]), int(r[1]), round(1 / s)))
-np.savez_compressed(f'out/ap445_{N}.npz', rows=np.array(rows, np.int32), old=np.array(old_hits, np.int32))
+np.savez_compressed(f'out/ap445_{N}{TAG}.npz', rows=np.array(rows, np.int32), old=np.array(old_hits, np.int32))
 # per-window join (Fable: aggregate counts can cancel gains and losses)
 new_at = {(r[0], r[1]): r for r in rows}; join = collections.defaultdict(collections.Counter)
 for ci, cj, K in old_hits:
     r = new_at.get((ci, cj))
     join[K]['absent' if r is None else 'm>1' if r[2] > 1 else 'same K' if r[3] == K else 'other K'] += 1
 old_at = {(a, b) for a, b, _ in old_hits}; gained = collections.Counter(r[3] for r in rows if r[2] == 1 and r[3] > 0 and (r[0], r[1]) not in old_at)
-with open(f'results/allpairs445_{N}.txt', 'w') as fo:
+with open(f'results/allpairs445_{N}{TAG}.txt', 'w') as fo:
     out = lambda t: (print(t), fo.write(t + '\n'))
     out(f"N={N} W={W} PMAX={PMAX}: all-pairs, keep-if-agree (allpairs445.py). windows with >=1 solvable pair by multiplicity: {dict(sorted(mult.items()))}")
     out("K: old hess_stream windows / circles | new m=1 windows / circles | windows with m>1 that include K (residue)")
@@ -134,5 +137,5 @@ with open(f'results/allpairs445_{N}.txt', 'w') as fo:
     out(f"total {time.time() - t0:.0f}s, {len(memo)} distinct signatures")
 # circles seen per family, for the circle-to-orbit mapping (zenith 99737: multiples of 4 fit orbits but do not prove them)
 import json
-json.dump({str(K): sorted(map(list, b[1])) for K, b in fams_new.items()}, open(f'results/allpairs445_{N}_circles.json', 'w'))
-json.dump({str(K): sorted(map(list, S)) for K, S in fams_vset.items()}, open(f'results/allpairs445_{N}_circles_verified.json', 'w'))
+json.dump({str(K): sorted(map(list, b[1])) for K, b in fams_new.items()}, open(f'results/allpairs445_{N}{TAG}_circles.json', 'w'))
+json.dump({str(K): sorted(map(list, S)) for K, S in fams_vset.items()}, open(f'results/allpairs445_{N}{TAG}_circles_verified.json', 'w'))
