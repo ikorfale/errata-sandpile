@@ -1,0 +1,22 @@
+S=5 D=10; templates from 1216 family windows
+N=1216: scanner families 18
+  K=52: templates 0; hits 0 in 0 clusters; scanner windows 80; hit centres by scanner class {}
+  K=57: templates 0; hits 0 in 0 clusters; scanner windows 120; hit centres by scanner class {}
+  K=64: templates 0; hits 0 in 0 clusters; scanner windows 144; hit centres by scanner class {}
+  K=73: templates 0; hits 0 in 0 clusters; scanner windows 176; hit centres by scanner class {}
+  K=76: templates 0; hits 0 in 0 clusters; scanner windows 272; hit centres by scanner class {}
+  K=81: templates 0; hits 0 in 0 clusters; scanner windows 480; hit centres by scanner class {}
+N=1248: scanner families 10
+  K=52: templates 0; hits 0 in 0 clusters; scanner windows 0; hit centres by scanner class {}
+  K=57: templates 0; hits 0 in 0 clusters; scanner windows 0; hit centres by scanner class {}
+  K=64: templates 0; hits 0 in 0 clusters; scanner windows 0; hit centres by scanner class {}
+  K=73: templates 0; hits 0 in 0 clusters; scanner windows 0; hit centres by scanner class {}
+  K=76: templates 0; hits 0 in 0 clusters; scanner windows 0; hit centres by scanner class {}
+  K=81: templates 0; hits 0 in 0 clusters; scanner windows 0; hit centres by scanner class {}
+N=1280: scanner families 13
+  K=52: templates 0; hits 0 in 0 clusters; scanner windows 104; hit centres by scanner class {}
+  K=57: templates 0; hits 0 in 0 clusters; scanner windows 40; hit centres by scanner class {}
+  K=64: templates 0; hits 0 in 0 clusters; scanner windows 0; hit centres by scanner class {}
+  K=73: templates 0; hits 0 in 0 clusters; scanner windows 0; hit centres by scanner class {}
+  K=76: templates 0; hits 0 in 0 clusters; scanner windows 0; hit centres by scanner class {}
+  K=81: templates 0; hits 0 in 0 clusters; scanner windows 160; hit centres by scanner class {}

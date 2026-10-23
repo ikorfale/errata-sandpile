@@ -1,0 +1,22 @@
+S=11 D=10; templates from 1216 family windows
+N=1216: scanner families 18
+  K=52: templates 20; hits 80 in 16 clusters, 80 within D of a scanner 52-window; other 7 D4 images 560; scanner windows 80; hit centres by scanner class {52: 80}; off-family hits 0 near other families {}
+  K=57: templates 24; hits 144 in 24 clusters, 144 within D of a scanner 57-window; other 7 D4 images 1008; scanner windows 120; hit centres by scanner class {0: 24, 57: 120}; off-family hits 0 near other families {}
+  K=64: templates 36; hits 144 in 16 clusters, 144 within D of a scanner 64-window; other 7 D4 images 1008; scanner windows 144; hit centres by scanner class {64: 144}; off-family hits 0 near other families {}
+  K=73: templates 48; hits 208 in 16 clusters, 208 within D of a scanner 73-window; other 7 D4 images 1456; scanner windows 176; hit centres by scanner class {0: 32, 73: 176}; off-family hits 0 near other families {}
+  K=76: templates 68; hits 368 in 16 clusters, 368 within D of a scanner 76-window; other 7 D4 images 2576; scanner windows 272; hit centres by scanner class {0: 96, 76: 272}; off-family hits 0 near other families {}
+  K=81: templates 80; hits 720 in 24 clusters, 720 within D of a scanner 81-window; other 7 D4 images 5040; scanner windows 480; hit centres by scanner class {0: 240, 81: 480}; off-family hits 0 near other families {}
+N=1248: scanner families 10
+  K=52: templates 20; hits 0 in 0 clusters, 0 within D of a scanner 52-window; other 7 D4 images 0; scanner windows 0; hit centres by scanner class {}; off-family hits 0 near other families {}
+  K=57: templates 24; hits 0 in 0 clusters, 0 within D of a scanner 57-window; other 7 D4 images 0; scanner windows 0; hit centres by scanner class {}; off-family hits 0 near other families {}
+  K=64: templates 36; hits 0 in 0 clusters, 0 within D of a scanner 64-window; other 7 D4 images 0; scanner windows 0; hit centres by scanner class {}; off-family hits 0 near other families {}
+  K=73: templates 48; hits 16 in 16 clusters, 0 within D of a scanner 73-window; other 7 D4 images 112; scanner windows 0; hit centres by scanner class {0: 16}; off-family hits 16 near other families {1: 16}
+  K=76: templates 68; hits 96 in 32 clusters, 0 within D of a scanner 76-window; other 7 D4 images 672; scanner windows 0; hit centres by scanner class {0: 96}; off-family hits 96 near other families {9: 48}
+  K=81: templates 80; hits 112 in 32 clusters, 0 within D of a scanner 81-window; other 7 D4 images 784; scanner windows 0; hit centres by scanner class {0: 112}; off-family hits 112 near other families {4: 16, 9: 16, 28: 16}
+N=1280: scanner families 13
+  K=52: templates 20; hits 40 in 8 clusters, 40 within D of a scanner 52-window; other 7 D4 images 280; scanner windows 104; hit centres by scanner class {52: 40}; off-family hits 0 near other families {}
+  K=57: templates 24; hits 48 in 8 clusters, 48 within D of a scanner 57-window; other 7 D4 images 336; scanner windows 40; hit centres by scanner class {0: 8, 57: 40}; off-family hits 0 near other families {}
+  K=64: templates 36; hits 0 in 0 clusters, 0 within D of a scanner 64-window; other 7 D4 images 0; scanner windows 0; hit centres by scanner class {}; off-family hits 0 near other families {}
+  K=73: templates 48; hits 16 in 16 clusters, 0 within D of a scanner 73-window; other 7 D4 images 112; scanner windows 0; hit centres by scanner class {0: 16}; off-family hits 16 near other families {1: 16}
+  K=76: templates 68; hits 96 in 32 clusters, 0 within D of a scanner 76-window; other 7 D4 images 672; scanner windows 0; hit centres by scanner class {0: 96}; off-family hits 96 near other families {9: 48}
+  K=81: templates 80; hits 352 in 40 clusters, 240 within D of a scanner 81-window; other 7 D4 images 2464; scanner windows 160; hit centres by scanner class {0: 192, 81: 160}; off-family hits 112 near other families {4: 16, 9: 16, 28: 16}
