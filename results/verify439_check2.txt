@@ -1,0 +1,37 @@
+SKIP   parents400_256_W5_4phase.txt (a phase not kept)
+MATCH  parents400_256_W5_P20_4phase.txt: rebuilt 53df28a84755 vs manifest 53df28a84755
+SKIP   parents400_512_W5_4phase.txt (a phase not kept)
+MATCH  parents400_512_W5_P20_4phase.txt: rebuilt d89b99bec98a vs manifest d89b99bec98a
+SKIP   parents400_640_W5_4phase.txt (a phase not kept)
+MATCH  parents400_640_W5_P20_4phase.txt: rebuilt 012da4f92386 vs manifest 012da4f92386
+SKIP   parents400_768_W5_4phase.txt (a phase not kept)
+MATCH  parents400_768_W5_P20_4phase.txt: rebuilt bc3aa2b78aa5 vs manifest bc3aa2b78aa5
+SKIP   parents400_896_W5_4phase.txt (a phase not kept)
+MATCH  parents400_896_W5_P20_4phase.txt: rebuilt 2b957ce41c45 vs manifest 2b957ce41c45
+SKIP   parents400_960_W5_4phase.txt (a phase not kept)
+MATCH  parents400_960_W5_P20_4phase.txt: rebuilt 3c5da0d02545 vs manifest 3c5da0d02545
+MATCH  parents400_992_W5_4phase.txt: rebuilt f592e27970b6 vs manifest f592e27970b6
+MATCH  parents400_1000_W5_4phase.txt: rebuilt 1c7b1705e021 vs manifest 1c7b1705e021
+MATCH  parents400_1004_W5_4phase.txt: rebuilt 3c5da0d02545 vs manifest 3c5da0d02545
+MATCH  parents400_1008_W5_4phase.txt: rebuilt 3c5da0d02545 vs manifest 3c5da0d02545
+MATCH  parents400_1008_W5_P20_4phase.txt: rebuilt 3c5da0d02545 vs manifest 3c5da0d02545
+MATCH  parents400_1012_W5_4phase.txt: rebuilt a9be4e058285 vs manifest a9be4e058285
+MATCH  parents400_1012_W5_P20_4phase.txt: rebuilt eaf0bf191b05 vs manifest eaf0bf191b05
+MATCH  parents400_1016_W5_4phase.txt: rebuilt a9be4e058285 vs manifest a9be4e058285
+SKIP   parents400_1024_W5_4phase.txt (a phase not kept)
+MATCH  parents400_1024_W5_P20_4phase.txt: rebuilt af6baddbe309 vs manifest af6baddbe309
+SKIP   parents400_1088_W5_4phase.txt (a phase not kept)
+MATCH  parents400_1088_W5_P20_4phase.txt: rebuilt 9f7a2d359f98 vs manifest 9f7a2d359f98
+SKIP   parents400_1152_W5_4phase.txt (a phase not kept)
+MATCH  parents400_1152_W5_P20_4phase.txt: rebuilt d2e36f3df8eb vs manifest d2e36f3df8eb
+SKIP   parents400_1216_W5_4phase.txt (a phase not kept)
+MATCH  parents400_1216_W5_P20_4phase.txt: rebuilt 85d72a88a866 vs manifest 85d72a88a866
+SKIP   parents400_1280_W5_4phase.txt (a phase not kept)
+MATCH  parents400_1280_W5_P20_4phase.txt: rebuilt 87d0f99f10d1 vs manifest 87d0f99f10d1
+MATCH  parents400_1296_W5_4phase.txt: rebuilt 87d0f99f10d1 vs manifest 87d0f99f10d1
+MATCH  parents400_1296_W5_P20_4phase.txt: rebuilt 87d0f99f10d1 vs manifest 87d0f99f10d1
+SKIP   parents400_1536_W5_4phase.txt (a phase not kept)
+MATCH  parents400_1536_W5_P20_4phase.txt: rebuilt 24d0292cd651 vs manifest 24d0292cd651
+MATCH  parents400_2016_W5_P20_4phase.txt: rebuilt ce3edb8afb5a vs manifest ce3edb8afb5a
+MATCH  parents400_2048_W5_P20_4phase.txt: rebuilt ce3edb8afb5a vs manifest ce3edb8afb5a
+total: 24 match, 0 differ, 12 skipped
