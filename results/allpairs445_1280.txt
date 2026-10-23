@@ -1,0 +1,17 @@
+N=1280 W=5 PMAX=20: all-pairs, keep-if-agree (allpairs445.py). windows with >=1 solvable pair by multiplicity: {1: 859532, 2: 104, 3: 8, 4: 24, 5: 40, 6: 24, 7: 16, 8: 16, 11: 8, 12: 16, 17: 8, 18: 8, 21: 8, 30: 8}
+K: old hess_stream windows / circles | new m=1 windows / circles | windows with m>1 that include K (residue)
+K=1: old 420288 / 1 | new 420208 / 1 (full-set verified 418448) | residue 80 | old hits now: {'same K': 420208, 'm>1': 80} | new hits not in old: 0
+K=4: old 85064 / 2 | new 85080 / 2 (full-set verified 85080) | residue 0 | old hits now: {'same K': 85064} | new hits not in old: 16
+K=9: old 20848 / 4 | new 20848 / 4 (full-set verified 20848) | residue 0 | old hits now: {'same K': 20848} | new hits not in old: 0
+K=12: old 17440 / 2 | new 17440 / 2 (full-set verified 17440) | residue 0 | old hits now: {'same K': 17440} | new hits not in old: 0
+K=16: old 4240 / 4 | new 4240 / 4 (full-set verified 4240) | residue 0 | old hits now: {'same K': 4240} | new hits not in old: 0
+K=24: old 3464 / 2 | new 3464 / 2 (full-set verified 3464) | residue 0 | old hits now: {'same K': 3464} | new hits not in old: 0
+K=25: old 7592 / 8 | new 7592 / 8 (full-set verified 7592) | residue 0 | old hits now: {'same K': 7592} | new hits not in old: 0
+K=28: old 9640 / 4 | new 9640 / 4 (full-set verified 9624) | residue 0 | old hits now: {'same K': 9640} | new hits not in old: 0
+K=33: old 11160 / 4 | new 11160 / 4 (full-set verified 11160) | residue 0 | old hits now: {'same K': 11160} | new hits not in old: 0
+K=52: old 104 / 4 | new 104 / 4 (full-set verified 104) | residue 0 | old hits now: {'same K': 104} | new hits not in old: 0
+K=57: old 40 / 4 | new 40 / 4 (full-set verified 40) | residue 0 | old hits now: {'same K': 40} | new hits not in old: 0
+K=72: old 96 / 4 | new 96 / 4 (full-set verified 96) | residue 0 | old hits now: {'same K': 96} | new hits not in old: 0
+K=81: old 160 / 4 | new 160 / 4 (full-set verified 152) | residue 0 | old hits now: {'same K': 160} | new hits not in old: 0
+m == 1 windows verified on the full OK set: 857724, not verified: 1808
+total 811s, 31740 distinct signatures

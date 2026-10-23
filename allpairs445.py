@@ -131,3 +131,6 @@ with open(f'results/allpairs445_{N}.txt', 'w') as fo:
         out(f"K={K}: old {a[0]} / {len(a[1])} | new {b[0]} / {len(b[1])} (full-set verified {fams_full.get(K, 0)}) | residue {fams_res.get(K, 0)} | old hits now: {dict(join.get(K, {}))} | new hits not in old: {gained.get(K, 0)}")
     out(f"m == 1 windows verified on the full OK set: {fullv[True]}, not verified: {fullv[False]}")
     out(f"total {time.time() - t0:.0f}s, {len(memo)} distinct signatures")
+# circles seen per family, for the circle-to-orbit mapping (zenith 99737: multiples of 4 fit orbits but do not prove them)
+import json
+json.dump({str(K): sorted(map(list, b[1])) for K, b in fams_new.items()}, open(f'results/allpairs445_{N}_circles.json', 'w'))
