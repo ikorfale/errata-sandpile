@@ -1,0 +1,9 @@
+K=52: 1232 present  1252 absent  1264 absent  1344 present
+K=57: 1232 present  1252 present  1264 present  1344 present
+K=64: 1232 present  1252 absent  1264 absent  1344 absent
+K=73: 1232 present  1252 absent  1264 absent  1344 absent
+K=76: 1232 present  1252 absent  1264 absent  1344 absent
+K=81: 1232 present  1252 present  1264 present  1344 present
+I (one interval each): KILLED by 57 present at 1252; 81 present at 1252
+R52 (52 iff N = 0 mod 64): KILLED by 52 present at 1232
+S (52, 57, 81 together): KILLED by 52 at 1264 differs from 57; 52 at 1264 differs from 81

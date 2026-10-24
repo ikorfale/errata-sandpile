@@ -1,0 +1,32 @@
+wrote out/odo_616.npz (cold)
+N=1232 warm 1890.7s (N'=616 cold 145.4s) sweeps 33618+35026 c 0.95/0.82 burn ok  L v == e: True  e+e=e: True  max e 3
+wrote out/odo_1232.npz
+pass 1: 840 vectors in 117s; windows with p and q: 194042
+pass 2: 583 vectors, total 192s
+N=1232 W=5 PMAX=20 phase 00: windows with an exact period lattice: 189714
+pass 1: 840 vectors in 122s; windows with p and q: 194042
+pass 2: 583 vectors, total 201s
+N=1232 W=5 PMAX=20 phase 01: windows with an exact period lattice: 189712
+pass 1: 840 vectors in 124s; windows with p and q: 194042
+pass 2: 583 vectors, total 195s
+N=1232 W=5 PMAX=20 phase 10: windows with an exact period lattice: 189712
+pass 1: 840 vectors in 111s; windows with p and q: 194042
+pass 2: 583 vectors, total 186s
+N=1232 W=5 PMAX=20 phase 11: windows with an exact period lattice: 189714
+N=1232 P20 families 21 wall 826s
+wrote out/odo_626.npz (cold)
+N=1252 warm 1923.3s (N'=626 cold 154.1s) sweeps 34205+35807 c 0.95/0.82 burn ok  L v == e: True  e+e=e: True  max e 3
+wrote out/odo_1252.npz
+pass 1: 840 vectors in 127s; windows with p and q: 218047
+pass 2: 567 vectors, total 206s
+N=1252 W=5 PMAX=20 phase 00: windows with an exact period lattice: 209803
+pass 1: 840 vectors in 127s; windows with p and q: 218047
+pass 2: 567 vectors, total 204s
+N=1252 W=5 PMAX=20 phase 01: windows with an exact period lattice: 209803
+pass 1: 840 vectors in 126s; windows with p and q: 218047
+pass 2: 567 vectors, total 205s
+N=1252 W=5 PMAX=20 phase 10: windows with an exact period lattice: 209803
+pass 1: 840 vectors in 125s; windows with p and q: 218047
+pass 2: 567 vectors, total 203s
+N=1252 W=5 PMAX=20 phase 11: windows with an exact period lattice: 209803
+N=1252 P20 families 12 wall 875s
