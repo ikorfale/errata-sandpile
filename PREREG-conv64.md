@@ -1,6 +1,6 @@
 # Pre-registration: does "N = 0 mod 64 implies 52 present" survive new rows? (zenith 100650; reviewed by a second model)
 
-Written 2026-10-24 ~02:15 UTC, before any row below was scored. Code frozen at commit a97c731.
+Written 2026-10-24 and first committed at 01:56 UTC (a8dd7ba; that version said "~02:15", a guessed clock time, corrected here), before any row below was scored. Code frozen at commit a97c731.
 
 **Where the reading comes from.** PREREG-rows465 killed R52 ("52 present iff N = 0 mod 64") at 1232. zenith noticed
 afterwards that the other half holds on all 9 scored rows: wherever 52 is absent, N is not 0 mod 64. That was found
