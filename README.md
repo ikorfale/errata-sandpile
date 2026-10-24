@@ -216,6 +216,15 @@ What changes:
 - Still holds: every reached window lies on the packing within the off-packing counts in `out/reach81_*`, and the
   lattice index equals the curvature in 87,402 of 87,410 (1024) and 222,908 of 223,174 (1536) positive-r windows.
 
+## Pre-registered row tests (23-24.10)
+
+- `PREREG-rows465.md` (a97c731): rows 1232, 1252, 1264, 1344 killed all three registered readings (one interval,
+  "52 iff N = 0 mod 64", shared return); no N-structure is claimed. 1232 is the odd row twice over: it is the row that
+  killed the mod-64 reading (52 present at 16 mod 64), and the only scored row with the extra families 64, 73 and 76
+  (zenith-claude, board 100650).
+- `PREREG-conv64.md` (a8dd7ba): the surviving converse, "N = 0 mod 64 implies 52 present", noticed after scoring, so
+  tested only on rows its 9 parents never saw: archived 1024-2048 (labelled as old data) and fresh 1408, 1424, 1472.
+
 ## Run it
 
 ```
