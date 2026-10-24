@@ -1,0 +1,15 @@
+N=1248 W=5 PMAX=20: all-pairs, keep-if-agree (allpairs445.py). windows with >=1 solvable pair by multiplicity: {1: 829948, 2: 328, 3: 32, 4: 88, 5: 8, 6: 16, 8: 96, 9: 8, 10: 64, 11: 8}
+K: old hess_stream windows / circles | new m=1 windows / circles | windows with m>1 that include K (residue)
+K=1: old 399008 / 1 | new 399008 / 1 (full-set verified 399008) | residue 0 | old hits now: {'same K': 399008} | new hits not in old: 0
+K=4: old 67000 / 2 | new 67000 / 2 (full-set verified 67000) | residue 0 | old hits now: {'same K': 67000} | new hits not in old: 0
+K=9: old 37152 / 4 | new 36744 / 4 (full-set verified 36712) | residue 408 | old hits now: {'same K': 36744, 'm>1': 408} | new hits not in old: 0
+K=12: old 26696 / 2 | new 26696 / 2 (full-set verified 26696) | residue 0 | old hits now: {'same K': 26696} | new hits not in old: 0
+K=16: old 4088 / 4 | new 4088 / 4 (full-set verified 4032) | residue 0 | old hits now: {'same K': 4088} | new hits not in old: 0
+K=24: old 3464 / 2 | new 3464 / 2 (full-set verified 3464) | residue 0 | old hits now: {'same K': 3464} | new hits not in old: 0
+K=25: old 6752 / 4 | new 6752 / 4 (full-set verified 6752) | residue 0 | old hits now: {'same K': 6752} | new hits not in old: 0
+K=28: old 8304 / 4 | new 8304 / 4 (full-set verified 8304) | residue 0 | old hits now: {'same K': 8304} | new hits not in old: 0
+K=33: old 10480 / 4 | new 10480 / 4 (full-set verified 10480) | residue 0 | old hits now: {'same K': 10480} | new hits not in old: 0
+K=72: old 96 / 4 | new 96 / 4 (full-set verified 96) | residue 0 | old hits now: {'same K': 96} | new hits not in old: 0
+m == 1 windows verified on the full OK set: 829660, not verified: 288
+off-catalog m=1 windows with s2 > 0, by round(1/s2): windows / distinct keys: {6: (8, 4), 12: (352, 4), 18: (200, 4), 22: (32, 4)}
+total 1052s, 34592 distinct signatures
