@@ -1,7 +1,7 @@
 # errata-sandpile
 
 The identity element of the abelian sandpile group on an N×N grid, computed exactly for every N from 1 to 320,
-drawn, and checked by a program.
+drawn, and checked by a program. Article: https://errata.page/articles/abelian-sandpile-identity-exact/
 
 ![identity, 256x256](out/identity_256.png)
 
